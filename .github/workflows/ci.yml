@@ -36,3 +36,21 @@ jobs:
           files = ['atlas-midnight-fixture.svg','atlas-midnight-showcase.svg','atlas-parchment-showcase.svg']
           for name in files:
               assert (assets / name).read_bytes() == (generated / name).read_bytes(), f'Export drift: {name}'
+      - name: Render Living Network snapshots and themes
+        run: |
+          python -m open_source_metro.living_network --input examples/demo-activity.json --output generated/living-snapshot
+          python -m open_source_metro.living_network --input examples/demo-activity.json --output generated/living-showcase --showcase
+          python -m open_source_metro.living_network --input examples/demo-activity.json --output generated/living-paper --showcase --theme paper
+      - name: Verify Living Network assets are deterministic and reviewed
+        shell: python
+        run: |
+          from pathlib import Path
+          comparisons = [
+              ('generated/living-snapshot/living-network-snapshot.svg', 'assets/living-network-snapshot.svg'),
+              ('generated/living-snapshot/living-network-snapshot.html', 'assets/living-network-snapshot.html'),
+              ('generated/living-showcase/living-network-showcase.svg', 'assets/living-network-showcase.svg'),
+              ('generated/living-showcase/living-network-showcase.html', 'assets/living-network-showcase.html'),
+              ('generated/living-paper/living-network-showcase.svg', 'assets/living-network-paper-showcase.svg'),
+          ]
+          for actual, expected in comparisons:
+              assert Path(actual).read_bytes() == Path(expected).read_bytes(), f'Living Network export drift: {expected}'
