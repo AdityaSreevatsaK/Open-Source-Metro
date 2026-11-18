@@ -147,8 +147,11 @@ def normalise_calendar_for_snapshot(raw: dict, snapshot: dict) -> dict[date, int
         raise ValueError("A GitHub contribution calendar is not a synthetic fixture")
     user = raw.get("user")
     login = user.get("login") if isinstance(user, dict) else None
-    if not isinstance(login, str) or value.get("username", "").casefold() != login.casefold():
-        raise ValueError("Calendar account mismatch")
+    identity = value.get("username")
+    if (not isinstance(login, str) or not isinstance(identity, str)
+            or identity.casefold() != login.casefold()
+            or value.get("kind") != "github-profile-visible-contributions"):
+        raise ValueError("Calendar account mismatch or unknown calendar type")
     total = value.get("total_contributions")
     if type(total) is not int or not 0 <= total <= 1_000_000_000:
         raise ValueError("Invalid calendar total")
