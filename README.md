@@ -1,5 +1,27 @@
 # Open Source Metro
 
+## Self-service public profile generator | Year-scale repository history
+
+**New:** Generate a compact 53-week Metro banner and a separate 16-week portrait card for a public GitHub account. Unlike the older 30-day Events API sampler, the new collector reads **source-backed history** from selected public repositories. It records exactly what it saw and documents all coverage gaps.
+
+```powershell
+py -3 -m pip install -e .
+
+# Public source-backed profile for a GitHub username
+py -3 -m open_source_metro.profile_cli --username AdityaSreevatsaK --output output/my-profile --layout both
+
+# Fully offline, reproducible sample (fictional fixture only)
+py -3 -m open_source_metro.profile_cli --input examples/demo-activity.json --output output/demo-profile --layout both
+```
+
+Output: `source-snapshot.json`, `profile-compact.svg`, `profile-mobile.svg` and `README_SNIPPET.md`. Use `--featured owner/repo` to pick an included repository, `--repos owner/repo,owner/other` to choose the **live collection scope**, and `--theme paper` for the lighter design.
+
+**Important:** This is **not** GitHub's complete contributions calendar. Commits are from the current default branch; other repos, branch histories, reviews and private contributions may be absent. The source manifest describes the precise window and omissions. Blank cells are *unobserved*, not proven zero contributions.
+
+[Full collection and self-service guide](docs/YEAR_HISTORY_AND_SELF_SERVICE.md). No real-account data is bundled, no profile repository is modified and no paid service is required.
+
+---
+
 ## New experimental capabilities | Mobile + public-event snapshots
 
 A **dedicated 460 × 808 mobile portrait card** is now available. It deliberately shows the **most recent 16 weeks**, rather than crushing the annual 53-week chart into an unreadable phone width. Its stops and repository routes are based only on observed source events, with a separate midnight and paper theme. [Mobile architecture and examples](docs/MOBILE_PROFILE.md).
@@ -167,7 +189,7 @@ SECURITY.md              Responsible disclosure and data-handling expectations
 
 Start with [AGENTS.md](AGENTS.md), then [Architecture](docs/ARCHITECTURE.md), [Data contract](docs/DATA_CONTRACT.md), [Design principles](docs/DESIGN_PRINCIPLES.md), [Development guide](docs/DEVELOPMENT.md), [Agent handover](docs/AGENT_HANDOVER.md), and [Release checklist](docs/RELEASE_CHECKLIST.md).
 
-All work should be reviewed and tested before claiming production readiness. **No real-account data is bundled, no paid API is required and no GitHub profile is modified.** A complete contribution history requires an independently designed, coverage-aware collector; the new public Events API adapter is only a limited 30-day source, not complete GitHub contribution coverage.
+All work should be reviewed and tested before claiming production readiness. **No real-account data is bundled, no paid API is required and no GitHub profile is modified.** Two independent collectors exist: a 30-day public Events API sampler and a bounded year-scale public repository-history adapter. **Neither equals GitHub's official complete contribution calendar.**
 
 ### Origin and licensing
 

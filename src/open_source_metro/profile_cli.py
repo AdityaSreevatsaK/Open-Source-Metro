@@ -67,7 +67,7 @@ def export_profile(snapshot: dict, output: Path, *, layout: str = "both",
                              encoding="utf-8")
     produced.append(snapshot_path)
     status = ("Synthetic demonstration data" if data["source"] == "demo"
-              else "Partial public repository-history snapshot")
+              else "Partial public GitHub event snapshot")
     text = [
         "# Open Source Metro | Generated profile assets",
         "",

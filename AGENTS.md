@@ -150,3 +150,14 @@ When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT
 - Do not call this event stream the full GitHub contribution calendar. Current `PushEvent` payloads have no enumerated commit list, so the adapter drops them rather than making up commit counts.
 - Local public snapshots are personal, user-chosen outputs, not fixture assets. Never commit an account-specific snapshot or embed it in README without explicit approval.
 - CI tests use mocked HTTP only. Real network collections must not be executed from CI as validation.
+
+
+## Year-scale public repository history and self-service exports
+
+- Consult [docs/YEAR_HISTORY_AND_SELF_SERVICE.md](docs/YEAR_HISTORY_AND_SELF_SERVICE.md) before altering `src/open_source_metro/year_history.py` or `src/open_source_metro/profile_cli.py`.
+- Repo history is constrained to source-backed **public** records, exact UTC windows, 1–20 selected public repositories and 1–5 pages per endpoint; actual completeness is **not guaranteed** even without a pagination cap.
+- GitHub commit events require real commit SHAs and a source-author filter on the **current default branch**, not inferred push counts. Only PRs authored by the selected user become authored opening/merge milestones.
+- Collectors must never silently treat rate limits, 404/403 transport errors, private repos or oversized responses as an empty activity history.
+- `GITHUB_TOKEN` is optional for rate limits and must never appear in output SVG/JSON, logs or tests; use mocked transports for CI.
+- Self-service `--featured` must only filter the already validated input, without injecting extra events or replacing the synthetic labels. Never auto-write to a GitHub profile or commit real-user snapshots.
+- Keep the existing static/animated demos unchanged, and respect the distinction between the 53-week compact layout and 16-week portrait.

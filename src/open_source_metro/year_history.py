@@ -8,6 +8,7 @@ GITHUB_TOKEN is optional for rate limits and is never logged.
 from __future__ import annotations
 
 import argparse
+import hashlib
 from datetime import datetime, timedelta, timezone
 from http.client import HTTPException
 import json
@@ -15,7 +16,7 @@ import os
 from pathlib import Path
 import re
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urlencode
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from .public_events import API_BASE, API_VERSION, username_valid
@@ -225,7 +226,7 @@ def collect_year(username: str, *, repos: list[str] | None = None, days: int = 3
             authored = detail.get("author") if isinstance(detail, dict) else None
             if not isinstance(authored, dict):
                 continue
-            record("commit", "commit:" + name + ":" + sha.lower(),
+            record("commit", "commit:" + sha.lower() + ":" + hashlib.sha256(name.lower().encode("utf-8")).hexdigest()[:12],
                    authored.get("date"), commit.get("html_url"))
 
         for pull in individual["pulls"]["rows"]:
