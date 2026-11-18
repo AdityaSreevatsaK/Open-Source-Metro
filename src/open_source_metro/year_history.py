@@ -20,7 +20,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from .public_events import API_BASE, API_VERSION, username_valid
-from .validation import normalise, safe_url, utc_timestamp
+from .validation import normalise, safe_url
 
 _REPOSITORY = re.compile(r"[A-Za-z0-9-]{1,39}/[A-Za-z0-9_.-]{1,100}\Z")
 _COMMIT = re.compile(r"[0-9a-fA-F]{40}\Z")
@@ -40,10 +40,16 @@ def utc_z(stamp: datetime) -> str:
 
 
 def _timestamp(value: object) -> datetime | None:
+    """Accept timezone-aware GitHub API dates and convert them to strict UTC v1."""
+    if not isinstance(value, str) or len(value) > 60:
+        return None
     try:
-        return utc_timestamp(value)
+        stamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError:
         return None
+    if stamp.tzinfo is None:
+        return None
+    return stamp.astimezone(timezone.utc)
 
 
 def _same_user(row: object, username: str) -> bool:
