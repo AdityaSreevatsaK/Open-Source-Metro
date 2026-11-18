@@ -64,3 +64,12 @@
 | Stable public release | Not authorised |
 
 **If a gate cannot be validated**, leave it unchecked and state why. Never silently bypass or claim an unrun check passed.
+
+
+## GitHub GraphQL calendar gate
+
+- [ ] Verify read-only GitHub Actions GraphQL collection against a real public profile and preserve calendar/route provenance separation in the generated SVG.
+- [ ] Check any anonymous restricted/private contribution count handling and profile visibility assumptions.
+- [ ] Ensure missing query days are explicitly unknown, not displayed as authoritative zeros.
+- [ ] Confirm GitHub calendar is never combined arithmetically with public event-ledger counts.
+- [ ] Verify the fallback when no token is available is clearly labelled incomplete rather than presented as GitHub's contribution calendar.

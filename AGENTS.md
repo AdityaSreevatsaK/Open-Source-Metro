@@ -171,3 +171,25 @@ When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT
 - Generate local artifacts only: bounded source snapshot, static SVGs and a README snippet; upload them with 7-day retention. No source-specific tokens in artifacts and no real-account snapshots committed to the repository.
 - Public Actions artifacts may be accessible to other users; warn people that the archive contains data drawn from public repositories and source identifiers.
 - No live API calls should be required in routine CI tests. Verify the manual workflow itself after merge with an explicit owner-triggered run; do not claim a successful live account run merely because the YAML exists.
+
+
+## Renderer coverage and repository selection correction
+
+- **Do not reintroduce the 240-event limit** in Living Network, compact or portrait calendar generation. The snapshot is already bounded by collectors and must remain source-complete within its time scope.
+- Draw day-square intensity using **all in-window public source events** from selected/collected repositories, even if only five repository lines are displayed. Hidden rails do not mean hidden calendar observations.
+- Routes are only created for repositories with observed events in the displayed window; never display `0w` as an active route.
+- Public year-scale collector defaults to ten public repositories and balances recently pushed projects against older repositories; explicit `--repos` overrides this sampling.
+- Preserve sampled coverage metadata and show real first/last observed dates. A mostly empty year may be accurate for the selected repositories; do not fill historical dates with invented activity or disguise sparsity.
+- The actual GitHub profile is never modified automatically and a selected public history is **not** all official GitHub contributions.
+
+
+## GitHub profile contribution calendar integration
+
+- Read [src/open_source_metro/contribution_calendar.py](src/open_source_metro/contribution_calendar.py) and [docs/YEAR_HISTORY_AND_SELF_SERVICE.md](docs/YEAR_HISTORY_AND_SELF_SERVICE.md) before modifying the two-layer real-account pipeline.
+- `_calendar` is an **optional**, strictly validated GraphQL profile-visible contribution calendar on a `source="github"` v1 source snapshot. Never create it for synthetic `source="demo"` data.
+- Annual and mobile **day squares** use the exact returned `date`/`contributionCount` from the GitHub GraphQL calendar when present. Do not merge or add public event-ledger counts into these official daily totals.
+- Five coloured **repository routes** continue to rely exclusively on validated public source events (commits, opened/merged PRs, issues and releases) from the independent collector. A route stop is **not** a decomposition of the official GitHub contribution total.
+- The GraphQL calendar may reflect anonymous restricted/private contributions if the user chose to show them on their public GitHub profile; never attribute anonymous totals to a particular repository or user-visible event.
+- GitHub Actions uses an ephemeral read-only repository token for the public profile calendar, with fixed GraphQL endpoint and no log, SVG or snapshot token storage.
+- A date omitted by the GraphQL response is **unqueried**, not necessarily a verified zero. Do not confuse GitHub day counts with source-event coverage or imply an official collection is guaranteed complete for invisible/private work.
+- Local `--input` must remain offline, deterministic and token-free. Every validation/error path needs mock-based tests. Do not persist real-account generated previews into this repository by default.

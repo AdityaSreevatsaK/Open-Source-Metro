@@ -16,6 +16,7 @@ from pathlib import Path
 from .compact_profile import COLOURS
 from .living_network import demo_story, _density
 from .validation import normalise
+from .contribution_calendar import normalise_calendar_for_snapshot, contribution_intensity
 
 WIDTH, HEIGHT = 460, 808
 WEEKS = 16
@@ -49,18 +50,17 @@ def mobile_plan(raw: dict) -> dict:
                                      r["full_name"]))[:5]
     names = {r["full_name"] for r in featured}
     chosen = [e for e in visible if e["repo"] in names]
-    # Identical cap semantics to the full renderer: never truncate half a day.
-    retained = chosen[-240:]
-    if len(chosen) > 240 and retained and chosen[-241]["date"].date() == retained[0]["date"].date():
-        boundary = retained[0]["date"].date()
-        retained = [e for e in retained if e["date"].date() != boundary]
+    # Do not silently truncate dense real activity at 240 events. Calendar
+    # cells include every source-observed event, including unfeatured repos.
+    retained = visible
     by_day = defaultdict(list)
     by_repo_week = defaultdict(list)
     for event in retained:
         d = event["date"].date()
         week = (d - start).days // 7
         by_day[d].append(event)
-        by_repo_week[(event["repo"], week)].append(event)
+        if event["repo"] in names:
+            by_repo_week[(event["repo"], week)].append(event)
     routes = []
     for index, repo in enumerate(featured):
         name = repo["full_name"]
@@ -88,18 +88,40 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
     if theme not in COLOURS:
         raise ValueError("Unknown colour theme")
     p = mobile_plan(raw)
+    official = normalise_calendar_for_snapshot(raw, p["snap"])
     c = COLOURS[theme]
     demo = p["snap"]["source"] == "demo"
     synthetic = demo and bool(raw.get("_synthetic_added"))
-    provenance = ("SYNTHETIC DESIGN SHOWCASE" if synthetic else
+    provenance = ("GITHUB PROFILE · PUBLIC ROUTES PARTIAL" if official is not None else
+                  "SYNTHETIC DESIGN SHOWCASE" if synthetic else
                   "SHARED SYNTHETIC FIXTURE" if demo else
                   "PUBLIC EVENTS · PARTIAL HISTORY")
-    scope = ("PUBLIC SOURCE MAY COVER ONLY 30 DAYS" if not demo else
+    coverage = raw.get("_coverage", {}) if isinstance(raw.get("_coverage"), dict) else {}
+    mode = coverage.get("collector")
+    scope = (("GITHUB DAY COUNTS · PUBLIC ROUTES PARTIAL" if official is not None else
+              "PUBLIC REPOSITORY HISTORY · COVERAGE PARTIAL" if mode == "public-repository-history-v1"
+              else "PUBLIC EVENT SNAPSHOT · COVERAGE PARTIAL") if not demo else
              "ILLUSTRATIVE DATA, NOT REAL GITHUB HISTORY")
+    if (p["events"] or official is not None) and not demo:
+        observed_days = (sorted(day for day, amount in official.items()
+                                if p["start"] <= day <= p["today"] and amount > 0)
+                         if official is not None else sorted(p["by_day"]))
+        range_label = (f"OBSERVED {len(observed_days)} DAYS · "
+                       f"{observed_days[0]:%d %b}–{observed_days[-1]:%d %b %Y}"
+                       if observed_days else "NO VISIBLE CONTRIBUTIONS IN THIS WINDOW")
+    elif not demo:
+        range_label = "NO SOURCE EVENTS OBSERVED IN THIS WINDOW"
+    else:
+        range_label = "BLANK SQUARES = UNOBSERVED"
+    intensity_samples = (sorted(amount for day,amount in official.items()
+                                if p["start"] <= day <= p["today"] and amount > 0)
+                         if official is not None else [])
     items = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="mobile-title mobile-desc">',
         f'<title id="mobile-title">Open Source Metro mobile / {provenance}</title>',
-        '<desc id="mobile-desc">A dedicated portrait view of the most recent sixteen Sunday-to-Saturday weeks. Date squares show observed source-event units; each line is one active repository, with stops only on observed weeks. Ring stations denote merged pull requests and diamond stations denote releases. The rail between stops is schematic, not continuous activity. Blank means unobserved, not zero GitHub contributions. This is not the official GitHub contributions chart.</desc>',
+        ('<desc id="mobile-desc">The most recent sixteen-week portrait uses GitHub profile-visible contribution counts for daily squares. Repository routes use a separate, incomplete public event ledger; these counts are not a per-project breakdown and may include anonymous restricted contributions depending on profile privacy settings.</desc>'
+         if official is not None else
+         '<desc id="mobile-desc">A dedicated portrait view of the most recent sixteen Sunday-to-Saturday weeks. Date squares show observed source-event units; each line is one active repository, with stops only on observed weeks. Ring stations denote merged pull requests and diamond stations denote releases. The rail between stops is schematic, not continuous activity. Blank means unobserved, not zero GitHub contributions. This is not the official GitHub contributions chart.</desc>'),
         '<defs><style><![CDATA[',
         '.heading{font:800 27px Arial,Segoe UI,sans-serif;letter-spacing:-1px}',
         '.subtitle{font:600 11px Arial,Segoe UI,sans-serif}',
@@ -116,7 +138,7 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
         f'<rect x="28" y="94" width="404" height="29" rx="10" fill="{c["surface"]}"/>',
         f'<g fill="{c["text"]}">{_txt(42,113,provenance,"tag")}</g>',
         f'<rect x="28" y="135" width="404" height="187" rx="14" fill="{c["surface"]}" stroke="{c["rule"]}"/>',
-        f'<g fill="{c["muted"]}">{_txt(42,155,"01 / SOURCE ACTIVITY","tag")}',
+        f'<g fill="{c["muted"]}">{_txt(42,155,("01 / GITHUB CONTRIBUTIONS" if official is not None else "01 / SOURCE ACTIVITY"),"tag")}',
         _txt(417,155,"LATEST 16 WEEKS","tag","end"),'</g>',
     ]
     for w in range(WEEKS):
@@ -131,16 +153,22 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
             continue
         week, row = divmod(offset, 7)
         records = p["by_day"].get(d, ())
-        units = sum(e["count"] for e in records)
-        level = _density(units)
+        units = official.get(d, 0) if official is not None else sum(e["count"] for e in records)
+        level = (contribution_intensity(units, intensity_samples)
+                 if official is not None else _density(units))
         fill = c["greens"][level-1] if level else c["empty"]
         x = X0 + week*XSTEP
         y = DAY_Y + row*DAY_STEP
-        message = (f"{d.isoformat()}: {len(records)} observed events, {units} units" if records
+        message = (f"{d.isoformat()}: not returned by GitHub profile calendar query"
+                   if official is not None and d not in official else
+                   f"{d.isoformat()}: {units} GitHub profile contributions, {len(records)} public repository events"
+                   if official is not None else
+                   f"{d.isoformat()}: {len(records)} observed events, {units} units" if records
                    else f"{d.isoformat()}: not observed in supplied snapshot")
-        items.append(f'<rect class="mobile-day" data-date="{d.isoformat()}" data-week="{week}" data-count="{len(records)}" x="{x:.2f}" y="{y:.2f}" width="{CELL}" height="{CELL}" rx="3" fill="{fill}"><title>{_esc(message)}</title></rect>')
+        src_count = (f' data-source-count="{len(records)}"' if official is not None else '')
+        items.append(f'<rect class="mobile-day" data-date="{d.isoformat()}" data-week="{week}" data-count="{units if official is not None else len(records)}"{src_count} x="{x:.2f}" y="{y:.2f}" width="{CELL}" height="{CELL}" rx="3" fill="{fill}"><title>{_esc(message)}</title></rect>')
     items.extend([
-        f'<g fill="{c["muted"]}">{_txt(42,311,"BLANK SQUARES = UNOBSERVED","small")}</g>',
+        f'<g fill="{c["muted"]}">{_txt(42,311,range_label,"small")}</g>',
         f'<rect x="28" y="336" width="404" height="346" rx="14" fill="{c["surface"]}" stroke="{c["rule"]}"/>',
         f'<g fill="{c["muted"]}">{_txt(42,358,"02 / REPOSITORY JOURNEYS","tag")}',
         _txt(416,358,"◉ MERGE · ◆ RELEASE","small","end"),'</g>',
@@ -178,7 +206,9 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
                     items.append(f'<circle cx="{x:.2f}" cy="{track_y:.2f}" r="2.4" fill="{colour}"/>')
                 items.append('</g>')
         items.append('</g>')
-    summary = f"{len(p['events'])} EVENTS  ·  {len(p['routes'])} ROUTES  ·  16 WEEKS"
+    summary = (f"{sum(v for day, v in official.items() if p['start'] <= day <= p['today']):,} GITHUB CONTRIBUTIONS · {len(p['routes'])} ROUTES"
+               if official is not None else
+               f"{len(p['events'])} EVENTS  ·  {len(p['routes'])} ROUTES  ·  16 WEEKS")
     items.extend([
         f'<rect x="28" y="696" width="404" height="80" rx="12" fill="{c["surface"]}" stroke="{c["rule"]}"/>',
         f'<g fill="{c["text"]}">{_txt(43,717,summary,"tag")}</g>',

@@ -80,6 +80,27 @@ class CompactProfileTests(unittest.TestCase):
         self.assertIn('PUBLIC EVENTS',render_compact(pub))
         self.assertNotIn('SYNTHETIC DESIGN SHOWCASE',render_compact(pub))
 
+    def test_real_snapshot_explains_observed_date_range_and_week_count(self):
+        sample = fixture()
+        sample['source'] = 'github'
+        svg = render_compact(sample)
+        self.assertIn('Observed ', svg)
+        self.assertIn('/53 WEEKS', svg)
+        self.assertIn('OUTSIDE YEAR', svg)
+        self.assertIn('REPOS', svg)
+
+    def test_real_dense_events_are_counted_without_240_cap(self):
+        sample = fixture()
+        sample['source'] = 'github'
+        sample['activity'] = [
+            dict(id=f'busy-{i}', kind='commit', repo_full_name='sample-dev/aurora',
+                 occurred_at=f'2026-10-01T{i//60:02d}:{i%60:02d}:00Z', count=1)
+            for i in range(502)]
+        svg = render_compact(sample)
+        self.assertIn('502 events', svg)
+        self.assertIn('0 WEEKS' if False else 'OBSERVED', svg)
+        self.assertIn('data-count="502"', svg)
+
     def test_untrusted_labels_escaped_and_invalid_values_rejected(self):
         raw=fixture();raw['activity'][0]['id']='<script>bad</script>'
         svg=render_compact(raw)

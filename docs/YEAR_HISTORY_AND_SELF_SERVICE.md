@@ -18,10 +18,10 @@ cd Open-Source-Metro
 py -3 -m pip install -e .
 \`\`\`
 
-Collect public repository history for the default five most recently pushed, non-fork **owned public** repositories:
+Collect public repository history for the default ten **time-diverse, non-fork owned public** repositories (recent plus progressively older projects):
 
 \`\`\`powershell
-py -3 -m open_source_metro.year_history AdityaSreevatsaK --days 365 --max-repos 5 --pages 2 --output output/year-public.json
+py -3 -m open_source_metro.year_history AdityaSreevatsaK --days 365 --max-repos 10 --pages 2 --output output/year-public.json
 \`\`\`
 
 Collect from **explicit public repositories**, including repositories belonging to other owners where the specified user has authored activity:
@@ -91,7 +91,7 @@ The \`_coverage\` field includes:
 
 **Even when \`possible_history_truncation\` is false, the snapshot is not complete GitHub contributions.** A complete API page cannot prove no omitted events elsewhere, and this collector deliberately excludes many kinds of contribution.
 
-Default request bounds: 5 repositories; up to 2 pages of 100 entries per endpoint and discovery. All bounds are configurable within 1-20 repositories and 1-5 pages, with a maximum 370-day window. More repositories/pages may hit unauthenticated rate limits.
+Default request bounds: 10 repositories; up to 2 pages of 100 entries per endpoint and discovery. All bounds are configurable within 1-20 repositories and 1-5 pages, with a maximum 370-day window. More repositories/pages may hit unauthenticated rate limits.
 
 No network queries run in CI; the public collector is tested using injected mock HTTP responses.
 
@@ -136,3 +136,37 @@ A one-off self-service workflow is installed at [Generate public Metro profile](
 The workflow uses a short-lived read-only GitHub Actions token to increase public API allowance, performs no Git push, has no account-write permissions and retains downloadable artifacts for **seven days**. Actions artifacts from a public project may be visible to others: use only information you are comfortable sharing publicly. The workflow is **not scheduled** and does not automatically update any profile.
 
 The automated unit test workflow makes **zero real network requests**, uses synthetic and mocked data, and cannot prove that an arbitrary GitHub account's entire development history is captured.
+
+
+## Why the old profile image looked nearly empty
+
+The initial export used only five most recently pushed repositories and an unnecessary 240-event renderer cap. On a real run, 502 events were fetched but the chart kept only 207 and reported **295 omitted**. The selected projects were so recent that the visible map had about a week of activity. This was a poor representation of a year, not evidence that the GitHub account was inactive.
+
+Corrections:
+
+1. The **annual calendar now uses all source events in its 53-week window**, from every repository present in the snapshot. Up to five observed-active repositories become labelled routes; other repositories still influence the day squares.
+2. Automatic public repository selection now spans **ten** repositories by default, combining recent and progressively older projects from the public, pushed-date-sorted list. This remains a bounded sample rather than account-wide collection.
+3. The SVG displays **actual observed date range**, **weeks with observations**, and explicitly distinguishes unfeatured routes from events outside the year.
+4. The generated README snippet includes a data-coverage summary and highlights sparse history.
+5. To explore other public repos, specify a reviewed comma-separated `--repos` list. This changes the collection scope, not the rendered numbers' honesty.
+
+Do not infer that a blank annual chart signifies no GitHub contributions. It means this selected public source had no observations for those dates. It can still omit external PRs, private activity, branch contributions and other GitHub event types.
+
+### Project-route ranking for real source snapshots
+
+The five labelled project routes prefer repositories with activity across **more distinct observed weeks**, rather than favouring one extremely busy day. Event volume then breaks ties. This avoids five newly created repositories crowding older, sustained public work out of the map. The annual calendar still includes every observed event from the collected public repositories, even those that are not given individual routes. For a different set of routes, choose a reviewed `--featured` list.
+
+
+## Official GitHub profile calendar for annual heatmap (November 2026 fix)
+
+The initial public repository history collector found only a few days of events even after changing automatic repository selection. A read-only GraphQL feasibility run against `AdityaSreevatsaK` demonstrated **1,883 profile-visible contributions on 99 non-zero days** in the preceding year, compared with just **88 public source events across three observed dates** from our selected-repository history. These are **different metrics**, not an inconsistency in GitHub.
+
+The primary public profile workflow now queries GitHub's `User.contributionsCollection(from:to:).contributionCalendar` in addition to the repository-level REST history. The GraphQL result is stored in a dedicated `_calendar` field, and the annual/portrait square colours use those exact `contributionCount` values. The metro routes continue using strictly source-backed public repository events and remain incomplete. Do not claim that GraphQL day totals can be attributed to the featured routes.
+
+**Read-only token requirements:** The one-off manual GitHub Action has `contents: read` and uses its ephemeral `github.token` to access the fixed `https://api.github.com/graphql` endpoint. Nothing is pushed to a profile. For local online use, set your own read-only `GITHUB_TOKEN` before `python -m open_source_metro.profile_cli --username ...`. Offline `--input` and demo fixtures require no token, and the CLI works without one by displaying only incomplete public repository observations.
+
+**Privacy:** GitHub's profile-visible calendar may contain anonymous restricted/private contributions, depending on what the account owner has enabled in GitHub profile settings. No private repository names, individual events or credentials are requested from GraphQL. The downloaded archive may contain public calendar counts and public repository metadata, so treat it as sharable profile data only if appropriate.
+
+**Interpretation:** The calendar is a GitHub-sourced daily summary. Metro routes indicate public events with verifiable repository links. An empty calendar square returned with count 0 is a GitHub-reported zero for the queried profile; a date not returned by the API is unknown. A blank route does not imply no contributions. The calendar's reported aggregate may not exactly equal the displayed 53-week cell sum because queries have specified time boundaries.
+
+**API:** [GraphQL users / ContributionsCollection / ContributionCalendar](https://docs.github.com/en/graphql/reference/users). Tests must mock the HTTP transport and validate the API response independently; no live GitHub requests belong in ordinary test CI.

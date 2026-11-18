@@ -37,7 +37,7 @@ on:
         description: Maximum public repositories to scan (1-20)
         type: number
         required: true
-        default: 5
+        default: 10
       pages:
         description: Maximum API pages per endpoint (1-5)
         type: number
@@ -90,6 +90,10 @@ jobs:
               max_repos=int(os.environ["INPUT_MAX_REPOS"]),
               pages=int(os.environ["INPUT_PAGES"]),
           )
+          from datetime import datetime
+          from open_source_metro.contribution_calendar import fetch_contribution_calendar
+          generated = datetime.fromisoformat(data["generated_at"].replace("Z", "+00:00"))
+          data["_calendar"] = fetch_contribution_calendar(username, generated_at=generated)
           results = export_profile(
               data, Path("generated-profile"),
               layout=os.environ["INPUT_LAYOUT"], theme=os.environ["INPUT_THEME"],

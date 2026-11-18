@@ -6,12 +6,15 @@ profile repository is modified, and no demonstration events are fabricated.
 from __future__ import annotations
 
 import argparse
+import os
+from datetime import datetime, timedelta
 import json
 from pathlib import Path
 
 from .compact_profile import render_compact
 from .mobile_profile import render_mobile
 from .validation import normalise
+from .contribution_calendar import fetch_contribution_calendar, normalise_calendar_for_snapshot
 from .year_history import collect_year, repository_valid
 
 
@@ -67,11 +70,44 @@ def export_profile(snapshot: dict, output: Path, *, layout: str = "both",
                              encoding="utf-8")
     produced.append(snapshot_path)
     status = ("Synthetic demonstration data" if data["source"] == "demo"
-              else "Partial public GitHub event snapshot")
+              else "GitHub profile-visible contributions + partial public project routes"
+              if data.get("_calendar") is not None else
+              "Partial public GitHub event snapshot")
+    snap = normalise(data)
+    calendar = normalise_calendar_for_snapshot(data, snap)
+    generated = snap["generated"].date()
+    last_sunday = generated - timedelta(days=(generated.weekday() + 1) % 7)
+    window_start = last_sunday - timedelta(weeks=52)
+    observed = [e["date"].date() for e in snap["events"]
+                if window_start <= e["date"].date() <= generated
+                and e["date"] <= snap["generated"]]
+    if calendar is not None:
+        observed_days = sorted(day for day, amount in calendar.items()
+                               if window_start <= day <= generated and amount > 0)
+        calendar_total = sum(amount for day, amount in calendar.items()
+                             if window_start <= day <= generated)
+    else:
+        observed_days = sorted(set(observed))
+        calendar_total = None
+    observed_weeks = {(day - window_start).days // 7 for day in observed_days}
+    observed_range = (f"{observed_days[0].isoformat()} to {observed_days[-1].isoformat()}"
+                      if observed_days else "No events in the displayed annual window")
     text = [
         "# Open Source Metro | Generated profile assets",
         "",
         f"**Source:** {status}. This is not GitHub's official complete contribution calendar.",
+        "",
+        f"**Actually observed dates:** {observed_range}.",
+        (f"**GitHub profile calendar:** {calendar_total} displayed GitHub contribution units on {len(observed_days)} days in {len(observed_weeks)} of 53 weeks."
+         if calendar is not None else
+         f"**Source event coverage:** {len(observed)} observed public events on {len(observed_days)} days in {len(observed_weeks)} of 53 weeks."),
+        (f"**Public project routes:** {len(observed)} recorded public repository events; project routes are not a breakdown of the GitHub contribution totals."
+         if calendar is not None else
+         "Up to five featured project routes; all validated events contribute to the source-event calendar."),
+        ("**Sparse history warning:** The selected source data covers fewer than eight active weeks; "
+         "a nearly blank year is expected. Add older public repositories using --repos, "
+         "or view the separate 16-week mobile layout." if data["source"] == "github"
+         and len(observed_weeks) < 8 else ""),
         "",
         "Upload the chosen SVG to your own profile repository and update its README **manually**.",
         "This tool does not open PRs, commit to a profile, publish any token or change GitHub settings.",
@@ -81,7 +117,9 @@ def export_profile(snapshot: dict, output: Path, *, layout: str = "both",
         text.append(f"![{status} | {svg.stem}](./{svg.name})")
         text.append("")
     text.extend([
-        "**Coverage:** Blank squares are unobserved activity, not confirmed zero contributions.",
+        ("**Calendar scope:** The day squares use GitHub's profile-visible counts, which can include anonymous restricted contributions depending on profile settings. Missing dates outside the API query are not proof of zero; project routes show only observed public events."
+         if calendar is not None else
+         "**Coverage:** Blank squares are unobserved activity, not confirmed zero contributions."),
         "For public data, refer to source-snapshot.json → _coverage for API, pagination and omissions.",
         "Portrait image intentionally shows only the most recent 16 weeks.",
         "",
@@ -101,7 +139,7 @@ def main() -> None:
     parser.add_argument("--repos", help="Comma-separated public repository collection scope (live only)")
     parser.add_argument("--featured", help="Comma-separated repository names to include in the generated card")
     parser.add_argument("--days", type=int, default=365)
-    parser.add_argument("--max-repos", type=int, default=5)
+    parser.add_argument("--max-repos", type=int, default=10)
     parser.add_argument("--pages", type=int, default=2)
     parser.add_argument("--include-forks", action="store_true")
     parser.add_argument("--layout", choices=("compact", "mobile", "both"), default="both")
@@ -116,13 +154,23 @@ def main() -> None:
         data = collect_year(args.username, repos=repos, days=args.days,
                             max_repos=args.max_repos, pages=args.pages,
                             include_forks=args.include_forks)
+        if os.getenv("GITHUB_TOKEN"):
+            # Official GitHub profile daily totals complement, never replace,
+            # the separately verified public repository event ledger.
+            recorded = datetime.fromisoformat(data["generated_at"].replace("Z", "+00:00"))
+            data["_calendar"] = fetch_contribution_calendar(args.username, generated_at=recorded)
+        else:
+            print("NOTE: No GITHUB_TOKEN: calendar shows only sampled public repository events.")
     featured = ([name.strip() for name in args.featured.split(",")]
                 if args.featured is not None else None)
     files = export_profile(data, args.output, layout=args.layout,
                            theme=args.theme, featured=featured)
     for file in files:
         print(file)
-    print("This is a source-backed event illustration, NOT a complete GitHub contribution calendar.")
+    if data.get("_calendar") is not None:
+        print("Day squares: GitHub's profile-visible contributions. Metro routes: partial public event history.")
+    else:
+        print("Partial source-event snapshot only. This is NOT GitHub's full contribution calendar.")
 
 
 if __name__ == "__main__":

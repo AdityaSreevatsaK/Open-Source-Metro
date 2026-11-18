@@ -76,7 +76,7 @@ Non-authoritative metadata such as language/stars may be included in the input b
 - GitHub's public Events API, repository commit history, pull requests and contribution calendar can differ in visibility, counting rules, historical coverage and ownership. No current adapter has proven equivalence.
 - Inactive/blank cells mean **absent from the input**, not zero real activity.
 - The fixed 53-week period ends at \`generated_at\`; events after that exact instant or outside the displayed period must not be treated as observed.
-- Repository selection is limited to five featured stations and event display to 240 eligible events. Disclose omissions. When a 240-event boundary splits a day, drop that oldest day rather than drawing a misleading fractional daily total.
+- Only five repositories are drawn as labelled routes, but the calendar uses every eligible in-window source event from **all supplied repositories**. No arbitrary 240-event cap or partial-day deletion is allowed. Events outside the requested time window and the actual number of observed days/weeks must be disclosed.
 - Only real safe public URLs can become clickable in a future interactive preview. The current static exports do not need links.
 
 ## Determinism and deduplication
@@ -94,3 +94,29 @@ All strings in JSON are hostile until validated. XML escaping is necessary but i
 ## Future collector hand-off (not yet implemented)
 
 A new source adapter must document: endpoint and GitHub API version, public-only scope, permissions, pagination and truncation, rate limits, timezones, deduplication identity, retry/backoff, ownership mapping, missing categories, cache policy, ETags/conditional requests, and what the resulting visual can and cannot accurately claim. Add these tests before introducing any network data path.
+
+
+## Optional independent GitHub contribution-calendar layer (`_calendar`)
+
+A real `source="github"` snapshot may include the additional top-level object:
+
+```json
+{
+  "_calendar": {
+    "provider": "github-graphql",
+    "kind": "github-profile-visible-contributions",
+    "username": "example-user",
+    "total_contributions": 123,
+    "window_from": "2025-11-18T00:00:00Z",
+    "window_to": "2026-11-18T00:00:00Z",
+    "days": [
+      {"date": "2026-11-17", "count": 3},
+      {"date": "2026-11-18", "count": 5}
+    ]
+  }
+}
+```
+
+This is **not** an event row and cannot be reverse-engineered into individual commits, project milestones, merges or private-repository metadata. The daily counts are GitHub profile-visible contributions and may include anonymous restricted activity according to account settings. A day not returned by GraphQL is **not observed by this API query**. Never treat absent days as authenticated zeros.
+
+Validation: exact provider/type, matching username, distinct ISO calendar dates, non-negative integer counts, bounded dates and no duplicate entries. Render all supported daily squares from `_calendar` if provided; **do not add public repository `activity` counts** into these GitHub totals. Routes always use only the independent `activity` ledger. Keep both provenance classes in the SVG and export summary. A `source="demo"` fixture is forbidden from carrying an official `_calendar`.

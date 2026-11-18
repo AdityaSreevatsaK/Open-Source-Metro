@@ -118,8 +118,31 @@ class PublicGitHub:
         return rows, capped
 
 
+def select_public_repositories_by_time(names: list[str], maximum: int) -> list[str]:
+    """Balance recently pushed repositories with older observed public projects.
+
+    The GitHub owned-repository feed is ordered by pushed_at descending.
+    Taking only the first five biases the year view towards freshly
+    created/updated repos. Keep recent activity but sample progressively older
+    repositories across the discovered list. Never infer events from metadata.
+    """
+    if not 1 <= maximum <= MAX_REPOS:
+        raise ValueError("Invalid selection limit")
+    if len(names) <= maximum:
+        return list(names)
+    most_recent = (maximum + 1) // 2
+    chosen = names[:most_recent]
+    older = names[most_recent:]
+    remaining = maximum - most_recent
+    if remaining:
+        # Unique increasing indices because len(older) >= remaining.
+        chosen.extend(older[((i + 1) * len(older) - 1) // remaining]
+                      for i in range(remaining))
+    return chosen
+
+
 def collect_year(username: str, *, repos: list[str] | None = None, days: int = 365,
-                 max_repos: int = 5, pages: int = 2, include_forks: bool = False,
+                 max_repos: int = 10, pages: int = 2, include_forks: bool = False,
                  generated_at: datetime | None = None, client: PublicGitHub | None = None) -> dict:
     """Collect public, observed activity for owned/explicit repositories.
 
@@ -179,7 +202,7 @@ def collect_year(username: str, *, repos: list[str] | None = None, days: int = 3
                 seen.add(name.casefold())
                 names.append(name)
         repo_cap = discover_capped or len(names) > max_repos
-        names = names[:max_repos]
+        names = select_public_repositories_by_time(names, max_repos)
 
     collected_repos = []
     events: dict[str, dict] = {}
@@ -279,7 +302,7 @@ def collect_year(username: str, *, repos: list[str] | None = None, days: int = 3
             "window_start": utc_z(since), "window_end": utc_z(moment),
             "days_requested": days, "complete_contribution_history": False,
             "public_repositories_only": True,
-            "selection": "explicit" if explicit else "owned_public_repositories",
+            "selection": "explicit" if explicit else "owned_public_repositories_balanced_by_pushed_order",
             "included_repositories": names,
             "repository_discovery_possibly_truncated": repo_cap,
             "requests": api.requests,
@@ -308,7 +331,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True, help="Local v1 JSON snapshot")
     parser.add_argument("--repos", help="Comma-separated public repositories; includes contributed-to repositories")
     parser.add_argument("--days", type=int, default=365)
-    parser.add_argument("--max-repos", type=int, default=5)
+    parser.add_argument("--max-repos", type=int, default=10)
     parser.add_argument("--pages", type=int, default=2, help="1-5 pages per endpoint per repository")
     parser.add_argument("--include-forks", action="store_true")
     args = parser.parse_args()
