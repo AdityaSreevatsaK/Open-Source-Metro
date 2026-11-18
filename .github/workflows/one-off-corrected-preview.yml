@@ -1,4 +1,5 @@
 name: One-off corrected public profile preview
+# Final profile regeneration after official GraphQL and contribution intensity changes
 on:
   push:
     branches: [fix/real-data-calendar-coverage]
