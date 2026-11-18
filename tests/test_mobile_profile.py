@@ -88,7 +88,7 @@ class MobileProfileTests(unittest.TestCase):
         source["source"] = "github"
         source["activity"] = [
             dict(id=f"busy-{i}", kind="commit", repo_full_name="sample-dev/aurora",
-                 occurred_at=f"2026-11-16T{i//60:02d}:{i%60:02d}:00Z", count=1)
+                 occurred_at=f"2026-10-01T{i//60:02d}:{i%60:02d}:00Z", count=1)
             for i in range(502)]
         plan = mobile_plan(source)
         self.assertEqual(len(plan["events"]), 502)

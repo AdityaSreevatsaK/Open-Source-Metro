@@ -149,7 +149,8 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         colour=colors[i]
         short=name if len(name)<=13 else name[:12]+'…'
         items.append(f'<g class="compact-journey" data-repo="{esc(full)}">')
-        items.append(f'<title>{esc(full)} · {len(route["weeks"])} weeks with observed activity</title>')
+        if not demo:
+            items.append(f'<title>{esc(full)} · {len(route["weeks"])} weeks with observed activity</title>')
         items.append(f'<rect x="52" y="{y-9:.1f}" width="23" height="18" rx="6" fill="{colour}"/>')
         items.append(f'<text x="63.5" y="{y+3.7:.1f}" class="index" text-anchor="middle" fill="{t["bg"]}">{i+1:02}</text>')
         items.append(f'<g fill="{t["text"]}">{txt(84,y+4,short,"route")}</g>')

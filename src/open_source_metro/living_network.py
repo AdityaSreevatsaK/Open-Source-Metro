@@ -62,7 +62,7 @@ def build_plan(raw: dict) -> dict:
     for e in eligible:
         first_seen.setdefault(e['repo'], e['date'])
     # Prefer active repos, not old/inactive or large synthetic 'count' weights.
-    featured = sorted(snap['repos'], key=lambda r: (-sizes[r['full_name']],
+    featured = sorted([r for r in snap['repos'] if sizes[r['full_name']] > 0], key=lambda r: (-sizes[r['full_name']],
           first_seen.get(r['full_name'], datetime.max.replace(tzinfo=timezone.utc)),
           r['full_name']))[:5]
     repo_names = {r['full_name'] for r in featured}
