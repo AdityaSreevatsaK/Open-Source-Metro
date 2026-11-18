@@ -178,9 +178,10 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
                     items.append(f'<circle cx="{x:.2f}" cy="{track_y:.2f}" r="2.4" fill="{colour}"/>')
                 items.append('</g>')
         items.append('</g>')
+    summary = f"{len(p['events'])} EVENTS  ·  {len(p['routes'])} ROUTES  ·  16 WEEKS"
     items.extend([
         f'<rect x="28" y="696" width="404" height="80" rx="12" fill="{c["surface"]}" stroke="{c["rule"]}"/>',
-        f'<g fill="{c["text"]}">{_txt(43,717,f"{len(p['events'])} EVENTS  ·  {len(p['routes'])} ROUTES  ·  16 WEEKS","tag")}</g>',
+        f'<g fill="{c["text"]}">{_txt(43,717,summary,"tag")}</g>',
         f'<g fill="{c["muted"]}">{_txt(43,736,scope,"small")}',
         _txt(43,752,"BLANK IS NOT PROOF OF ZERO CONTRIBUTIONS","small"),
         _txt(43,767,f"EXCLUDED {p['omitted_repos']} REPOS · {p['omitted_events']} EVENTS","small"),'</g>',
