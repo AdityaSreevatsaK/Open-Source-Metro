@@ -1,0 +1,56 @@
+name: One-off corrected public profile preview
+on:
+  push:
+    branches: [fix/real-data-calendar-coverage]
+    paths: [.github/workflows/one-off-corrected-preview.yml]
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.11'
+      - name: Install standalone metro
+        run: python -m pip install -e .
+      - name: Collect broad public account history and render corrected profile
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python -m open_source_metro.profile_cli --username AdityaSreevatsaK --output corrected-real-preview --max-repos 10 --pages 2 --layout both --theme midnight
+      - name: Audit observed dates, source completeness, project diversity and rendered events
+        shell: python
+        run: |
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          import json
+          import xml.etree.ElementTree as ET
+          raw = json.loads(Path('corrected-real-preview/source-snapshot.json').read_text(encoding='utf-8'))
+          cutoff = datetime.fromisoformat(raw['generated_at'].replace('Z','+00:00')).date()
+          last_sunday = cutoff - timedelta(days=(cutoff.weekday()+1)%7)
+          start = last_sunday - timedelta(weeks=52)
+          included = [e for e in raw['activity'] if start <= datetime.fromisoformat(e['occurred_at'].replace('Z','+00:00')).date() <= cutoff]
+          seen_days = {e['occurred_at'][:10] for e in included}
+          weeks = {(datetime.fromisoformat(x).date()-start).days//7 for x in seen_days}
+          compact = ET.parse('corrected-real-preview/profile-compact.svg').getroot()
+          day_nodes = [n for n in compact.iter() if n.get('class')=='calendar-day']
+          plotted = sum(int(n.get('data-count','0')) for n in day_nodes)
+          assert plotted == len(included), (plotted,len(included))
+          print('Selected public repositories:',len(raw['repositories']))
+          print('Collected source records:',len(raw['activity']))
+          print('In-year event count and plotted event total:',len(included),plotted)
+          print('Distinct observed UTC days:',len(seen_days))
+          print('Distinct observed year weeks:',len(weeks))
+          print('Earliest/latest observed UTC dates:',min(seen_days) if seen_days else 'none',max(seen_days) if seen_days else 'none')
+          print('Public source pagination/discovery possibly truncated:',raw['_coverage']['possible_history_truncation'])
+          print('No private data or complete-contributions claim; not official GitHub totals.')
+      - name: Upload corrected source snapshot and SVG previews for review
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: corrected-public-metro-profile
+          path: corrected-real-preview/
+          retention-days: 7
+          if-no-files-found: error
