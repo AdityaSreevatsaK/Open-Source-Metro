@@ -31,7 +31,7 @@ def graphql_result(username="sample-dev"):
     return {"data":{"user":{"login":username,"contributionsCollection":{
         "contributionCalendar":{"totalContributions":11,"weeks":[
             {"contributionDays":[
-                {"date":"2026-07-15","contributionCount":8},
+                {"date":"2026-08-15","contributionCount":8},
                 {"date":"2026-10-08","contributionCount":3},
             ]}
         ]}}}}}
@@ -79,7 +79,7 @@ class OfficialCalendarTests(unittest.TestCase):
             parse_calendar(wrong,"sample-dev")
         bad=graphql_result()
         bad["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"][0]["contributionDays"].append(
-            {"date":"2026-07-15","contributionCount":1})
+            {"date":"2026-08-15","contributionCount":1})
         with self.assertRaises(ValueError):
             parse_calendar(bad,"sample-dev")
         bad2=graphql_result()
@@ -95,7 +95,7 @@ class OfficialCalendarTests(unittest.TestCase):
         sample=fixture()
         sample["_calendar"]=calendar()
         self.assertEqual(normalise_calendar_for_snapshot(sample, {} )[
-            datetime(2026,7,15).date()],8)
+            datetime(2026,8,15).date()],8)
         sample["source"]="demo"
         with self.assertRaises(ValueError):
             render_compact(sample)
@@ -139,7 +139,7 @@ class OfficialCalendarTests(unittest.TestCase):
 
     def test_untrusted_calendar_rejects_non_numeric_and_duplicate_date(self):
         sample=fixture();sample["_calendar"]=calendar()
-        sample["_calendar"]["days"].append({"date":"2026-07-15","count":10})
+        sample["_calendar"]["days"].append({"date":"2026-08-15","count":10})
         with self.assertRaises(ValueError):render_compact(sample)
         sample["_calendar"]["days"]=calendar()["days"]
         sample["_calendar"]["username"]=88
