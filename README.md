@@ -1,6 +1,39 @@
 # Open Source Metro
 
-## Living Network | Compact GitHub-profile edition (Draft)
+## New experimental capabilities | Mobile + public-event snapshots
+
+A **dedicated 460 × 808 mobile portrait card** is now available. It deliberately shows the **most recent 16 weeks**, rather than crushing the annual 53-week chart into an unreadable phone width. Its stops and repository routes are based only on observed source events, with a separate midnight and paper theme. [Mobile architecture and examples](docs/MOBILE_PROFILE.md).
+
+```powershell
+py -3 -m open_source_metro.mobile_profile --input examples/demo-activity.json --output output/mobile-showcase.svg --showcase
+py -3 -m open_source_metro.mobile_profile --input examples/demo-activity.json --output output/mobile-fixture.svg
+```
+
+
+
+### Portrait mobile gallery (synthetic illustration)
+
+![Dedicated 16-week portrait Open Source Metro with five repository journeys and event-backed stops; synthetic demonstration only.](assets/living-mobile-showcase.svg)
+
+<details>
+<summary>Paper theme and original fixture-only mobile version</summary>
+
+![Warm paper-coloured 16-week portrait network, using explicitly synthetic demonstration events.](assets/living-mobile-paper.svg)
+
+![Portrait network built from the ten original synthetic fixture events only, without any additional illustrative events.](assets/living-mobile-fixture.svg)
+
+</details>
+
+The initial **public GitHub Events API adapter** supports recent source-backed, username-specific events without a token, but is **not a complete GitHub contribution history**. It accesses only public events, at most 300 events from the previous 30 days, and skips pushes without explicit commit lists rather than inventing counts. All results are written only to local `output/`, never checked in as the owner's activity.
+
+```powershell
+py -3 -m open_source_metro.public_events AdityaSreevatsaK --output output/public-snapshot.json --compact-svg output/public-compact.svg --mobile-svg output/public-mobile.svg
+```
+
+[Collector data/coverage contract](docs/PUBLIC_EVENTS_COLLECTOR.md). **Neither output has been installed on the owner's live GitHub profile.**
+
+---
+## Living Network | Compact GitHub-profile edition
 
 **Project routes tell the story.** Each coloured line is a repository, with stops only at recorded active weeks. Rings indicate merged PRs; diamonds indicate releases. The upper layer retains the familiar 53-week GitHub-style contribution calendar.
 
@@ -134,7 +167,7 @@ SECURITY.md              Responsible disclosure and data-handling expectations
 
 Start with [AGENTS.md](AGENTS.md), then [Architecture](docs/ARCHITECTURE.md), [Data contract](docs/DATA_CONTRACT.md), [Design principles](docs/DESIGN_PRINCIPLES.md), [Development guide](docs/DEVELOPMENT.md), [Agent handover](docs/AGENT_HANDOVER.md), and [Release checklist](docs/RELEASE_CHECKLIST.md).
 
-All work should be reviewed and tested before claiming production readiness. **No real-account data is bundled, no paid API is required and no GitHub profile is modified.** A complete contribution history requires an independently designed, coverage-aware collector; no endpoint is presently treated as a source of complete GitHub contribution totals.
+All work should be reviewed and tested before claiming production readiness. **No real-account data is bundled, no paid API is required and no GitHub profile is modified.** A complete contribution history requires an independently designed, coverage-aware collector; the new public Events API adapter is only a limited 30-day source, not complete GitHub contribution coverage.
 
 ### Origin and licensing
 

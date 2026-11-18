@@ -140,4 +140,13 @@ When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT
 - `assets/living-compact-{showcase,paper,fixture}.svg` are checked byte-for-byte in CI. The committed compact GIF must be a small valid GIF, but exact pixel parity across OSes is intentionally not assumed.
 - The synthetic showcase includes **108 invented example events**; real data must never be passed to `demo_story()`. The ten-event fixture view is unaugmented.
 - Prefer compact GIF first in draft README, with static SVG for reduced-motion and a full interactive storyboard available for detailed event inspection.
-- A 320–420 px mobile-specific composition and real GitHub collector are **not yet implemented**. Do not imply this draft is released or installed on a live profile.
+- A dedicated 460px-wide portrait card and a **recent public-events adapter** now exist. Neither is a complete annual GitHub contribution data source or a released/profile-installed product.
+
+
+## New capabilities: 16-week portrait and public Events API
+
+- Read [docs/MOBILE_PROFILE.md](docs/MOBILE_PROFILE.md). The portrait renderer is **460×808** and intentionally presents a labelled **16-week window**, not a 53-week chart squeezed into a phone.
+- Read [docs/PUBLIC_EVENTS_COLLECTOR.md](docs/PUBLIC_EVENTS_COLLECTOR.md). It fetches **only** public events for a named user, at most 300 within the past 30 days; no secrets or private event fetches are permitted.
+- Do not call this event stream the full GitHub contribution calendar. Current `PushEvent` payloads have no enumerated commit list, so the adapter drops them rather than making up commit counts.
+- Local public snapshots are personal, user-chosen outputs, not fixture assets. Never commit an account-specific snapshot or embed it in README without explicit approval.
+- CI tests use mocked HTTP only. Real network collections must not be executed from CI as validation.

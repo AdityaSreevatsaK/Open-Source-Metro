@@ -76,3 +76,14 @@ This roadmap separates **design acceptance** from **engineering correctness**. I
 - Artificial activity inflation on public snapshots.
 - A reskinned snake animation.
 - Developing GitHub Activity Studio's other concepts.
+
+
+## November 2026 progress: Living Network and source integration
+
+- [x] Living Network PR #1 merged. Repository journeys, interactive 53-week replay, compact 53-week SVG/GIF now on master.
+- [x] Dedicated **16-week portrait** renderer, source-backed with distinct midnight/paper themes, proposed in PR #2.
+- [x] Bounded **public-only recent Events API** adapter with mock-only tests, proposed in PR #2.
+- [ ] Evaluate actual mobile portrait artwork on a 320–420px viewport and refine typography.
+- [ ] Implement a **separately source-validated year-scale collector**. The public Events API's 30-day/300-event bound does not supply full-year contribution coverage, and current PushEvent payloads do not provide complete commit counts.
+- [ ] Add user-selectable featured repositories, meaningful linked milestones and read-only hosted browser preview.
+- [ ] Owner sign-off before an installation on a live GitHub profile or release.
