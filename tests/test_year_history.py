@@ -155,6 +155,18 @@ class YearHistoryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             collect_year("demo-dev", days=999, generated_at=AT, client=PublicGitHub(opener=fake))
 
+    def test_timezone_offset_commit_normalises_to_utc(self):
+        fake = FakeAPI(overrides={
+            "/repos/demo-dev/aurora/commits": [
+                commit(date="2026-10-03T16:30:00+05:30"),
+                commit(sha="b"*40, date="2026-10-04T11:00:00")
+            ]})
+        snapshot = collect_year("demo-dev", generated_at=AT,
+                                client=PublicGitHub(opener=fake))
+        commits = [e for e in snapshot["activity"] if e["kind"] == "commit"]
+        self.assertEqual(len(commits), 1)
+        self.assertEqual(commits[0]["occurred_at"], "2026-10-03T11:00:00Z")
+
     def test_selected_private_repo_fails_closed(self):
         fake = FakeAPI(overrides={"/repos/demo-dev/secret":{"full_name":"demo-dev/secret","private":True}})
         with self.assertRaisesRegex(ValueError,"public"):
