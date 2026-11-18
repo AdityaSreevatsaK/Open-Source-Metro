@@ -131,4 +131,13 @@ The project is **not** an official GitHub chart replacement, complete GitHub con
 
 ## Experimental branch: Living Network
 
-When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT.md](docs/LIVING_NETWORK_EXPERIMENT.md) first. This branch explores repository-specific routes, real milestone stations and a source-backed chronological browser replay. Do not merge its renderer into the current baseline or claim actual GitHub contributions without explicit owner approval. All synthetic events are visibly labelled, and the existing static generator stays untouched.
+When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT.md](docs/LIVING_NETWORK_EXPERIMENT.md) first. For the new compact GitHub profile edition, also read [docs/COMPACT_LIVING_NETWORK.md](docs/COMPACT_LIVING_NETWORK.md). This branch explores repository-specific routes, real milestone stations and a source-backed chronological browser replay. Do not merge its renderer into the current baseline or claim actual GitHub contributions without explicit owner approval. All synthetic events are visibly labelled, and the existing static generator stays untouched.
+
+### Compact edition: agent-specific cautions
+
+- `src/open_source_metro/compact_profile.py` is a **separate, additive** 1360×462 still-SVG profile preset. It uses the same validated `living_network.build_plan()` source semantics. Do not replace or silently alter the full-size renderer.
+- `tools/render_compact_gif.py` is optional: CairoSVG/Pillow must never become mandatory dependencies for regular SVG generation or CI tests. It reveals chronological observed-week stops and positions trains at last **observed** stops, not fictional intermediate contributions.
+- `assets/living-compact-{showcase,paper,fixture}.svg` are checked byte-for-byte in CI. The committed compact GIF must be a small valid GIF, but exact pixel parity across OSes is intentionally not assumed.
+- The synthetic showcase includes **108 invented example events**; real data must never be passed to `demo_story()`. The ten-event fixture view is unaugmented.
+- Prefer compact GIF first in draft README, with static SVG for reduced-motion and a full interactive storyboard available for detailed event inspection.
+- A 320–420 px mobile-specific composition and real GitHub collector are **not yet implemented**. Do not imply this draft is released or installed on a live profile.

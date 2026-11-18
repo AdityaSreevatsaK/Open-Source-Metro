@@ -104,3 +104,22 @@ A change is **not done** merely because a commit exists. Require:
 ## 8. Ready-to-use handover prompt
 
 > You are the lead engineer and visual-systems architect for \`AdityaSreevatsaK/Open-Source-Metro\`. First read \`AGENTS.md\` and every linked architecture, data contract, development, design, roadmap and release document. Operate only in this repository. Treat the existing five straight, semantic metro lines over the 53-week contribution calendar as a **candidate baseline**, not a finished design. The owner rejected winding, squiggly routes and requires an immediately understandable, genuinely beautiful GitHub contribution-chart-centred concept. Build code, not just mock-ups. Maintain the synthetic-versus-real provenance boundary, the Python 3.11+ offline workflow, Windows support, tests, and reproducible static SVG previews. Use a feature branch, include screenshots and accessibility/mobile analysis, run verification, and report changed files, exact test results and any blockers. Do not alter GitHub Activity Studio's other concepts, the owner's profile, or repo visibility/releases without approval.
+
+## Addendum | Living Network compact profile prototype
+
+**Current working branch:** `design/living-network-v1`, draft PR #1. This is the preferred visual **candidate**, not a merged release.
+
+The owner approved exploring Living Network because repository routes, chronological replay and source-backed milestone stops communicate more than decorative event-kind lines.
+
+The first full-screen concept is a 1460×938 storyboarding SVG plus interactive HTML. A second profile-sized, 1360×462 edition now exists:
+
+- `src/open_source_metro/compact_profile.py`: independent compact 53-week chart and five aligned source-backed project routes.
+- `tools/render_compact_gif.py`: optional 26-frame replay, 850 px wide, station-accurate train arrivals, 2.2-second final hold.
+- `assets/living-compact-showcase.svg`, `living-compact-paper.svg`, `living-compact-fixture.svg`: deterministic static previews. Regular CI regenerates and compares them.
+- `assets/living-compact-replay.gif`: constrained GIF preview generated from the same source, with optional Pillow/CairoSVG.
+- `tests/test_compact_profile.py`, `tests/test_compact_gif.py`: source traceability, UTC positions, provenance, malformed data, final-frame and animation checks.
+- `docs/COMPACT_LIVING_NETWORK.md`: reproduction commands, design semantics and acceptance criteria.
+
+The full-size renderer and interactive HTML remain unchanged for comparison. **Never** add synthetic event records when `source="github"`. The compact replay only places a train at the latest observed repository stop; it must not animate a fictional event between stops.
+
+**Remaining gates:** verify real GitHub README appearance, a separately designed mobile-friendly preset, user acceptance, and coverage-aware public GitHub data collection. Do not merge PR #1, tag a release or touch the public profile without explicit approval.
