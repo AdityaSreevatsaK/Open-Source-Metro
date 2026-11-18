@@ -71,3 +71,21 @@ jobs:
           assert gif[:6] == b'GIF89a' and 100000 <= len(gif) < 1000000, 'Missing, oversize or invalid GIF'
           width, height = struct.unpack('<HH',gif[6:10])
           assert width == 850 and 250 <= height <= 350, f'Unexpected compact GIF dimensions: {width}x{height}'
+
+      - name: Verify mobile 16-week portrait renderer in both themes
+        run: |
+          python -m open_source_metro.mobile_profile --input examples/demo-activity.json --output generated/mobile-fixture.svg
+          python -m open_source_metro.mobile_profile --input examples/demo-activity.json --output generated/mobile-showcase.svg --showcase
+          python -m open_source_metro.mobile_profile --input examples/demo-activity.json --output generated/mobile-paper.svg --showcase --theme paper
+      - name: Check mobile exported SVGs parse and carry source scope
+        shell: python
+        run: |
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          for path in Path('generated').glob('mobile-*.svg'):
+              content = path.read_text(encoding='utf-8')
+              root = ET.fromstring(content)
+              assert root.attrib.get('width') == '460'
+              assert root.attrib.get('height') == '808'
+              assert 'LATEST 16 WEEKS' in content
+              assert 'UNOBSERVED' in content

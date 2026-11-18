@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 from .validation import normalise, safe_label, safe_url, utc_timestamp
 
 USER_RE = re.compile(r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?\Z")
-REPO_RE = re.compile(r"[^/\s]+/[^/\s]+\Z")
+REPO_RE = re.compile(r"[A-Za-z0-9-]+/[A-Za-z0-9_.-]+\Z")
 API_VERSION = "2026-03-10"
 API_BASE = "https://api.github.com"
 MAX_PAGES = 3
