@@ -62,7 +62,7 @@ class ProfileExportTests(unittest.TestCase):
             content=(Path(tmp)/"profile-mobile.svg").read_text()
             self.assertIn("PUBLIC EVENTS",content)
             self.assertNotIn("SYNTHETIC DESIGN SHOWCASE",content)
-            self.assertIn("Partial public repository-history snapshot",
+            self.assertIn("Partial public GitHub event snapshot",
                           (Path(tmp)/"README_SNIPPET.md").read_text())
 
     def test_stable_export_bytes(self):
