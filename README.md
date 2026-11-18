@@ -1,12 +1,40 @@
 # Open Source Metro
 
-## Experimental direction: Living Network (Draft)
+## Living Network | Compact GitHub-profile edition (Draft)
 
-**Animated chronological replay (synthetic showcase, approximately 650 KB):**
+**Project routes tell the story.** Each coloured line is a repository, with stops only at recorded active weeks. Rings indicate merged PRs; diamonds indicate releases. The upper layer retains the familiar 53-week GitHub-style contribution calendar.
 
-![Animated Open Source Metro project network growing chronologically over 53 weeks. The source data is explicitly synthetic, not the owner's real GitHub history.](assets/living-network-replay.gif)
+**Chronological compact replay, synthetic demonstration only:**
 
-This animation is a preview of the offline interactive experience, **not** a complete GitHub contributions graph. A fully readable [static version](assets/living-network-showcase.svg) is always available.
+![Compact Open Source Metro replay of a 53-week contribution-style calendar with five repository journeys and source-observed stations appearing over time. All activity is explicitly fictional demo data.](assets/living-compact-replay.gif)
+
+The replay shows train markers at the **latest recorded stop**, never a made-up contribution. The final completed network stays visible for 2.2 seconds. A still-image fallback is available:
+
+![Static compact midnight Living Network profile design with a recognisable contribution grid and five repository journeys. Clearly labelled synthetic data.](assets/living-compact-showcase.svg)
+
+<details>
+<summary>Compact alternatives: paper design and faithful ten-event fixture</summary>
+
+![Compact paper-coloured Living Network with identical, explicitly fictional demonstration data.](assets/living-compact-paper.svg)
+
+![Compact Living Network using only the ten original synthetic fixture records, without added illustration events.](assets/living-compact-fixture.svg)
+
+</details>
+
+**The showcase is not your actual GitHub activity.** It includes 108 expressly invented events, while the fixture-only view contains only the original ten example events. These are source-shaped **illustrations**, not GitHub's official contribution totals.
+
+See [compact design specification, generation commands and provenance rules](docs/COMPACT_LIVING_NETWORK.md).
+
+### Full Living Network | Detailed, interactive version
+
+The complete storyboard and its interactive browser event register remain available alongside the compact edition.
+
+<details>
+<summary>Watch the original full-size annual replay</summary>
+
+![Full-size animated Open Source Metro project network growing chronologically over 53 weeks, from synthetic example events.](assets/living-network-replay.gif)
+
+</details>
 
 **The calendar now tells a story instead of just wearing coloured lines.** In this alternative, **each route represents a repository**. Small stops are source-observed active weeks; distinct rings highlight PR merges and releases. A milestone passport shows exact source event IDs and dates. The **interactive replay** lets you travel through 53 weeks, focus on a repository and inspect source events.
 

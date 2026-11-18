@@ -40,3 +40,11 @@ The GIF is deliberately restrained, with observed-stop arrivals and a hold on th
 - Preserve static GIF fallback and provide a clearly labelled synthetic demo.
 - Do not interpret route links as actual GitHub collaborations or project dependencies.
 - Do not merge the draft PR, update a live GitHub profile or publish a stable release without owner approval.
+
+## Review and CI status
+
+Three static compact exports are generated deterministically from the committed ten-event fixture and compared byte-for-byte on Windows/Linux CI. The compact GIF is generated with optional CairoSVG/Pillow tooling, but its pixel bytes are not required to match across runners because rasterisation and installed fonts may vary. CI checks its GIF signature, 850 px width and size bound.
+
+Current compact outputs: `assets/living-compact-showcase.svg`, `assets/living-compact-paper.svg`, `assets/living-compact-fixture.svg`, and `assets/living-compact-replay.gif`.
+
+The original full-size Living Network renderer, HTML replay, GIF and the primary `open-source-metro` entry point have not been replaced. The compact source and gallery remain inside the design draft PR until approval.
