@@ -166,7 +166,7 @@ class LivingNetworkTests(unittest.TestCase):
             q=generate(inp,Path(b),showcase=True)
             self.assertEqual([x.read_bytes() for x in p],[x.read_bytes() for x in q])
             self.assertEqual(len(p),2)
-            self.assertIn('SYNTHETIC STORY SHOWCASE',p[0].read_text())
+            self.assertIn('SYNTHETIC STORY SHOWCASE',p[0].read_text(encoding='utf-8'))
 
     def test_two_themes_have_distinct_valid_colours(self):
         a=render_svg(raw(),theme='midnight');b=render_svg(raw(),theme='paper')
