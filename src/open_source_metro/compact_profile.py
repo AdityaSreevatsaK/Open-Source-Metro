@@ -12,6 +12,7 @@ import json
 from pathlib import Path
 
 from .living_network import build_plan, demo_story, _density
+from .contribution_calendar import normalise_calendar_for_snapshot
 
 WIDTH, HEIGHT = 1360, 462
 X0, XSTEP, DAY_SIZE = 202.0, 19.45, 12.8
@@ -64,30 +65,40 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
     if theme not in COLOURS:
         raise ValueError('Unknown theme')
     p = compact_plan(raw)
+    official = normalise_calendar_for_snapshot(raw, p['snap'])
     t = COLOURS[theme]
     routes = p['routes']
     colors = t['routes']
     demo = p['snap']['source'] == 'demo'
     synthetic = demo and bool(raw.get('_synthetic_added'))
-    provenance = ('SYNTHETIC DESIGN SHOWCASE' if synthetic else
+    provenance = ('GITHUB CALENDAR · PARTIAL ROUTES' if official is not None else
+                  'SYNTHETIC DESIGN SHOWCASE' if synthetic else
                   'SHARED SYNTHETIC FIXTURE' if demo else
                   'PUBLIC EVENTS · INCOMPLETE COVERAGE')
     years = f"{p['start'].year}–{p['today'].year}"
-    metrics = f"{len(p['events'])} events · {len(routes)} routes · {p['milestones']} milestones"
-    active_days = sorted(p['by_day'])
+    metrics = (f"{sum(amount for day, amount in official.items() if p['start'] <= day <= p['today']):,} GitHub contributions · {len(p['events'])} public events"
+               if official is not None else
+               f"{len(p['events'])} events · {len(routes)} routes · {p['milestones']} milestones")
+    active_days = (sorted(day for day, amount in official.items()
+                          if p['start'] <= day <= p['today'] and amount > 0)
+                   if official is not None else sorted(p['by_day']))
     active_weeks = {p['positions'][day][0] for day in active_days}
     if not demo:
         if active_days:
             date_range = f"{active_days[0]:%d %b %Y} to {active_days[-1]:%d %b %Y}"
-            subtitle = f"Observed {len(active_days)} active days · {date_range}"
+            subtitle = (f"GitHub profile contributions on {len(active_days)} days · {date_range}" if official is not None
+                        else f"Observed {len(active_days)} active days · {date_range}")
         else:
-            subtitle = "No source events observed in selected repositories"
+            subtitle = ("No GitHub profile contributions in selected dates" if official is not None
+                        else "No source events observed in selected repositories")
     else:
         subtitle = "A year of source-backed project journeys"
     items = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="metro-title metro-desc">',
         f'<title id="metro-title">Open Source Metro / Project journeys / {esc(provenance)}</title>',
-        '<desc id="metro-desc">A compact 53-week Sunday-to-Saturday GitHub-style event calendar with up to five repository journeys aligned to the same week positions. Stops are observed events; merges are rings, releases diamonds. Rails between stops are schematic and do not mean continuous contributions. Blank days are unobserved, not verified zero contributions. This is not GitHub’s official contributions chart.</desc>',
+        (('<desc id="metro-desc">GitHub GraphQL profile-visible contribution counts form the annual day squares. Separate public repository history supports the five schematic project routes; routes do not account for all calendar totals. A blank square means zero in this GitHub profile calendar, which may reflect privacy settings. Individual project events are not a complete GitHub contribution record.</desc>')
+         if official is not None else
+         '<desc id="metro-desc">A compact 53-week Sunday-to-Saturday GitHub-style event calendar with up to five repository journeys aligned to the same week positions. Stops are observed events; merges are rings, releases diamonds. Rails between stops are schematic and do not mean continuous contributions. Blank days are unobserved, not verified zero contributions. This is not GitHub’s official contributions chart.</desc>'),
         '<defs><style><![CDATA[',
         '.display{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:27px;font-weight:850;letter-spacing:-1px}',
         '.small{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:10px;font-weight:600}',
@@ -109,7 +120,7 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         f'<g fill="{t["text"]}">{txt(1019,50,provenance,"tag")}</g>',
         f'<g fill="{t["muted"]}">{txt(1310,82,metrics,"small",anchor="end")}</g>',
         f'<rect x="35" y="94" width="1290" height="175" rx="13" fill="{t["surface"]}" stroke="{t["rule"]}"/>',
-        f'<g fill="{t["muted"]}">{txt(53,113,"01 / SOURCE ACTIVITY","tag")}',
+        f'<g fill="{t["muted"]}">{txt(53,113,("01 / GITHUB PROFILE CONTRIBUTIONS" if official is not None else "01 / SOURCE ACTIVITY"),"tag")}',
         txt(1305,113,(f"OBSERVED {len(active_weeks)}/53 WEEKS  ·  UTC" if not demo else '53 WEEKS  ·  SUN–SAT  ·  UTC'),'tag',anchor='end'),'</g>',
     ]
     # Source-observed contribution-style calendar. No blank day means a verified zero.
@@ -125,18 +136,21 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
             continue
         week,row = divmod(offset,7)
         observed = p['by_day'].get(day,())
-        units = sum(e['count'] for e in observed)
+        units = official.get(day, 0) if official is not None else sum(e['count'] for e in observed)
         level = _density(units)
         fill = t['greens'][level-1] if level else t['empty']
         x = X0+week*XSTEP
         y = DAY_Y+row*DAY_STEP
-        desc = (f'{day.isoformat()}: {len(observed)} source events, {units} observed units' if observed else
+        desc = (f'{day.isoformat()}: {units} GitHub profile contributions, {len(observed)} observed public repository events'
+                if official is not None else
+                f'{day.isoformat()}: {len(observed)} source events, {units} observed units' if observed else
                 f'{day.isoformat()}: unobserved in supplied snapshot')
-        items.append(f'<rect class="calendar-day" data-week="{week}" data-date="{day.isoformat()}" data-count="{len(observed)}" x="{x:.2f}" y="{y:.2f}" width="{DAY_SIZE}" height="{DAY_SIZE}" rx="2.4" fill="{fill}"><title>{esc(desc)}</title></rect>')
+        source_attribute = (f' data-source-count="{len(observed)}"' if official is not None else '')
+        items.append(f'<rect class="calendar-day" data-week="{week}" data-date="{day.isoformat()}" data-count="{units if official is not None else len(observed)}"{source_attribute} x="{x:.2f}" y="{y:.2f}" width="{DAY_SIZE}" height="{DAY_SIZE}" rx="2.4" fill="{fill}"><title>{esc(desc)}</title></rect>')
         if any(e['kind']=='release' for e in observed):
             items.append(f'<path class="calendar-milestone" data-week="{week}" data-kind="release" d="M{x+DAY_SIZE/2:.2f} {y-2.8:.2f}l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="{colors[3]}"><title>Recorded release on {day.isoformat()}</title></path>')
     items += [
-        f'<g fill="{t["muted"]}">{txt(54,260,"BLANK = NO OBSERVATION, NOT CONFIRMED INACTIVITY","tag")}</g>',
+        f'<g fill="{t["muted"]}">{txt(54,260,("DAY SQUARES = GITHUB PROFILE · ROUTES = PARTIAL PUBLIC REPOSITORY HISTORY" if official is not None else "BLANK = NO OBSERVATION, NOT CONFIRMED INACTIVITY"),"tag")}</g>',
         f'<rect x="35" y="281" width="1290" height="141" rx="13" fill="{t["surface"]}" stroke="{t["rule"]}"/>',
         f'<g fill="{t["muted"]}">{txt(53,299,"02 / PROJECT ROUTES","tag")}',
         txt(1306,299,"◉ MERGE  ·  ◆ RELEASE","tag",anchor='end'),'</g>',
@@ -183,7 +197,8 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         items.append('</g>')
     end=X0+52*XSTEP+DAY_SIZE/2
     items.append(f'<line id="compact-cursor" x1="{end:.2f}" x2="{end:.2f}" y1="147" y2="411" stroke="{colors[0]}" stroke-width="1.6" stroke-dasharray="4 5" opacity="0"/>')
-    footer=('DEMO ONLY · '+str(raw.get('_synthetic_added',0))+' INVENTED ILLUSTRATION EVENTS' if synthetic else
+    footer=('GITHUB PROFILE CALENDAR · ROUTE EVENTS INCOMPLETE' if official is not None else
+            'DEMO ONLY · '+str(raw.get('_synthetic_added',0))+' INVENTED ILLUSTRATION EVENTS' if synthetic else
             'SYNTHETIC EXAMPLE · NO EXTRA EVENTS' if demo else
             'PUBLIC EVENTS ONLY · COVERAGE NOT COMPLETE')
     coverage_footer = (f"UNROUTED {p['omitted_repos']} REPOS · OUTSIDE YEAR {p['omitted_events']} EVENTS   |   {years}"
