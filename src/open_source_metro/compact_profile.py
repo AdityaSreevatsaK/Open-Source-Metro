@@ -124,7 +124,9 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         f'<g fill="{t["muted"]}">{txt(1310,82,metrics,"small",anchor="end")}</g>',
         f'<rect x="35" y="94" width="1290" height="175" rx="13" fill="{t["surface"]}" stroke="{t["rule"]}"/>',
         f'<g fill="{t["muted"]}">{txt(53,113,("01 / GITHUB PROFILE CONTRIBUTIONS" if official is not None else "01 / SOURCE ACTIVITY"),"tag")}',
-        txt(1305,113,(f"OBSERVED {len(active_weeks)}/53 WEEKS  ·  UTC" if not demo else '53 WEEKS  ·  SUN–SAT  ·  UTC'),'tag',anchor='end'),'</g>',
+        txt(1305,113,(f"GITHUB CALENDAR · {len(active_weeks)} ACTIVE WEEKS" if official is not None else
+                         f"OBSERVED {len(active_weeks)}/53 WEEKS  ·  UTC" if not demo else
+                         '53 WEEKS  ·  SUN–SAT  ·  UTC'),'tag',anchor='end'),'</g>',
     ]
     # Source-observed contribution-style calendar. No blank day means a verified zero.
     for w in range(53):
