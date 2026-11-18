@@ -1,0 +1,1563 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 602" width="1440" height="602" role="img" aria-labelledby="title description">
+<title id="title">Open Source Metro: midnight GitHub-style contribution calendar</title>
+<desc id="description">SYNTHETIC DENSITY SHOWCASE. Calendar tiles show synthetic source event units, coloured lines show five event kinds, roundels mark repo stations. Blank days do not prove zero actual GitHub contributions.</desc>
+<defs><style><![CDATA[
+.mast{font:800 36px system-ui,Segoe UI,sans-serif;letter-spacing:-1px;fill:#F2F8FE}
+.sub{font:600 12px system-ui,sans-serif;letter-spacing:1.4px;fill:#A9BED0}
+.tag{font:800 10px system-ui,sans-serif;letter-spacing:1.55px;fill:#A9BED0}
+.month{font:800 12px system-ui,sans-serif;letter-spacing:.65px;fill:#A9BED0}
+.legend{font:800 12px system-ui,sans-serif;letter-spacing:1px;fill:#F2F8FE}
+.detail{font:500 12px system-ui,sans-serif;fill:#A9BED0}
+.repo{font:700 15px system-ui,Segoe UI,sans-serif;fill:#F2F8FE}
+.tile-cell{width:15.5px;height:15.5px;rx:4px}
+.f0{fill:#1A2B3B}
+.f1{fill:#27574F}
+.f2{fill:#237B63}
+.f3{fill:#2BAA7F}
+.f4{fill:#69E6B1}
+.cell:focus .focus{stroke-width:2.4;opacity:1}
+@media(prefers-reduced-motion:reduce){.train{display:none}}
+]]></style></defs>
+<rect width="1440" height="602" fill="#080E18"/>
+<rect x="16" y="15" width="1408" height="572" rx="22" fill="#101C2B" stroke="#294255" stroke-width="1"/>
+<path d="M58 45V96" stroke="#4CE0B3" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1359" cy="79" r="21" fill="none" stroke="#4CE0B3" stroke-width="1.6"/><circle cx="1359" cy="79" r="5" fill="#4CE0B3"/>
+<text x="79.0" y="70.0" class="mast" text-anchor="start">OPEN SOURCE METRO</text>
+<text x="80.0" y="94.0" class="sub" text-anchor="start">GITHUB CONTRIBUTION CALENDAR × TRANSIT MAP</text>
+<text x="1250.0" y="53.0" class="tag" text-anchor="end">SYNTHETIC DENSITY SHOWCASE</text>
+<text x="1250.0" y="77.0" class="detail" text-anchor="end">198 EVENTS   /   172 ACTIVE DAYS   /   5 STATIONS</text>
+<rect x="76" y="127" width="1288" height="247" rx="13" fill="#0B1724" stroke="#294255" stroke-width="1"/>
+<text x="101.0" y="147.0" class="tag" text-anchor="start">01 / CALENDAR CITY + FIVE METRO LINES</text>
+<text x="1332.0" y="147.0" class="tag" text-anchor="end">SQUARE = DAY    /    COLOURED RAIL = EVENT TYPE    /    DOT = ACTIVE WEEK</text>
+<rect x="165" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="249" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="333" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="417" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="501" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="585" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="669" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="753" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="837" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="921" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="1005" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="1089" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="1173" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<rect x="1257" y="182" width="79" height="164" rx="2" fill="#142536" opacity=".35"/>
+<text x="170.0" y="177.0" class="month" text-anchor="start">NOV</text>
+<text x="233.0" y="177.0" class="month" text-anchor="start">DEC</text>
+<text x="317.0" y="177.0" class="month" text-anchor="start">JAN</text>
+<text x="401.0" y="177.0" class="month" text-anchor="start">FEB</text>
+<text x="485.0" y="177.0" class="month" text-anchor="start">MAR</text>
+<text x="590.0" y="177.0" class="month" text-anchor="start">APR</text>
+<text x="674.0" y="177.0" class="month" text-anchor="start">MAY</text>
+<text x="779.0" y="177.0" class="month" text-anchor="start">JUN</text>
+<text x="863.0" y="177.0" class="month" text-anchor="start">JUL</text>
+<text x="947.0" y="177.0" class="month" text-anchor="start">AUG</text>
+<text x="1052.0" y="177.0" class="month" text-anchor="start">SEP</text>
+<text x="1136.0" y="177.0" class="month" text-anchor="start">OCT</text>
+<text x="1220.0" y="177.0" class="month" text-anchor="start">NOV</text>
+<text x="151.0" y="227.0" class="tag" text-anchor="end">MON</text>
+<text x="151.0" y="269.0" class="tag" text-anchor="end">WED</text>
+<text x="151.0" y="311.0" class="tag" text-anchor="end">FRI</text>
+<g class="cell" data-date="2025-11-16" data-units="1" tabindex="0" aria-label="2025-11-16 : 1 observed demo units; illustrative-365-a">
+<title>2025-11-16 : 1 observed demo units; illustrative-365-a</title>
+<rect class="tile-cell f1" x="170.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_merged" x="171.1" y="208.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="169.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="170.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2025-11-18" data-units="5" tabindex="0" aria-label="2025-11-18 : 5 observed demo units; illustrative-363-a">
+<title>2025-11-18 : 5 observed demo units; illustrative-363-a</title>
+<rect class="tile-cell f2" x="170.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="171.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="169.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-19" data-units="3" tabindex="0" aria-label="2025-11-19 : 3 observed demo units; illustrative-362-a">
+<title>2025-11-19 : 3 observed demo units; illustrative-362-a</title>
+<rect class="tile-cell f2" x="170.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="171.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="169.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-20" data-units="4" tabindex="0" aria-label="2025-11-20 : 4 observed demo units; illustrative-361-a">
+<title>2025-11-20 : 4 observed demo units; illustrative-361-a</title>
+<rect class="tile-cell f2" x="170.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="171.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="169.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="170.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2025-11-22" data-units="1" tabindex="0" aria-label="2025-11-22 : 1 observed demo units; illustrative-359-a">
+<title>2025-11-22 : 1 observed demo units; illustrative-359-a</title>
+<rect class="tile-cell f1" x="170.0" y="321.0"/>
+<rect class="day-service" data-kind="release" x="171.1" y="334.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="169.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-23" data-units="3" tabindex="0" aria-label="2025-11-23 : 3 observed demo units; illustrative-358-a">
+<title>2025-11-23 : 3 observed demo units; illustrative-358-a</title>
+<rect class="tile-cell f2" x="191.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="192.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="190.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-24" data-units="1" tabindex="0" aria-label="2025-11-24 : 1 observed demo units; illustrative-357-a">
+<title>2025-11-24 : 1 observed demo units; illustrative-357-a</title>
+<rect class="tile-cell f1" x="191.0" y="216.0"/>
+<rect class="day-service" data-kind="issue_opened" x="192.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="190.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-25" data-units="1" tabindex="0" aria-label="2025-11-25 : 1 observed demo units; illustrative-356-a">
+<title>2025-11-25 : 1 observed demo units; illustrative-356-a</title>
+<rect class="tile-cell f1" x="191.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="192.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="190.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-26" data-units="1" tabindex="0" aria-label="2025-11-26 : 1 observed demo units; illustrative-355-a">
+<title>2025-11-26 : 1 observed demo units; illustrative-355-a</title>
+<rect class="tile-cell f1" x="191.0" y="258.0"/>
+<rect class="day-service" data-kind="issue_opened" x="192.1" y="271.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="190.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-27" data-units="1" tabindex="0" aria-label="2025-11-27 : 1 observed demo units; illustrative-354-a">
+<title>2025-11-27 : 1 observed demo units; illustrative-354-a</title>
+<rect class="tile-cell f1" x="191.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="192.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="190.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-11-28" data-units="1" tabindex="0" aria-label="2025-11-28 : 1 observed demo units; illustrative-353-a">
+<title>2025-11-28 : 1 observed demo units; illustrative-353-a</title>
+<rect class="tile-cell f1" x="191.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_opened" x="192.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="190.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="191.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2025-11-30" data-units="1" tabindex="0" aria-label="2025-11-30 : 1 observed demo units; illustrative-351-a">
+<title>2025-11-30 : 1 observed demo units; illustrative-351-a</title>
+<rect class="tile-cell f1" x="212.0" y="195.0"/>
+<rect class="day-service" data-kind="issue_opened" x="213.1" y="208.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="211.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-01" data-units="1" tabindex="0" aria-label="2025-12-01 : 1 observed demo units; illustrative-350-a">
+<title>2025-12-01 : 1 observed demo units; illustrative-350-a</title>
+<rect class="tile-cell f1" x="212.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_opened" x="213.1" y="229.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="211.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-02" data-units="3" tabindex="0" aria-label="2025-12-02 : 3 observed demo units; illustrative-349-a, illustrative-349-b">
+<title>2025-12-02 : 3 observed demo units; illustrative-349-a, illustrative-349-b</title>
+<rect class="tile-cell f2" x="212.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="213.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_opened" x="216.1" y="250.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="211.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-03" data-units="3" tabindex="0" aria-label="2025-12-03 : 3 observed demo units; illustrative-348-a">
+<title>2025-12-03 : 3 observed demo units; illustrative-348-a</title>
+<rect class="tile-cell f2" x="212.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="213.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="211.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-04" data-units="5" tabindex="0" aria-label="2025-12-04 : 5 observed demo units; illustrative-347-a, illustrative-347-b">
+<title>2025-12-04 : 5 observed demo units; illustrative-347-a, illustrative-347-b</title>
+<rect class="tile-cell f2" x="212.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="213.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="211.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-05" data-units="4" tabindex="0" aria-label="2025-12-05 : 4 observed demo units; illustrative-346-a, illustrative-346-b">
+<title>2025-12-05 : 4 observed demo units; illustrative-346-a, illustrative-346-b</title>
+<rect class="tile-cell f2" x="212.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="213.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_merged" x="216.1" y="313.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="211.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="212.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2025-12-07" data-units="2" tabindex="0" aria-label="2025-12-07 : 2 observed demo units; illustrative-344-a, illustrative-344-b">
+<title>2025-12-07 : 2 observed demo units; illustrative-344-a, illustrative-344-b</title>
+<rect class="tile-cell f1" x="233.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="234.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_merged" x="237.1" y="208.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="232.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-08" data-units="1" tabindex="0" aria-label="2025-12-08 : 1 observed demo units; illustrative-343-a">
+<title>2025-12-08 : 1 observed demo units; illustrative-343-a</title>
+<rect class="tile-cell f1" x="233.0" y="216.0"/>
+<rect class="day-service" data-kind="release" x="234.1" y="229.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="232.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="233.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="233.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="233.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="233.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="233.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2025-12-14" data-units="3" tabindex="0" aria-label="2025-12-14 : 3 observed demo units; illustrative-337-a">
+<title>2025-12-14 : 3 observed demo units; illustrative-337-a</title>
+<rect class="tile-cell f2" x="254.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="255.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="253.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-15" data-units="1" tabindex="0" aria-label="2025-12-15 : 1 observed demo units; illustrative-336-a">
+<title>2025-12-15 : 1 observed demo units; illustrative-336-a</title>
+<rect class="tile-cell f1" x="254.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_merged" x="255.1" y="229.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="253.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-16" data-units="1" tabindex="0" aria-label="2025-12-16 : 1 observed demo units; illustrative-335-a">
+<title>2025-12-16 : 1 observed demo units; illustrative-335-a</title>
+<rect class="tile-cell f1" x="254.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_opened" x="255.1" y="250.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="253.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2025-12-17" data-units="1" tabindex="0" aria-label="2025-12-17 : 1 observed demo units; illustrative-334-a">
+<title>2025-12-17 : 1 observed demo units; illustrative-334-a</title>
+<rect class="tile-cell f1" x="254.0" y="258.0"/>
+<rect class="day-service" data-kind="issue_opened" x="255.1" y="271.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="253.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="254.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="254.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2025-12-20" data-units="1" tabindex="0" aria-label="2025-12-20 : 1 observed demo units; illustrative-331-a">
+<title>2025-12-20 : 1 observed demo units; illustrative-331-a</title>
+<rect class="tile-cell f1" x="254.0" y="321.0"/>
+<rect class="day-service" data-kind="pr_merged" x="255.1" y="334.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="253.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="275.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="275.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="275.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="275.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="275.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="275.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2025-12-27" data-units="1" tabindex="0" aria-label="2025-12-27 : 1 observed demo units; illustrative-324-a">
+<title>2025-12-27 : 1 observed demo units; illustrative-324-a</title>
+<rect class="tile-cell f1" x="275.0" y="321.0"/>
+<rect class="day-service" data-kind="issue_opened" x="276.1" y="334.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="274.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="296.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="296.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="296.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2025-12-31" data-units="2" tabindex="0" aria-label="2025-12-31 : 2 observed demo units; illustrative-320-a">
+<title>2025-12-31 : 2 observed demo units; illustrative-320-a</title>
+<rect class="tile-cell f1" x="296.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="297.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="295.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="296.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="296.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="296.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="317.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="317.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-06" data-units="1" tabindex="0" aria-label="2026-01-06 : 1 observed demo units; illustrative-314-a">
+<title>2026-01-06 : 1 observed demo units; illustrative-314-a</title>
+<rect class="tile-cell f1" x="317.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="318.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="316.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-01-07" data-units="4" tabindex="0" aria-label="2026-01-07 : 4 observed demo units; illustrative-313-a, illustrative-313-b">
+<title>2026-01-07 : 4 observed demo units; illustrative-313-a, illustrative-313-b</title>
+<rect class="tile-cell f2" x="317.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="318.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="release" x="321.1" y="271.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="316.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="317.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="317.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="317.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="338.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-12" data-units="7" tabindex="0" aria-label="2026-01-12 : 7 observed demo units; illustrative-308-a">
+<title>2026-01-12 : 7 observed demo units; illustrative-308-a</title>
+<rect class="tile-cell f3" x="338.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="339.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="337.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-01-13" data-units="1" tabindex="0" aria-label="2026-01-13 : 1 observed demo units; illustrative-307-a">
+<title>2026-01-13 : 1 observed demo units; illustrative-307-a</title>
+<rect class="tile-cell f1" x="338.0" y="237.0"/>
+<rect class="day-service" data-kind="release" x="339.1" y="250.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="337.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="338.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-15" data-units="1" tabindex="0" aria-label="2026-01-15 : 1 observed demo units; illustrative-305-a">
+<title>2026-01-15 : 1 observed demo units; illustrative-305-a</title>
+<rect class="tile-cell f1" x="338.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="339.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="337.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="338.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-17" data-units="1" tabindex="0" aria-label="2026-01-17 : 1 observed demo units; illustrative-303-a">
+<title>2026-01-17 : 1 observed demo units; illustrative-303-a</title>
+<rect class="tile-cell f1" x="338.0" y="321.0"/>
+<rect class="day-service" data-kind="pr_opened" x="339.1" y="334.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="337.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="359.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-19" data-units="1" tabindex="0" aria-label="2026-01-19 : 1 observed demo units; illustrative-301-a">
+<title>2026-01-19 : 1 observed demo units; illustrative-301-a</title>
+<rect class="tile-cell f1" x="359.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_opened" x="360.1" y="229.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="358.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-01-20" data-units="5" tabindex="0" aria-label="2026-01-20 : 5 observed demo units; illustrative-300-a, illustrative-300-b">
+<title>2026-01-20 : 5 observed demo units; illustrative-300-a, illustrative-300-b</title>
+<rect class="tile-cell f2" x="359.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="360.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="358.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="359.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="359.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-23" data-units="6" tabindex="0" aria-label="2026-01-23 : 6 observed demo units; illustrative-297-a">
+<title>2026-01-23 : 6 observed demo units; illustrative-297-a</title>
+<rect class="tile-cell f3" x="359.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="360.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="358.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-01-24" data-units="1" tabindex="0" aria-label="2026-01-24 : 1 observed demo units; illustrative-296-a">
+<title>2026-01-24 : 1 observed demo units; illustrative-296-a</title>
+<rect class="tile-cell f1" x="359.0" y="321.0"/>
+<rect class="day-service" data-kind="release" x="360.1" y="334.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="358.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="380.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="380.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-01-27" data-units="1" tabindex="0" aria-label="2026-01-27 : 1 observed demo units; illustrative-293-a">
+<title>2026-01-27 : 1 observed demo units; illustrative-293-a</title>
+<rect class="tile-cell f1" x="380.0" y="237.0"/>
+<rect class="day-service" data-kind="release" x="381.1" y="250.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="379.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="380.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="380.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="380.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="380.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="401.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-02" data-units="1" tabindex="0" aria-label="2026-02-02 : 1 observed demo units; illustrative-287-a">
+<title>2026-02-02 : 1 observed demo units; illustrative-287-a</title>
+<rect class="tile-cell f1" x="401.0" y="216.0"/>
+<rect class="day-service" data-kind="issue_opened" x="402.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="400.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="401.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="401.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-05" data-units="5" tabindex="0" aria-label="2026-02-05 : 5 observed demo units; illustrative-284-a">
+<title>2026-02-05 : 5 observed demo units; illustrative-284-a</title>
+<rect class="tile-cell f2" x="401.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="402.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="400.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="401.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="401.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="422.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-09" data-units="1" tabindex="0" aria-label="2026-02-09 : 1 observed demo units; illustrative-280-a">
+<title>2026-02-09 : 1 observed demo units; illustrative-280-a</title>
+<rect class="tile-cell f1" x="422.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_merged" x="423.1" y="229.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="421.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="422.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="422.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-12" data-units="6" tabindex="0" aria-label="2026-02-12 : 6 observed demo units; illustrative-277-a, illustrative-277-b">
+<title>2026-02-12 : 6 observed demo units; illustrative-277-a, illustrative-277-b</title>
+<rect class="tile-cell f3" x="422.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="423.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="421.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-02-13" data-units="1" tabindex="0" aria-label="2026-02-13 : 1 observed demo units; illustrative-276-a">
+<title>2026-02-13 : 1 observed demo units; illustrative-276-a</title>
+<rect class="tile-cell f1" x="422.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_merged" x="423.1" y="313.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="421.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="422.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="443.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-16" data-units="1" tabindex="0" aria-label="2026-02-16 : 1 observed demo units; illustrative-273-a">
+<title>2026-02-16 : 1 observed demo units; illustrative-273-a</title>
+<rect class="tile-cell f1" x="443.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_opened" x="444.1" y="229.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="442.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-02-17" data-units="1" tabindex="0" aria-label="2026-02-17 : 1 observed demo units; illustrative-272-a">
+<title>2026-02-17 : 1 observed demo units; illustrative-272-a</title>
+<rect class="tile-cell f1" x="443.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="444.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="442.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-02-18" data-units="5" tabindex="0" aria-label="2026-02-18 : 5 observed demo units; illustrative-271-a">
+<title>2026-02-18 : 5 observed demo units; illustrative-271-a</title>
+<rect class="tile-cell f2" x="443.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="444.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="442.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="443.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="443.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="443.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-22" data-units="1" tabindex="0" aria-label="2026-02-22 : 1 observed demo units; illustrative-267-a">
+<title>2026-02-22 : 1 observed demo units; illustrative-267-a</title>
+<rect class="tile-cell f1" x="464.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_merged" x="465.1" y="208.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="463.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="464.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-24" data-units="7" tabindex="0" aria-label="2026-02-24 : 7 observed demo units; illustrative-265-a, illustrative-265-b">
+<title>2026-02-24 : 7 observed demo units; illustrative-265-a, illustrative-265-b</title>
+<rect class="tile-cell f3" x="464.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="465.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="463.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="464.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="464.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-02-27" data-units="1" tabindex="0" aria-label="2026-02-27 : 1 observed demo units; illustrative-262-a">
+<title>2026-02-27 : 1 observed demo units; illustrative-262-a</title>
+<rect class="tile-cell f1" x="464.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_merged" x="465.1" y="313.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="463.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="464.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="485.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-02" data-units="5" tabindex="0" aria-label="2026-03-02 : 5 observed demo units; illustrative-259-a">
+<title>2026-03-02 : 5 observed demo units; illustrative-259-a</title>
+<rect class="tile-cell f2" x="485.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="486.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="484.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-03" data-units="1" tabindex="0" aria-label="2026-03-03 : 1 observed demo units; illustrative-258-a">
+<title>2026-03-03 : 1 observed demo units; illustrative-258-a</title>
+<rect class="tile-cell f1" x="485.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_opened" x="486.1" y="250.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="484.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-04" data-units="1" tabindex="0" aria-label="2026-03-04 : 1 observed demo units; illustrative-257-a">
+<title>2026-03-04 : 1 observed demo units; illustrative-257-a</title>
+<rect class="tile-cell f1" x="485.0" y="258.0"/>
+<rect class="day-service" data-kind="pr_opened" x="486.1" y="271.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="484.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-05" data-units="4" tabindex="0" aria-label="2026-03-05 : 4 observed demo units; illustrative-256-a, illustrative-256-b">
+<title>2026-03-05 : 4 observed demo units; illustrative-256-a, illustrative-256-b</title>
+<rect class="tile-cell f2" x="485.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="486.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_merged" x="489.1" y="292.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="484.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="485.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-07" data-units="4" tabindex="0" aria-label="2026-03-07 : 4 observed demo units; illustrative-254-a">
+<title>2026-03-07 : 4 observed demo units; illustrative-254-a</title>
+<rect class="tile-cell f2" x="485.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="486.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="484.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-08" data-units="1" tabindex="0" aria-label="2026-03-08 : 1 observed demo units; illustrative-253-a">
+<title>2026-03-08 : 1 observed demo units; illustrative-253-a</title>
+<rect class="tile-cell f1" x="506.0" y="195.0"/>
+<rect class="day-service" data-kind="issue_opened" x="507.1" y="208.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="505.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-09" data-units="1" tabindex="0" aria-label="2026-03-09 : 1 observed demo units; illustrative-252-a">
+<title>2026-03-09 : 1 observed demo units; illustrative-252-a</title>
+<rect class="tile-cell f1" x="506.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_opened" x="507.1" y="229.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="505.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-10" data-units="1" tabindex="0" aria-label="2026-03-10 : 1 observed demo units; illustrative-251-a">
+<title>2026-03-10 : 1 observed demo units; illustrative-251-a</title>
+<rect class="tile-cell f1" x="506.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_opened" x="507.1" y="250.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="505.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="506.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="506.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-13" data-units="1" tabindex="0" aria-label="2026-03-13 : 1 observed demo units; illustrative-248-a">
+<title>2026-03-13 : 1 observed demo units; illustrative-248-a</title>
+<rect class="tile-cell f1" x="506.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_opened" x="507.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="505.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="506.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-15" data-units="1" tabindex="0" aria-label="2026-03-15 : 1 observed demo units; illustrative-246-a">
+<title>2026-03-15 : 1 observed demo units; illustrative-246-a</title>
+<rect class="tile-cell f1" x="527.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_opened" x="528.1" y="208.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="526.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-16" data-units="5" tabindex="0" aria-label="2026-03-16 : 5 observed demo units; illustrative-245-a, illustrative-245-b">
+<title>2026-03-16 : 5 observed demo units; illustrative-245-a, illustrative-245-b</title>
+<rect class="tile-cell f2" x="527.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="528.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="526.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="527.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-18" data-units="4" tabindex="0" aria-label="2026-03-18 : 4 observed demo units; illustrative-243-a">
+<title>2026-03-18 : 4 observed demo units; illustrative-243-a</title>
+<rect class="tile-cell f2" x="527.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="528.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="526.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="527.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="527.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-21" data-units="4" tabindex="0" aria-label="2026-03-21 : 4 observed demo units; illustrative-240-a">
+<title>2026-03-21 : 4 observed demo units; illustrative-240-a</title>
+<rect class="tile-cell f2" x="527.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="528.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="526.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-03-22" data-units="1" tabindex="0" aria-label="2026-03-22 : 1 observed demo units; illustrative-239-a">
+<title>2026-03-22 : 1 observed demo units; illustrative-239-a</title>
+<rect class="tile-cell f1" x="548.0" y="195.0"/>
+<rect class="day-service" data-kind="release" x="549.1" y="208.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="547.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="548.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="548.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="548.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-26" data-units="1" tabindex="0" aria-label="2026-03-26 : 1 observed demo units; illustrative-235-a">
+<title>2026-03-26 : 1 observed demo units; illustrative-235-a</title>
+<rect class="tile-cell f1" x="548.0" y="279.0"/>
+<rect class="day-service" data-kind="pr_opened" x="549.1" y="292.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="547.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="548.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="548.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-29" data-units="2" tabindex="0" aria-label="2026-03-29 : 2 observed demo units; illustrative-232-a">
+<title>2026-03-29 : 2 observed demo units; illustrative-232-a</title>
+<rect class="tile-cell f1" x="569.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="570.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="568.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="569.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-03-31" data-units="1" tabindex="0" aria-label="2026-03-31 : 1 observed demo units; illustrative-230-a">
+<title>2026-03-31 : 1 observed demo units; illustrative-230-a</title>
+<rect class="tile-cell f1" x="569.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="570.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="568.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="569.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-04-02" data-units="1" tabindex="0" aria-label="2026-04-02 : 1 observed demo units; illustrative-228-a">
+<title>2026-04-02 : 1 observed demo units; illustrative-228-a</title>
+<rect class="tile-cell f1" x="569.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="570.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="568.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-03" data-units="3" tabindex="0" aria-label="2026-04-03 : 3 observed demo units; illustrative-227-a">
+<title>2026-04-03 : 3 observed demo units; illustrative-227-a</title>
+<rect class="tile-cell f2" x="569.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="570.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="568.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-04" data-units="4" tabindex="0" aria-label="2026-04-04 : 4 observed demo units; illustrative-226-a">
+<title>2026-04-04 : 4 observed demo units; illustrative-226-a</title>
+<rect class="tile-cell f2" x="569.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="570.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="568.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-05" data-units="1" tabindex="0" aria-label="2026-04-05 : 1 observed demo units; illustrative-225-a">
+<title>2026-04-05 : 1 observed demo units; illustrative-225-a</title>
+<rect class="tile-cell f1" x="590.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_opened" x="591.1" y="208.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="589.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="590.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="590.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="590.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="590.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="590.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="590.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-04-12" data-units="1" tabindex="0" aria-label="2026-04-12 : 1 observed demo units; illustrative-218-a">
+<title>2026-04-12 : 1 observed demo units; illustrative-218-a</title>
+<rect class="tile-cell f1" x="611.0" y="195.0"/>
+<rect class="day-service" data-kind="release" x="612.1" y="208.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="610.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="611.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="611.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="611.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="611.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="611.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="611.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-04-19" data-units="4" tabindex="0" aria-label="2026-04-19 : 4 observed demo units; illustrative-211-a">
+<title>2026-04-19 : 4 observed demo units; illustrative-211-a</title>
+<rect class="tile-cell f2" x="632.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="633.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="631.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-20" data-units="4" tabindex="0" aria-label="2026-04-20 : 4 observed demo units; illustrative-210-a, illustrative-210-b">
+<title>2026-04-20 : 4 observed demo units; illustrative-210-a, illustrative-210-b</title>
+<rect class="tile-cell f2" x="632.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="633.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="issue_opened" x="636.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="631.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="632.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="632.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-04-23" data-units="1" tabindex="0" aria-label="2026-04-23 : 1 observed demo units; illustrative-207-a">
+<title>2026-04-23 : 1 observed demo units; illustrative-207-a</title>
+<rect class="tile-cell f1" x="632.0" y="279.0"/>
+<rect class="day-service" data-kind="release" x="633.1" y="292.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="631.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-24" data-units="2" tabindex="0" aria-label="2026-04-24 : 2 observed demo units; illustrative-206-a">
+<title>2026-04-24 : 2 observed demo units; illustrative-206-a</title>
+<rect class="tile-cell f1" x="632.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="633.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="631.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-25" data-units="5" tabindex="0" aria-label="2026-04-25 : 5 observed demo units; illustrative-205-a">
+<title>2026-04-25 : 5 observed demo units; illustrative-205-a</title>
+<rect class="tile-cell f2" x="632.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="633.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="631.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-26" data-units="1" tabindex="0" aria-label="2026-04-26 : 1 observed demo units; illustrative-204-a">
+<title>2026-04-26 : 1 observed demo units; illustrative-204-a</title>
+<rect class="tile-cell f1" x="653.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_merged" x="654.1" y="208.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="652.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-27" data-units="1" tabindex="0" aria-label="2026-04-27 : 1 observed demo units; illustrative-203-a">
+<title>2026-04-27 : 1 observed demo units; illustrative-203-a</title>
+<rect class="tile-cell f1" x="653.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_merged" x="654.1" y="229.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="652.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-04-28" data-units="1" tabindex="0" aria-label="2026-04-28 : 1 observed demo units; illustrative-202-a">
+<title>2026-04-28 : 1 observed demo units; illustrative-202-a</title>
+<rect class="tile-cell f1" x="653.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="654.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="652.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="653.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="653.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-01" data-units="1" tabindex="0" aria-label="2026-05-01 : 1 observed demo units; illustrative-199-a">
+<title>2026-05-01 : 1 observed demo units; illustrative-199-a</title>
+<rect class="tile-cell f1" x="653.0" y="300.0"/>
+<rect class="day-service" data-kind="release" x="654.1" y="313.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="652.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="653.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-03" data-units="6" tabindex="0" aria-label="2026-05-03 : 6 observed demo units; illustrative-197-a">
+<title>2026-05-03 : 6 observed demo units; illustrative-197-a</title>
+<rect class="tile-cell f3" x="674.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="675.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="673.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="674.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-05" data-units="1" tabindex="0" aria-label="2026-05-05 : 1 observed demo units; illustrative-195-a">
+<title>2026-05-05 : 1 observed demo units; illustrative-195-a</title>
+<rect class="tile-cell f1" x="674.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="675.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="673.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-05-06" data-units="5" tabindex="0" aria-label="2026-05-06 : 5 observed demo units; illustrative-194-a">
+<title>2026-05-06 : 5 observed demo units; illustrative-194-a</title>
+<rect class="tile-cell f2" x="674.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="675.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="673.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="674.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="674.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-09" data-units="5" tabindex="0" aria-label="2026-05-09 : 5 observed demo units; illustrative-191-a">
+<title>2026-05-09 : 5 observed demo units; illustrative-191-a</title>
+<rect class="tile-cell f2" x="674.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="675.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="673.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="695.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-11" data-units="4" tabindex="0" aria-label="2026-05-11 : 4 observed demo units; illustrative-189-a">
+<title>2026-05-11 : 4 observed demo units; illustrative-189-a</title>
+<rect class="tile-cell f2" x="695.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="696.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="694.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-05-12" data-units="3" tabindex="0" aria-label="2026-05-12 : 3 observed demo units; illustrative-188-a, illustrative-188-b">
+<title>2026-05-12 : 3 observed demo units; illustrative-188-a, illustrative-188-b</title>
+<rect class="tile-cell f2" x="695.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="696.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="issue_opened" x="699.1" y="250.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="694.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="695.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="695.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="695.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="695.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-17" data-units="1" tabindex="0" aria-label="2026-05-17 : 1 observed demo units; illustrative-183-a">
+<title>2026-05-17 : 1 observed demo units; illustrative-183-a</title>
+<rect class="tile-cell f1" x="716.0" y="195.0"/>
+<rect class="day-service" data-kind="release" x="717.1" y="208.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="715.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="716.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-19" data-units="5" tabindex="0" aria-label="2026-05-19 : 5 observed demo units; illustrative-181-a">
+<title>2026-05-19 : 5 observed demo units; illustrative-181-a</title>
+<rect class="tile-cell f2" x="716.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="717.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="715.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="716.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-21" data-units="2" tabindex="0" aria-label="2026-05-21 : 2 observed demo units; illustrative-179-a, illustrative-179-b">
+<title>2026-05-21 : 2 observed demo units; illustrative-179-a, illustrative-179-b</title>
+<rect class="tile-cell f1" x="716.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="717.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="issue_opened" x="720.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="715.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-05-22" data-units="1" tabindex="0" aria-label="2026-05-22 : 1 observed demo units; illustrative-178-a">
+<title>2026-05-22 : 1 observed demo units; illustrative-178-a</title>
+<rect class="tile-cell f1" x="716.0" y="300.0"/>
+<rect class="day-service" data-kind="release" x="717.1" y="313.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="715.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="716.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-24" data-units="1" tabindex="0" aria-label="2026-05-24 : 1 observed demo units; illustrative-176-a">
+<title>2026-05-24 : 1 observed demo units; illustrative-176-a</title>
+<rect class="tile-cell f1" x="737.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_merged" x="738.1" y="208.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="736.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="737.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="737.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="737.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-05-28" data-units="5" tabindex="0" aria-label="2026-05-28 : 5 observed demo units; illustrative-172-a">
+<title>2026-05-28 : 5 observed demo units; illustrative-172-a</title>
+<rect class="tile-cell f2" x="737.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="738.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="736.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="737.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="737.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="758.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-06-01" data-units="3" tabindex="0" aria-label="2026-06-01 : 3 observed demo units; illustrative-168-a">
+<title>2026-06-01 : 3 observed demo units; illustrative-168-a</title>
+<rect class="tile-cell f2" x="758.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="759.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="757.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-02" data-units="1" tabindex="0" aria-label="2026-06-02 : 1 observed demo units; illustrative-167-a">
+<title>2026-06-02 : 1 observed demo units; illustrative-167-a</title>
+<rect class="tile-cell f1" x="758.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_merged" x="759.1" y="250.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="757.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="758.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="758.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="758.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="758.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-06-07" data-units="1" tabindex="0" aria-label="2026-06-07 : 1 observed demo units; illustrative-162-a">
+<title>2026-06-07 : 1 observed demo units; illustrative-162-a</title>
+<rect class="tile-cell f1" x="779.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_merged" x="780.1" y="208.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="778.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-08" data-units="1" tabindex="0" aria-label="2026-06-08 : 1 observed demo units; illustrative-161-a">
+<title>2026-06-08 : 1 observed demo units; illustrative-161-a</title>
+<rect class="tile-cell f1" x="779.0" y="216.0"/>
+<rect class="day-service" data-kind="pr_merged" x="780.1" y="229.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="778.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="779.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2026-06-10" data-units="1" tabindex="0" aria-label="2026-06-10 : 1 observed demo units; illustrative-159-a">
+<title>2026-06-10 : 1 observed demo units; illustrative-159-a</title>
+<rect class="tile-cell f1" x="779.0" y="258.0"/>
+<rect class="day-service" data-kind="issue_opened" x="780.1" y="271.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="778.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-11" data-units="1" tabindex="0" aria-label="2026-06-11 : 1 observed demo units; illustrative-158-a">
+<title>2026-06-11 : 1 observed demo units; illustrative-158-a</title>
+<rect class="tile-cell f1" x="779.0" y="279.0"/>
+<rect class="day-service" data-kind="release" x="780.1" y="292.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="778.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-12" data-units="4" tabindex="0" aria-label="2026-06-12 : 4 observed demo units; illustrative-157-a">
+<title>2026-06-12 : 4 observed demo units; illustrative-157-a</title>
+<rect class="tile-cell f2" x="779.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="780.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="778.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="779.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="800.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="800.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="800.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="800.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="800.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="800.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-06-20" data-units="1" tabindex="0" aria-label="2026-06-20 : 1 observed demo units; illustrative-149-a">
+<title>2026-06-20 : 1 observed demo units; illustrative-149-a</title>
+<rect class="tile-cell f1" x="800.0" y="321.0"/>
+<rect class="day-service" data-kind="pr_opened" x="801.1" y="334.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="799.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-21" data-units="1" tabindex="0" aria-label="2026-06-21 : 1 observed demo units; illustrative-148-a">
+<title>2026-06-21 : 1 observed demo units; illustrative-148-a</title>
+<rect class="tile-cell f1" x="821.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_opened" x="822.1" y="208.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="820.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="821.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="821.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2026-06-24" data-units="1" tabindex="0" aria-label="2026-06-24 : 1 observed demo units; illustrative-145-a">
+<title>2026-06-24 : 1 observed demo units; illustrative-145-a</title>
+<rect class="tile-cell f1" x="821.0" y="258.0"/>
+<rect class="day-service" data-kind="issue_opened" x="822.1" y="271.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="820.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="821.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="821.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-06-27" data-units="5" tabindex="0" aria-label="2026-06-27 : 5 observed demo units; illustrative-142-a">
+<title>2026-06-27 : 5 observed demo units; illustrative-142-a</title>
+<rect class="tile-cell f2" x="821.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="822.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="820.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-28" data-units="1" tabindex="0" aria-label="2026-06-28 : 1 observed demo units; illustrative-141-a">
+<title>2026-06-28 : 1 observed demo units; illustrative-141-a</title>
+<rect class="tile-cell f1" x="842.0" y="195.0"/>
+<rect class="day-service" data-kind="issue_opened" x="843.1" y="208.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="841.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-06-29" data-units="1" tabindex="0" aria-label="2026-06-29 : 1 observed demo units; illustrative-140-a">
+<title>2026-06-29 : 1 observed demo units; illustrative-140-a</title>
+<rect class="tile-cell f1" x="842.0" y="216.0"/>
+<rect class="day-service" data-kind="release" x="843.1" y="229.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="841.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="842.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="842.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-02" data-units="4" tabindex="0" aria-label="2026-07-02 : 4 observed demo units; illustrative-137-a, illustrative-137-b">
+<title>2026-07-02 : 4 observed demo units; illustrative-137-a, illustrative-137-b</title>
+<rect class="tile-cell f2" x="842.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="843.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_opened" x="846.1" y="292.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="841.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-03" data-units="3" tabindex="0" aria-label="2026-07-03 : 3 observed demo units; illustrative-136-a">
+<title>2026-07-03 : 3 observed demo units; illustrative-136-a</title>
+<rect class="tile-cell f2" x="842.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="843.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="841.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-04" data-units="1" tabindex="0" aria-label="2026-07-04 : 1 observed demo units; illustrative-135-a">
+<title>2026-07-04 : 1 observed demo units; illustrative-135-a</title>
+<rect class="tile-cell f1" x="842.0" y="321.0"/>
+<rect class="day-service" data-kind="issue_opened" x="843.1" y="334.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="841.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-05" data-units="1" tabindex="0" aria-label="2026-07-05 : 1 observed demo units; illustrative-134-a">
+<title>2026-07-05 : 1 observed demo units; illustrative-134-a</title>
+<rect class="tile-cell f1" x="863.0" y="195.0"/>
+<rect class="day-service" data-kind="release" x="864.1" y="208.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="862.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="863.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-07" data-units="4" tabindex="0" aria-label="2026-07-07 : 4 observed demo units; illustrative-132-a, illustrative-132-b">
+<title>2026-07-07 : 4 observed demo units; illustrative-132-a, illustrative-132-b</title>
+<rect class="tile-cell f2" x="863.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="864.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_opened" x="867.1" y="250.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="862.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-08" data-units="1" tabindex="0" aria-label="2026-07-08 : 1 observed demo units; illustrative-131-a">
+<title>2026-07-08 : 1 observed demo units; illustrative-131-a</title>
+<rect class="tile-cell f1" x="863.0" y="258.0"/>
+<rect class="day-service" data-kind="release" x="864.1" y="271.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="862.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="863.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-10" data-units="5" tabindex="0" aria-label="2026-07-10 : 5 observed demo units; illustrative-129-a">
+<title>2026-07-10 : 5 observed demo units; illustrative-129-a</title>
+<rect class="tile-cell f2" x="863.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="864.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="862.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="863.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="884.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-13" data-units="1" tabindex="0" aria-label="2026-07-13 : 1 observed demo units; illustrative-126-a">
+<title>2026-07-13 : 1 observed demo units; illustrative-126-a</title>
+<rect class="tile-cell f1" x="884.0" y="216.0"/>
+<rect class="day-service" data-kind="issue_opened" x="885.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="883.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="884.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="884.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="884.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="884.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-18" data-units="1" tabindex="0" aria-label="2026-07-18 : 1 observed demo units; illustrative-121-a">
+<title>2026-07-18 : 1 observed demo units; illustrative-121-a</title>
+<rect class="tile-cell f1" x="884.0" y="321.0"/>
+<rect class="day-service" data-kind="issue_opened" x="885.1" y="334.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="883.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-19" data-units="1" tabindex="0" aria-label="2026-07-19 : 1 observed demo units; illustrative-120-a">
+<title>2026-07-19 : 1 observed demo units; illustrative-120-a</title>
+<rect class="tile-cell f1" x="905.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_opened" x="906.1" y="208.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="904.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="905.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-21" data-units="1" tabindex="0" aria-label="2026-07-21 : 1 observed demo units; illustrative-118-a">
+<title>2026-07-21 : 1 observed demo units; illustrative-118-a</title>
+<rect class="tile-cell f1" x="905.0" y="237.0"/>
+<rect class="day-service" data-kind="release" x="906.1" y="250.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="904.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="905.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="905.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-24" data-units="5" tabindex="0" aria-label="2026-07-24 : 5 observed demo units; illustrative-115-a">
+<title>2026-07-24 : 5 observed demo units; illustrative-115-a</title>
+<rect class="tile-cell f2" x="905.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="906.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="904.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="905.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="926.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-07-27" data-units="1" tabindex="0" aria-label="2026-07-27 : 1 observed demo units; illustrative-112-a">
+<title>2026-07-27 : 1 observed demo units; illustrative-112-a</title>
+<rect class="tile-cell f1" x="926.0" y="216.0"/>
+<rect class="day-service" data-kind="issue_opened" x="927.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="925.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-28" data-units="5" tabindex="0" aria-label="2026-07-28 : 5 observed demo units; illustrative-111-a">
+<title>2026-07-28 : 5 observed demo units; illustrative-111-a</title>
+<rect class="tile-cell f2" x="926.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="927.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="925.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-29" data-units="3" tabindex="0" aria-label="2026-07-29 : 3 observed demo units; illustrative-110-a">
+<title>2026-07-29 : 3 observed demo units; illustrative-110-a</title>
+<rect class="tile-cell f2" x="926.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="927.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="925.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-07-30" data-units="1" tabindex="0" aria-label="2026-07-30 : 1 observed demo units; illustrative-109-a">
+<title>2026-07-30 : 1 observed demo units; illustrative-109-a</title>
+<rect class="tile-cell f1" x="926.0" y="279.0"/>
+<rect class="day-service" data-kind="release" x="927.1" y="292.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="925.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="926.0" y="300.0" opacity=".78"/>
+<rect class="tile-cell f0" x="926.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-02" data-units="1" tabindex="0" aria-label="2026-08-02 : 1 observed demo units; illustrative-106-a">
+<title>2026-08-02 : 1 observed demo units; illustrative-106-a</title>
+<rect class="tile-cell f1" x="947.0" y="195.0"/>
+<rect class="day-service" data-kind="issue_opened" x="948.1" y="208.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="946.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-03" data-units="4" tabindex="0" aria-label="2026-08-03 : 4 observed demo units; demo-001, illustrative-105-a">
+<title>2026-08-03 : 4 observed demo units; demo-001, illustrative-105-a</title>
+<rect class="tile-cell f2" x="947.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="948.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="issue_opened" x="951.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="946.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="947.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="947.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-06" data-units="1" tabindex="0" aria-label="2026-08-06 : 1 observed demo units; illustrative-102-a">
+<title>2026-08-06 : 1 observed demo units; illustrative-102-a</title>
+<rect class="tile-cell f1" x="947.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="948.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="946.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-07" data-units="3" tabindex="0" aria-label="2026-08-07 : 3 observed demo units; illustrative-101-a">
+<title>2026-08-07 : 3 observed demo units; illustrative-101-a</title>
+<rect class="tile-cell f2" x="947.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="948.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="946.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-08" data-units="1" tabindex="0" aria-label="2026-08-08 : 1 observed demo units; illustrative-100-a">
+<title>2026-08-08 : 1 observed demo units; illustrative-100-a</title>
+<rect class="tile-cell f1" x="947.0" y="321.0"/>
+<rect class="day-service" data-kind="pr_opened" x="948.1" y="334.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="946.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="968.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="968.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-11" data-units="1" tabindex="0" aria-label="2026-08-11 : 1 observed demo units; illustrative-097-a">
+<title>2026-08-11 : 1 observed demo units; illustrative-097-a</title>
+<rect class="tile-cell f1" x="968.0" y="237.0"/>
+<rect class="day-service" data-kind="release" x="969.1" y="250.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="967.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="968.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="968.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-14" data-units="7" tabindex="0" aria-label="2026-08-14 : 7 observed demo units; illustrative-094-a">
+<title>2026-08-14 : 7 observed demo units; illustrative-094-a</title>
+<rect class="tile-cell f3" x="968.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="969.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="967.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-15" data-units="7" tabindex="0" aria-label="2026-08-15 : 7 observed demo units; illustrative-093-a, illustrative-093-b">
+<title>2026-08-15 : 7 observed demo units; illustrative-093-a, illustrative-093-b</title>
+<rect class="tile-cell f3" x="968.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="969.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="967.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-16" data-units="1" tabindex="0" aria-label="2026-08-16 : 1 observed demo units; illustrative-092-a">
+<title>2026-08-16 : 1 observed demo units; illustrative-092-a</title>
+<rect class="tile-cell f1" x="989.0" y="195.0"/>
+<rect class="day-service" data-kind="issue_opened" x="990.1" y="208.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="988.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-17" data-units="1" tabindex="0" aria-label="2026-08-17 : 1 observed demo units; illustrative-091-a">
+<title>2026-08-17 : 1 observed demo units; illustrative-091-a</title>
+<rect class="tile-cell f1" x="989.0" y="216.0"/>
+<rect class="day-service" data-kind="issue_opened" x="990.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="988.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-18" data-units="6" tabindex="0" aria-label="2026-08-18 : 6 observed demo units; illustrative-090-a">
+<title>2026-08-18 : 6 observed demo units; illustrative-090-a</title>
+<rect class="tile-cell f3" x="989.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="990.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="988.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="989.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-20" data-units="1" tabindex="0" aria-label="2026-08-20 : 1 observed demo units; illustrative-088-a">
+<title>2026-08-20 : 1 observed demo units; illustrative-088-a</title>
+<rect class="tile-cell f1" x="989.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="990.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="988.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-08-21" data-units="1" tabindex="0" aria-label="2026-08-21 : 1 observed demo units; demo-002">
+<title>2026-08-21 : 1 observed demo units; demo-002</title>
+<rect class="tile-cell f1" x="989.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_opened" x="990.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="988.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="989.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1010.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-24" data-units="4" tabindex="0" aria-label="2026-08-24 : 4 observed demo units; illustrative-084-a, illustrative-084-b">
+<title>2026-08-24 : 4 observed demo units; illustrative-084-a, illustrative-084-b</title>
+<rect class="tile-cell f2" x="1010.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="1011.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_merged" x="1014.1" y="229.2" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1009.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1010.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-26" data-units="1" tabindex="0" aria-label="2026-08-26 : 1 observed demo units; illustrative-082-a">
+<title>2026-08-26 : 1 observed demo units; illustrative-082-a</title>
+<rect class="tile-cell f1" x="1010.0" y="258.0"/>
+<rect class="day-service" data-kind="release" x="1011.1" y="271.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="1009.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1010.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-08-28" data-units="2" tabindex="0" aria-label="2026-08-28 : 2 observed demo units; illustrative-080-a, illustrative-080-b">
+<title>2026-08-28 : 2 observed demo units; illustrative-080-a, illustrative-080-b</title>
+<rect class="tile-cell f1" x="1010.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="1011.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_opened" x="1014.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1009.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1010.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1031.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1031.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1031.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1031.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1031.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-04" data-units="1" tabindex="0" aria-label="2026-09-04 : 1 observed demo units; illustrative-073-a">
+<title>2026-09-04 : 1 observed demo units; illustrative-073-a</title>
+<rect class="tile-cell f1" x="1031.0" y="300.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1032.1" y="313.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1030.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-09-05" data-units="1" tabindex="0" aria-label="2026-09-05 : 1 observed demo units; illustrative-072-a">
+<title>2026-09-05 : 1 observed demo units; illustrative-072-a</title>
+<rect class="tile-cell f1" x="1031.0" y="321.0"/>
+<rect class="day-service" data-kind="release" x="1032.1" y="334.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="1030.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-09-06" data-units="2" tabindex="0" aria-label="2026-09-06 : 2 observed demo units; demo-003">
+<title>2026-09-06 : 2 observed demo units; demo-003</title>
+<rect class="tile-cell f1" x="1052.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="1053.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1051.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-09-07" data-units="1" tabindex="0" aria-label="2026-09-07 : 1 observed demo units; illustrative-070-a">
+<title>2026-09-07 : 1 observed demo units; illustrative-070-a</title>
+<rect class="tile-cell f1" x="1052.0" y="216.0"/>
+<rect class="day-service" data-kind="release" x="1053.1" y="229.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="1051.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1052.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1052.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-10" data-units="5" tabindex="0" aria-label="2026-09-10 : 5 observed demo units; illustrative-067-a">
+<title>2026-09-10 : 5 observed demo units; illustrative-067-a</title>
+<rect class="tile-cell f2" x="1052.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="1053.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1051.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1052.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-12" data-units="1" tabindex="0" aria-label="2026-09-12 : 1 observed demo units; demo-004">
+<title>2026-09-12 : 1 observed demo units; demo-004</title>
+<rect class="tile-cell f1" x="1052.0" y="321.0"/>
+<rect class="day-service" data-kind="pr_merged" x="1053.1" y="334.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1051.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1073.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-14" data-units="7" tabindex="0" aria-label="2026-09-14 : 7 observed demo units; illustrative-063-a, illustrative-063-b">
+<title>2026-09-14 : 7 observed demo units; illustrative-063-a, illustrative-063-b</title>
+<rect class="tile-cell f3" x="1073.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="1074.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1072.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1073.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-16" data-units="5" tabindex="0" aria-label="2026-09-16 : 5 observed demo units; illustrative-061-a">
+<title>2026-09-16 : 5 observed demo units; illustrative-061-a</title>
+<rect class="tile-cell f2" x="1073.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="1074.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1072.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1073.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-18" data-units="1" tabindex="0" aria-label="2026-09-18 : 1 observed demo units; illustrative-059-a">
+<title>2026-09-18 : 1 observed demo units; illustrative-059-a</title>
+<rect class="tile-cell f1" x="1073.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_merged" x="1074.1" y="313.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1072.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-09-19" data-units="1" tabindex="0" aria-label="2026-09-19 : 1 observed demo units; illustrative-058-a">
+<title>2026-09-19 : 1 observed demo units; illustrative-058-a</title>
+<rect class="tile-cell f1" x="1073.0" y="321.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1074.1" y="334.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1072.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1094.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1094.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1094.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1094.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1094.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-25" data-units="1" tabindex="0" aria-label="2026-09-25 : 1 observed demo units; illustrative-052-a">
+<title>2026-09-25 : 1 observed demo units; illustrative-052-a</title>
+<rect class="tile-cell f1" x="1094.0" y="300.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1095.1" y="313.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1093.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-09-26" data-units="1" tabindex="0" aria-label="2026-09-26 : 1 observed demo units; illustrative-051-a">
+<title>2026-09-26 : 1 observed demo units; illustrative-051-a</title>
+<rect class="tile-cell f1" x="1094.0" y="321.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1095.1" y="334.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1093.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1115.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-09-28" data-units="1" tabindex="0" aria-label="2026-09-28 : 1 observed demo units; demo-005">
+<title>2026-09-28 : 1 observed demo units; demo-005</title>
+<rect class="tile-cell f1" x="1115.0" y="216.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1116.1" y="229.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1114.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-09-29" data-units="2" tabindex="0" aria-label="2026-09-29 : 2 observed demo units; illustrative-048-a">
+<title>2026-09-29 : 2 observed demo units; illustrative-048-a</title>
+<rect class="tile-cell f1" x="1115.0" y="237.0"/>
+<rect class="day-service" data-kind="commit" x="1116.1" y="250.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1114.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1115.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1115.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-02" data-units="1" tabindex="0" aria-label="2026-10-02 : 1 observed demo units; illustrative-045-a">
+<title>2026-10-02 : 1 observed demo units; illustrative-045-a</title>
+<rect class="tile-cell f1" x="1115.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_merged" x="1116.1" y="313.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1114.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1115.0" y="321.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1136.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1136.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1136.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1136.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-08" data-units="1" tabindex="0" aria-label="2026-10-08 : 1 observed demo units; illustrative-039-a">
+<title>2026-10-08 : 1 observed demo units; illustrative-039-a</title>
+<rect class="tile-cell f1" x="1136.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1137.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1135.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-09" data-units="4" tabindex="0" aria-label="2026-10-09 : 4 observed demo units; illustrative-038-a, illustrative-038-b">
+<title>2026-10-09 : 4 observed demo units; illustrative-038-a, illustrative-038-b</title>
+<rect class="tile-cell f2" x="1136.0" y="300.0"/>
+<rect class="day-service" data-kind="commit" x="1137.1" y="313.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_merged" x="1140.1" y="313.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1135.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1136.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-11" data-units="1" tabindex="0" aria-label="2026-10-11 : 1 observed demo units; illustrative-036-a">
+<title>2026-10-11 : 1 observed demo units; illustrative-036-a</title>
+<rect class="tile-cell f1" x="1157.0" y="195.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1158.1" y="208.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1156.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1157.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1157.0" y="237.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-14" data-units="4" tabindex="0" aria-label="2026-10-14 : 4 observed demo units; illustrative-033-a">
+<title>2026-10-14 : 4 observed demo units; illustrative-033-a</title>
+<rect class="tile-cell f2" x="1157.0" y="258.0"/>
+<rect class="day-service" data-kind="commit" x="1158.1" y="271.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1156.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1157.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-16" data-units="1" tabindex="0" aria-label="2026-10-16 : 1 observed demo units; illustrative-031-a">
+<title>2026-10-16 : 1 observed demo units; illustrative-031-a</title>
+<rect class="tile-cell f1" x="1157.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1158.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1156.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-17" data-units="6" tabindex="0" aria-label="2026-10-17 : 6 observed demo units; illustrative-030-a, demo-006">
+<title>2026-10-17 : 6 observed demo units; illustrative-030-a, demo-006</title>
+<rect class="tile-cell f3" x="1157.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="1158.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="issue_opened" x="1161.1" y="334.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1156.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1178.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1178.0" y="216.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1178.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1178.0" y="258.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1178.0" y="279.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-23" data-units="1" tabindex="0" aria-label="2026-10-23 : 1 observed demo units; illustrative-024-a">
+<title>2026-10-23 : 1 observed demo units; illustrative-024-a</title>
+<rect class="tile-cell f1" x="1178.0" y="300.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1179.1" y="313.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1177.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-24" data-units="1" tabindex="0" aria-label="2026-10-24 : 1 observed demo units; demo-007">
+<title>2026-10-24 : 1 observed demo units; demo-007</title>
+<rect class="tile-cell f1" x="1178.0" y="321.0"/>
+<rect class="day-service" data-kind="release" x="1179.1" y="334.1" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="1177.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1199.0" y="195.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1199.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-10-27" data-units="1" tabindex="0" aria-label="2026-10-27 : 1 observed demo units; illustrative-020-a">
+<title>2026-10-27 : 1 observed demo units; illustrative-020-a</title>
+<rect class="tile-cell f1" x="1199.0" y="237.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1200.1" y="250.2" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1198.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-28" data-units="1" tabindex="0" aria-label="2026-10-28 : 1 observed demo units; illustrative-019-a">
+<title>2026-10-28 : 1 observed demo units; illustrative-019-a</title>
+<rect class="tile-cell f1" x="1199.0" y="258.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1200.1" y="271.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1198.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-29" data-units="3" tabindex="0" aria-label="2026-10-29 : 3 observed demo units; illustrative-018-a">
+<title>2026-10-29 : 3 observed demo units; illustrative-018-a</title>
+<rect class="tile-cell f2" x="1199.0" y="279.0"/>
+<rect class="day-service" data-kind="commit" x="1200.1" y="292.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1198.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-30" data-units="1" tabindex="0" aria-label="2026-10-30 : 1 observed demo units; illustrative-017-a">
+<title>2026-10-30 : 1 observed demo units; illustrative-017-a</title>
+<rect class="tile-cell f1" x="1199.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1200.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1198.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-10-31" data-units="4" tabindex="0" aria-label="2026-10-31 : 4 observed demo units; illustrative-016-a, illustrative-016-b">
+<title>2026-10-31 : 4 observed demo units; illustrative-016-a, illustrative-016-b</title>
+<rect class="tile-cell f2" x="1199.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="1200.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_merged" x="1203.1" y="334.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1198.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-11-01" data-units="1" tabindex="0" aria-label="2026-11-01 : 1 observed demo units; illustrative-015-a">
+<title>2026-11-01 : 1 observed demo units; illustrative-015-a</title>
+<rect class="tile-cell f1" x="1220.0" y="195.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1221.1" y="208.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1219.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1220.0" y="216.0" opacity=".78"/>
+<g class="cell" data-date="2026-11-03" data-units="1" tabindex="0" aria-label="2026-11-03 : 1 observed demo units; illustrative-013-a">
+<title>2026-11-03 : 1 observed demo units; illustrative-013-a</title>
+<rect class="tile-cell f1" x="1220.0" y="237.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1221.1" y="250.2" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1219.0" y="236.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-11-04" data-units="2" tabindex="0" aria-label="2026-11-04 : 2 observed demo units; illustrative-012-a, demo-008">
+<title>2026-11-04 : 2 observed demo units; illustrative-012-a, demo-008</title>
+<rect class="tile-cell f1" x="1220.0" y="258.0"/>
+<rect class="day-service" data-kind="pr_merged" x="1221.1" y="271.1" width="2.4" height="1.65" fill="#A792FD"/>
+<rect class="focus" x="1219.0" y="257.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1220.0" y="279.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1220.0" y="300.0" opacity=".78"/>
+<g class="cell" data-date="2026-11-07" data-units="2" tabindex="0" aria-label="2026-11-07 : 2 observed demo units; illustrative-009-a, illustrative-009-b">
+<title>2026-11-07 : 2 observed demo units; illustrative-009-a, illustrative-009-b</title>
+<rect class="tile-cell f1" x="1220.0" y="321.0"/>
+<rect class="day-service" data-kind="commit" x="1221.1" y="334.1" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="pr_opened" x="1224.1" y="334.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1219.0" y="320.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1241.0" y="195.0" opacity=".78"/>
+<g class="cell" data-date="2026-11-09" data-units="5" tabindex="0" aria-label="2026-11-09 : 5 observed demo units; demo-009, illustrative-007-a">
+<title>2026-11-09 : 5 observed demo units; demo-009, illustrative-007-a</title>
+<rect class="tile-cell f2" x="1241.0" y="216.0"/>
+<rect class="day-service" data-kind="commit" x="1242.1" y="229.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="day-service" data-kind="release" x="1245.1" y="229.2" width="2.4" height="1.65" fill="#76BEFF"/>
+<rect class="focus" x="1240.0" y="215.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1241.0" y="237.0" opacity=".78"/>
+<rect class="tile-cell f0" x="1241.0" y="258.0" opacity=".78"/>
+<g class="cell" data-date="2026-11-12" data-units="1" tabindex="0" aria-label="2026-11-12 : 1 observed demo units; illustrative-004-a">
+<title>2026-11-12 : 1 observed demo units; illustrative-004-a</title>
+<rect class="tile-cell f1" x="1241.0" y="279.0"/>
+<rect class="day-service" data-kind="issue_opened" x="1242.1" y="292.1" width="2.4" height="1.65" fill="#FFD174"/>
+<rect class="focus" x="1240.0" y="278.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<g class="cell" data-date="2026-11-13" data-units="1" tabindex="0" aria-label="2026-11-13 : 1 observed demo units; demo-010">
+<title>2026-11-13 : 1 observed demo units; demo-010</title>
+<rect class="tile-cell f1" x="1241.0" y="300.0"/>
+<rect class="day-service" data-kind="pr_opened" x="1242.1" y="313.1" width="2.4" height="1.65" fill="#FF9E85"/>
+<rect class="focus" x="1240.0" y="299.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1241.0" y="321.0" opacity=".78"/>
+<g class="cell" data-date="2026-11-15" data-units="5" tabindex="0" aria-label="2026-11-15 : 5 observed demo units; illustrative-001-a">
+<title>2026-11-15 : 5 observed demo units; illustrative-001-a</title>
+<rect class="tile-cell f2" x="1262.0" y="195.0"/>
+<rect class="day-service" data-kind="commit" x="1263.1" y="208.2" width="2.4" height="1.65" fill="#4CE0B3"/>
+<rect class="focus" x="1261.0" y="194.0" width="17.5" height="17.5" rx="4" fill="none" stroke="#F2F8FE" opacity="0"/>
+</g>
+<rect class="tile-cell f0" x="1262.0" y="216.0" opacity=".78"/>
+<g class="service-route route-commit" data-kind="commit">
+<title>CODE: one straight rail for commit. Each stop marks a week with recorded events. The track between stops does not mean daily contributions.</title>
+<path class="service-track-halo" d="M177.8 213.2 H1269.8" fill="none" stroke="#0B1724" stroke-width="6.3" stroke-linecap="round"/>
+<path class="service-track" data-kind="commit" d="M177.8 213.2 H1269.8" fill="none" stroke="#4CE0B3" stroke-width="3.2" stroke-linecap="round"/>
+<circle class="service-stop" data-kind="commit" data-week="0" data-events="3" cx="177.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 1</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="1" data-events="1" cx="198.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 2</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="2" data-events="5" cx="219.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 5 recorded event(s) in calendar week 3</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="3" data-events="1" cx="240.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 4</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="4" data-events="1" cx="261.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 5</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="6" data-events="1" cx="303.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 7</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="7" data-events="1" cx="324.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 8</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="8" data-events="1" cx="345.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 9</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="9" data-events="3" cx="366.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 10</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="11" data-events="1" cx="408.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 12</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="12" data-events="2" cx="429.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 13</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="13" data-events="1" cx="450.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 14</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="14" data-events="2" cx="471.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 15</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="15" data-events="3" cx="492.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 16</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="17" data-events="4" cx="534.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 4 recorded event(s) in calendar week 18</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="19" data-events="3" cx="576.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 20</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="22" data-events="4" cx="639.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 4 recorded event(s) in calendar week 23</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="24" data-events="3" cx="681.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 25</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="25" data-events="2" cx="702.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 26</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="26" data-events="2" cx="723.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 27</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="27" data-events="1" cx="744.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 28</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="28" data-events="1" cx="765.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 29</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="29" data-events="1" cx="786.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 30</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="31" data-events="1" cx="828.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 32</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="32" data-events="2" cx="849.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 33</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="33" data-events="2" cx="870.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 34</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="35" data-events="1" cx="912.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 36</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="36" data-events="2" cx="933.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 37</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="37" data-events="2" cx="954.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 38</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="38" data-events="3" cx="975.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 39</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="39" data-events="1" cx="996.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 40</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="40" data-events="2" cx="1017.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 41</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="42" data-events="2" cx="1059.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 43</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="43" data-events="3" cx="1080.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 3 recorded event(s) in calendar week 44</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="45" data-events="1" cx="1122.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 46</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="46" data-events="1" cx="1143.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 47</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="47" data-events="2" cx="1164.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 48</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="49" data-events="2" cx="1206.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 2 recorded event(s) in calendar week 50</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="50" data-events="1" cx="1227.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 51</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="51" data-events="1" cx="1248.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 52</title></circle>
+<circle class="service-stop" data-kind="commit" data-week="52" data-events="1" cx="1269.8" cy="213.2" r="3.8" fill="#0B1724" stroke="#4CE0B3" stroke-width="1.9"><title>CODE: 1 recorded event(s) in calendar week 53</title></circle>
+<rect x="1291" y="206.2" width="40" height="14" rx="7" fill="#4CE0B3"/>
+<text x="1311" y="216.2" text-anchor="middle" font-size="8.5" font-weight="800" font-family="system-ui,sans-serif" fill="#0B1724">M1</text>
+</g>
+<g class="service-route route-pr_opened" data-kind="pr_opened">
+<title>PROPOSE: one straight rail for pr_opened. Each stop marks a week with recorded events. The track between stops does not mean daily contributions.</title>
+<path class="service-track-halo" d="M198.8 234.2 H1248.8" fill="none" stroke="#0B1724" stroke-width="6.3" stroke-linecap="round"/>
+<path class="service-track" data-kind="pr_opened" d="M198.8 234.2 H1248.8" fill="none" stroke="#FF9E85" stroke-width="3.2" stroke-linecap="round"/>
+<circle class="service-stop" data-kind="pr_opened" data-week="1" data-events="1" cx="198.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 2</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="2" data-events="2" cx="219.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 2 recorded event(s) in calendar week 3</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="4" data-events="1" cx="261.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 5</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="8" data-events="1" cx="345.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 9</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="9" data-events="1" cx="366.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 10</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="13" data-events="1" cx="450.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 14</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="15" data-events="2" cx="492.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 2 recorded event(s) in calendar week 16</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="16" data-events="3" cx="513.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 3 recorded event(s) in calendar week 17</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="17" data-events="1" cx="534.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 18</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="18" data-events="1" cx="555.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 19</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="20" data-events="1" cx="597.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 21</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="30" data-events="1" cx="807.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 31</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="31" data-events="1" cx="828.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 32</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="32" data-events="1" cx="849.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 33</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="33" data-events="1" cx="870.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 34</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="35" data-events="1" cx="912.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 36</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="37" data-events="1" cx="954.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 38</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="39" data-events="1" cx="996.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 40</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="40" data-events="1" cx="1017.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 41</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="43" data-events="1" cx="1080.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 44</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="47" data-events="2" cx="1164.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 2 recorded event(s) in calendar week 48</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="49" data-events="3" cx="1206.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 3 recorded event(s) in calendar week 50</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="50" data-events="1" cx="1227.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 51</title></circle>
+<circle class="service-stop" data-kind="pr_opened" data-week="51" data-events="1" cx="1248.8" cy="234.2" r="3.8" fill="#0B1724" stroke="#FF9E85" stroke-width="1.9"><title>PROPOSE: 1 recorded event(s) in calendar week 52</title></circle>
+<rect x="1291" y="227.2" width="40" height="14" rx="7" fill="#FF9E85"/>
+<text x="1311" y="237.2" text-anchor="middle" font-size="8.5" font-weight="800" font-family="system-ui,sans-serif" fill="#0B1724">M2</text>
+</g>
+<g class="service-route route-pr_merged" data-kind="pr_merged">
+<title>MERGE: one straight rail for pr_merged. Each stop marks a week with recorded events. The track between stops does not mean daily contributions.</title>
+<path class="service-track-halo" d="M177.8 255.2 H1227.8" fill="none" stroke="#0B1724" stroke-width="6.3" stroke-linecap="round"/>
+<path class="service-track" data-kind="pr_merged" d="M177.8 255.2 H1227.8" fill="none" stroke="#A792FD" stroke-width="3.2" stroke-linecap="round"/>
+<circle class="service-stop" data-kind="pr_merged" data-week="0" data-events="1" cx="177.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 1</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="1" data-events="1" cx="198.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 2</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="2" data-events="1" cx="219.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 3</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="3" data-events="1" cx="240.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 4</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="4" data-events="2" cx="261.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 2 recorded event(s) in calendar week 5</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="7" data-events="1" cx="324.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 8</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="12" data-events="2" cx="429.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 2 recorded event(s) in calendar week 13</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="13" data-events="1" cx="450.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 14</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="14" data-events="2" cx="471.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 2 recorded event(s) in calendar week 15</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="15" data-events="1" cx="492.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 16</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="19" data-events="1" cx="576.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 20</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="23" data-events="3" cx="660.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 3 recorded event(s) in calendar week 24</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="24" data-events="1" cx="681.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 25</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="27" data-events="1" cx="744.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 28</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="28" data-events="1" cx="765.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 29</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="29" data-events="2" cx="786.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 2 recorded event(s) in calendar week 30</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="40" data-events="1" cx="1017.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 41</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="42" data-events="1" cx="1059.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 43</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="43" data-events="1" cx="1080.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 44</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="45" data-events="1" cx="1122.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 46</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="46" data-events="1" cx="1143.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 47</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="49" data-events="1" cx="1206.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 1 recorded event(s) in calendar week 50</title></circle>
+<circle class="service-stop" data-kind="pr_merged" data-week="50" data-events="2" cx="1227.8" cy="255.2" r="3.8" fill="#0B1724" stroke="#A792FD" stroke-width="1.9"><title>MERGE: 2 recorded event(s) in calendar week 51</title></circle>
+<rect x="1291" y="248.2" width="40" height="14" rx="7" fill="#A792FD"/>
+<text x="1311" y="258.2" text-anchor="middle" font-size="8.5" font-weight="800" font-family="system-ui,sans-serif" fill="#0B1724">M3</text>
+</g>
+<g class="service-route route-issue_opened" data-kind="issue_opened">
+<title>DISCUSS: one straight rail for issue_opened. Each stop marks a week with recorded events. The track between stops does not mean daily contributions.</title>
+<path class="service-track-halo" d="M198.8 276.2 H1248.8" fill="none" stroke="#0B1724" stroke-width="6.3" stroke-linecap="round"/>
+<path class="service-track" data-kind="issue_opened" d="M198.8 276.2 H1248.8" fill="none" stroke="#FFD174" stroke-width="3.2" stroke-linecap="round"/>
+<circle class="service-stop" data-kind="issue_opened" data-week="1" data-events="3" cx="198.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 3 recorded event(s) in calendar week 2</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="2" data-events="1" cx="219.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 3</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="4" data-events="1" cx="261.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 5</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="5" data-events="1" cx="282.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 6</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="8" data-events="1" cx="345.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 9</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="11" data-events="1" cx="408.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 12</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="16" data-events="1" cx="513.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 17</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="19" data-events="1" cx="576.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 20</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="22" data-events="1" cx="639.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 23</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="25" data-events="1" cx="702.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 26</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="26" data-events="1" cx="723.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 27</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="29" data-events="1" cx="786.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 30</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="31" data-events="1" cx="828.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 32</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="32" data-events="2" cx="849.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 2 recorded event(s) in calendar week 33</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="34" data-events="2" cx="891.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 2 recorded event(s) in calendar week 35</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="36" data-events="1" cx="933.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 37</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="37" data-events="3" cx="954.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 3 recorded event(s) in calendar week 38</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="39" data-events="3" cx="996.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 3 recorded event(s) in calendar week 40</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="41" data-events="1" cx="1038.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 42</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="44" data-events="2" cx="1101.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 2 recorded event(s) in calendar week 45</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="45" data-events="1" cx="1122.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 46</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="46" data-events="1" cx="1143.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 47</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="47" data-events="1" cx="1164.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 48</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="48" data-events="1" cx="1185.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 49</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="50" data-events="2" cx="1227.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 2 recorded event(s) in calendar week 51</title></circle>
+<circle class="service-stop" data-kind="issue_opened" data-week="51" data-events="1" cx="1248.8" cy="276.2" r="3.8" fill="#0B1724" stroke="#FFD174" stroke-width="1.9"><title>DISCUSS: 1 recorded event(s) in calendar week 52</title></circle>
+<rect x="1291" y="269.2" width="40" height="14" rx="7" fill="#FFD174"/>
+<text x="1311" y="279.2" text-anchor="middle" font-size="8.5" font-weight="800" font-family="system-ui,sans-serif" fill="#0B1724">M4</text>
+</g>
+<g class="service-route route-release" data-kind="release">
+<title>SHIP: one straight rail for release. Each stop marks a week with recorded events. The track between stops does not mean daily contributions.</title>
+<path class="service-track-halo" d="M177.8 297.2 H1248.8" fill="none" stroke="#0B1724" stroke-width="6.3" stroke-linecap="round"/>
+<path class="service-track" data-kind="release" d="M177.8 297.2 H1248.8" fill="none" stroke="#76BEFF" stroke-width="3.2" stroke-linecap="round"/>
+<circle class="service-stop" data-kind="release" data-week="0" data-events="1" cx="177.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 1</title></circle>
+<circle class="service-stop" data-kind="release" data-week="3" data-events="1" cx="240.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 4</title></circle>
+<circle class="service-stop" data-kind="release" data-week="7" data-events="1" cx="324.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 8</title></circle>
+<circle class="service-stop" data-kind="release" data-week="8" data-events="1" cx="345.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 9</title></circle>
+<circle class="service-stop" data-kind="release" data-week="9" data-events="1" cx="366.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 10</title></circle>
+<circle class="service-stop" data-kind="release" data-week="10" data-events="1" cx="387.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 11</title></circle>
+<circle class="service-stop" data-kind="release" data-week="18" data-events="1" cx="555.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 19</title></circle>
+<circle class="service-stop" data-kind="release" data-week="21" data-events="1" cx="618.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 22</title></circle>
+<circle class="service-stop" data-kind="release" data-week="22" data-events="1" cx="639.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 23</title></circle>
+<circle class="service-stop" data-kind="release" data-week="23" data-events="1" cx="660.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 24</title></circle>
+<circle class="service-stop" data-kind="release" data-week="26" data-events="2" cx="723.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 2 recorded event(s) in calendar week 27</title></circle>
+<circle class="service-stop" data-kind="release" data-week="29" data-events="1" cx="786.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 30</title></circle>
+<circle class="service-stop" data-kind="release" data-week="32" data-events="1" cx="849.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 33</title></circle>
+<circle class="service-stop" data-kind="release" data-week="33" data-events="2" cx="870.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 2 recorded event(s) in calendar week 34</title></circle>
+<circle class="service-stop" data-kind="release" data-week="35" data-events="1" cx="912.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 36</title></circle>
+<circle class="service-stop" data-kind="release" data-week="36" data-events="1" cx="933.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 37</title></circle>
+<circle class="service-stop" data-kind="release" data-week="38" data-events="1" cx="975.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 39</title></circle>
+<circle class="service-stop" data-kind="release" data-week="40" data-events="1" cx="1017.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 41</title></circle>
+<circle class="service-stop" data-kind="release" data-week="41" data-events="1" cx="1038.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 42</title></circle>
+<circle class="service-stop" data-kind="release" data-week="42" data-events="1" cx="1059.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 43</title></circle>
+<circle class="service-stop" data-kind="release" data-week="48" data-events="1" cx="1185.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 49</title></circle>
+<circle class="service-stop" data-kind="release" data-week="51" data-events="1" cx="1248.8" cy="297.2" r="3.8" fill="#0B1724" stroke="#76BEFF" stroke-width="1.9"><title>SHIP: 1 recorded event(s) in calendar week 52</title></circle>
+<rect x="1291" y="290.2" width="40" height="14" rx="7" fill="#76BEFF"/>
+<text x="1311" y="300.2" text-anchor="middle" font-size="8.5" font-weight="800" font-family="system-ui,sans-serif" fill="#0B1724">M5</text>
+</g>
+<g class="terminal" data-repo="sample-dev/aurora">
+<circle cx="1185.8" cy="328.8" r="10.5" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="1185.8" y="332.1" text-anchor="middle" font-size="10" font-weight="800" font-family="system-ui,sans-serif" fill="#F2F8FE">01</text>
+<title>Repository terminal 01: sample-dev/aurora; release on 2026-10-24</title></g>
+<g class="terminal" data-repo="sample-dev/atlas">
+<circle cx="1038.8" cy="328.8" r="10.5" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="1038.8" y="332.1" text-anchor="middle" font-size="10" font-weight="800" font-family="system-ui,sans-serif" fill="#F2F8FE">02</text>
+<title>Repository terminal 02: sample-dev/atlas; release on 2026-09-05</title></g>
+<g class="terminal" data-repo="sample-dev/ember">
+<circle cx="933.8" cy="286.8" r="10.5" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="933.8" y="290.1" text-anchor="middle" font-size="10" font-weight="800" font-family="system-ui,sans-serif" fill="#F2F8FE">03</text>
+<title>Repository terminal 03: sample-dev/ember; release on 2026-07-30</title></g>
+<g class="terminal" data-repo="sample-dev/orbit">
+<circle cx="975.8" cy="244.8" r="10.5" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="975.8" y="248.2" text-anchor="middle" font-size="10" font-weight="800" font-family="system-ui,sans-serif" fill="#F2F8FE">04</text>
+<title>Repository terminal 04: sample-dev/orbit; release on 2026-08-11</title></g>
+<g class="terminal" data-repo="sample-dev/harbour">
+<circle cx="1248.8" cy="223.8" r="10.5" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="1248.8" y="227.2" text-anchor="middle" font-size="10" font-weight="800" font-family="system-ui,sans-serif" fill="#F2F8FE">05</text>
+<title>Repository terminal 05: sample-dev/harbour; release on 2026-11-09</title></g>
+<text x="101.0" y="365.0" class="tag" text-anchor="start">CALENDAR DENSITY:   NONE / NO OBSERVATION</text>
+<text x="1210.0" y="365.0" class="tag" text-anchor="end">LOW</text>
+<rect x="1222" y="354" width="12" height="12" rx="3" fill="#1A2B3B"/>
+<rect x="1242" y="354" width="12" height="12" rx="3" fill="#27574F"/>
+<rect x="1262" y="354" width="12" height="12" rx="3" fill="#237B63"/>
+<rect x="1282" y="354" width="12" height="12" rx="3" fill="#2BAA7F"/>
+<rect x="1302" y="354" width="12" height="12" rx="3" fill="#69E6B1"/>
+<text x="1353.0" y="365.0" class="tag" text-anchor="end">HIGH</text>
+<text x="81.0" y="408.0" class="tag" text-anchor="start">02 / THE FIVE STRAIGHT TRANSIT LINES</text>
+<text x="1359.0" y="408.0" class="tag" text-anchor="end">M1–M5 RUN IN ROW GAPS. ROUNDELS MARK WEEKS WITH THAT EVENT TYPE.</text>
+<path d="M94 433H127" stroke="#4CE0B3" stroke-width="5" stroke-linecap="round"/>
+<circle cx="109" cy="433" r="8" fill="#101C2B" stroke="#4CE0B3" stroke-width="3"/>
+<text x="141.0" y="438.0" class="legend" text-anchor="start">CODE</text>
+<text x="142.0" y="449.0" class="tag" text-anchor="start">77 EVENTS</text>
+<path d="M359 433H392" stroke="#FF9E85" stroke-width="5" stroke-linecap="round"/>
+<circle cx="374" cy="433" r="8" fill="#101C2B" stroke="#FF9E85" stroke-width="3"/>
+<text x="406.0" y="438.0" class="legend" text-anchor="start">PROPOSE</text>
+<text x="407.0" y="449.0" class="tag" text-anchor="start">31 EVENTS</text>
+<path d="M624 433H657" stroke="#A792FD" stroke-width="5" stroke-linecap="round"/>
+<circle cx="639" cy="433" r="8" fill="#101C2B" stroke="#A792FD" stroke-width="3"/>
+<text x="671.0" y="438.0" class="legend" text-anchor="start">MERGE</text>
+<text x="672.0" y="449.0" class="tag" text-anchor="start">30 EVENTS</text>
+<path d="M889 433H922" stroke="#FFD174" stroke-width="5" stroke-linecap="round"/>
+<circle cx="904" cy="433" r="8" fill="#101C2B" stroke="#FFD174" stroke-width="3"/>
+<text x="936.0" y="438.0" class="legend" text-anchor="start">DISCUSS</text>
+<text x="937.0" y="449.0" class="tag" text-anchor="start">36 EVENTS</text>
+<path d="M1154 433H1187" stroke="#76BEFF" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1169" cy="433" r="8" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="1201.0" y="438.0" class="legend" text-anchor="start">SHIP</text>
+<text x="1202.0" y="449.0" class="tag" text-anchor="start">24 EVENTS</text>
+<path d="M81 453H1360" stroke="#294255"/>
+<text x="81.0" y="475.0" class="tag" text-anchor="start">03 / REPOSITORY TERMINALS</text>
+<text x="1359.0" y="475.0" class="tag" text-anchor="end">NUMBERED TERMINALS PIN REPOSITORIES TO EXACT OBSERVED DATES</text>
+<rect x="82" y="486" width="251" height="61" rx="11" fill="#142536" stroke="#294255" stroke-width="1"/>
+<circle cx="105" cy="517" r="15" fill="#101C2B" stroke="#4CE0B3" stroke-width="3"/>
+<text x="105.0" y="521.0" class="legend" text-anchor="middle">01</text>
+<text x="129.0" y="510.0" class="repo" text-anchor="start">aurora</text>
+<text x="129.0" y="528.0" class="detail" text-anchor="start">37 recorded events  /  sample-dev</text>
+<rect x="130" y="537" width="94.0" height="2.7" fill="#4CE0B3" opacity=".75"/>
+<rect x="347" y="486" width="251" height="61" rx="11" fill="#142536" stroke="#294255" stroke-width="1"/>
+<circle cx="370" cy="517" r="15" fill="#101C2B" stroke="#FF9E85" stroke-width="3"/>
+<text x="370.0" y="521.0" class="legend" text-anchor="middle">02</text>
+<text x="394.0" y="510.0" class="repo" text-anchor="start">atlas</text>
+<text x="394.0" y="528.0" class="detail" text-anchor="start">34 recorded events  /  sample-dev</text>
+<rect x="395" y="537" width="88.0" height="2.7" fill="#FF9E85" opacity=".75"/>
+<rect x="612" y="486" width="251" height="61" rx="11" fill="#142536" stroke="#294255" stroke-width="1"/>
+<circle cx="635" cy="517" r="15" fill="#101C2B" stroke="#A792FD" stroke-width="3"/>
+<text x="635.0" y="521.0" class="legend" text-anchor="middle">03</text>
+<text x="659.0" y="510.0" class="repo" text-anchor="start">ember</text>
+<text x="659.0" y="528.0" class="detail" text-anchor="start">43 recorded events  /  sample-dev</text>
+<rect x="660" y="537" width="106.0" height="2.7" fill="#A792FD" opacity=".75"/>
+<rect x="877" y="486" width="251" height="61" rx="11" fill="#142536" stroke="#294255" stroke-width="1"/>
+<circle cx="900" cy="517" r="15" fill="#101C2B" stroke="#FFD174" stroke-width="3"/>
+<text x="900.0" y="521.0" class="legend" text-anchor="middle">04</text>
+<text x="924.0" y="510.0" class="repo" text-anchor="start">orbit</text>
+<text x="924.0" y="528.0" class="detail" text-anchor="start">35 recorded events  /  sample-dev</text>
+<rect x="925" y="537" width="90.0" height="2.7" fill="#FFD174" opacity=".75"/>
+<rect x="1142" y="486" width="251" height="61" rx="11" fill="#142536" stroke="#294255" stroke-width="1"/>
+<circle cx="1165" cy="517" r="15" fill="#101C2B" stroke="#76BEFF" stroke-width="3"/>
+<text x="1165.0" y="521.0" class="legend" text-anchor="middle">05</text>
+<text x="1189.0" y="510.0" class="repo" text-anchor="start">harbour</text>
+<text x="1189.0" y="528.0" class="detail" text-anchor="start">49 recorded events  /  sample-dev</text>
+<rect x="1190" y="537" width="118.0" height="2.7" fill="#76BEFF" opacity=".75"/>
+<path d="M81 558H1360" stroke="#294255" stroke-width=".8"/>
+<text x="82.0" y="574.0" class="tag" text-anchor="start">SYNTHETIC DENSITY SHOWCASE  /  188 invented design-only events + 10 fixture events</text>
+<text x="1358.0" y="574.0" class="tag" text-anchor="end">NOT A COMPLETE GITHUB CONTRIBUTION HISTORY</text>
+</svg>

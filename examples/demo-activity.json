@@ -1,0 +1,128 @@
+{
+  "schema_version": "1",
+  "source": "demo",
+  "generated_at": "2026-11-16T00:00:00Z",
+  "user": {
+    "login": "sample-dev",
+    "url": "https://github.com/example"
+  },
+  "repositories": [
+    {
+      "full_name": "sample-dev/aurora",
+      "name": "aurora",
+      "url": "https://github.com/example",
+      "language": "Python",
+      "stars": 12
+    },
+    {
+      "full_name": "sample-dev/atlas",
+      "name": "atlas",
+      "url": "https://github.com/example",
+      "language": "TypeScript",
+      "stars": 4
+    },
+    {
+      "full_name": "sample-dev/ember",
+      "name": "ember",
+      "url": "https://github.com/example",
+      "language": "Rust",
+      "stars": 2
+    },
+    {
+      "full_name": "sample-dev/orbit",
+      "name": "orbit",
+      "url": "https://github.com/example",
+      "language": "Python",
+      "stars": 7
+    },
+    {
+      "full_name": "sample-dev/harbour",
+      "name": "harbour",
+      "url": "https://github.com/example",
+      "language": "Go",
+      "stars": 0
+    }
+  ],
+  "activity": [
+    {
+      "id": "demo-001",
+      "kind": "commit",
+      "repo_full_name": "sample-dev/aurora",
+      "occurred_at": "2026-08-03T10:20:00Z",
+      "url": "https://github.com/example",
+      "count": 3
+    },
+    {
+      "id": "demo-002",
+      "kind": "pr_opened",
+      "repo_full_name": "sample-dev/atlas",
+      "occurred_at": "2026-08-21T09:15:00Z",
+      "url": "https://github.com/example",
+      "count": 1
+    },
+    {
+      "id": "demo-003",
+      "kind": "commit",
+      "repo_full_name": "sample-dev/ember",
+      "occurred_at": "2026-09-06T20:45:00Z",
+      "url": "https://github.com/example",
+      "count": 2
+    },
+    {
+      "id": "demo-004",
+      "kind": "pr_merged",
+      "repo_full_name": "sample-dev/atlas",
+      "occurred_at": "2026-09-12T13:00:00Z",
+      "url": "https://github.com/example",
+      "count": 1
+    },
+    {
+      "id": "demo-005",
+      "kind": "issue_opened",
+      "repo_full_name": "sample-dev/orbit",
+      "occurred_at": "2026-09-28T06:30:00Z",
+      "url": "https://github.com/example",
+      "count": 1
+    },
+    {
+      "id": "demo-006",
+      "kind": "commit",
+      "repo_full_name": "sample-dev/orbit",
+      "occurred_at": "2026-10-17T18:25:00Z",
+      "url": "https://github.com/example",
+      "count": 5
+    },
+    {
+      "id": "demo-007",
+      "kind": "release",
+      "repo_full_name": "sample-dev/aurora",
+      "occurred_at": "2026-10-24T11:00:00Z",
+      "url": "https://github.com/example",
+      "count": 1
+    },
+    {
+      "id": "demo-008",
+      "kind": "pr_merged",
+      "repo_full_name": "sample-dev/harbour",
+      "occurred_at": "2026-11-04T15:10:00Z",
+      "url": "https://github.com/example",
+      "count": 1
+    },
+    {
+      "id": "demo-009",
+      "kind": "commit",
+      "repo_full_name": "sample-dev/harbour",
+      "occurred_at": "2026-11-09T07:45:00Z",
+      "url": "https://github.com/example",
+      "count": 4
+    },
+    {
+      "id": "demo-010",
+      "kind": "pr_opened",
+      "repo_full_name": "sample-dev/ember",
+      "occurred_at": "2026-11-13T09:00:00Z",
+      "url": "https://github.com/example",
+      "count": 1
+    }
+  ]
+}

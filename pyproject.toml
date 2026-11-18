@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-source-metro"
+version = "0.1.0.dev0"
+description = "Turn source-backed GitHub events into a calendar-first metro diagram"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "AdityaSreevatsaK"}]
+keywords = ["github", "contribution-calendar", "data-visualisation", "svg", "metro-map"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Multimedia :: Graphics :: Presentation",
+]
+
+[project.scripts]
+open-source-metro = "open_source_metro.renderer:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
