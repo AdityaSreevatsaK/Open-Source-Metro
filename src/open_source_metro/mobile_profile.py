@@ -93,8 +93,19 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
     provenance = ("SYNTHETIC DESIGN SHOWCASE" if synthetic else
                   "SHARED SYNTHETIC FIXTURE" if demo else
                   "PUBLIC EVENTS · PARTIAL HISTORY")
-    scope = ("PUBLIC SOURCE MAY COVER ONLY 30 DAYS" if not demo else
+    coverage = raw.get("_coverage", {}) if isinstance(raw.get("_coverage"), dict) else {}
+    mode = coverage.get("collector")
+    scope = (("PUBLIC REPOSITORY HISTORY · COVERAGE PARTIAL" if mode == "public-repository-history-v1"
+              else "PUBLIC EVENT SNAPSHOT · COVERAGE PARTIAL") if not demo else
              "ILLUSTRATIVE DATA, NOT REAL GITHUB HISTORY")
+    if p["events"] and not demo:
+        observed_days = sorted(p["by_day"])
+        range_label = (f"OBSERVED {len(observed_days)} DAYS · "
+                       f"{observed_days[0]:%d %b}–{observed_days[-1]:%d %b %Y}")
+    elif not demo:
+        range_label = "NO SOURCE EVENTS OBSERVED IN THIS WINDOW"
+    else:
+        range_label = "BLANK SQUARES = UNOBSERVED"
     items = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="mobile-title mobile-desc">',
         f'<title id="mobile-title">Open Source Metro mobile / {provenance}</title>',
@@ -139,7 +150,7 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
                    else f"{d.isoformat()}: not observed in supplied snapshot")
         items.append(f'<rect class="mobile-day" data-date="{d.isoformat()}" data-week="{week}" data-count="{len(records)}" x="{x:.2f}" y="{y:.2f}" width="{CELL}" height="{CELL}" rx="3" fill="{fill}"><title>{_esc(message)}</title></rect>')
     items.extend([
-        f'<g fill="{c["muted"]}">{_txt(42,311,"BLANK SQUARES = UNOBSERVED","small")}</g>',
+        f'<g fill="{c["muted"]}">{_txt(42,311,range_label,"small")}</g>',
         f'<rect x="28" y="336" width="404" height="346" rx="14" fill="{c["surface"]}" stroke="{c["rule"]}"/>',
         f'<g fill="{c["muted"]}">{_txt(42,358,"02 / REPOSITORY JOURNEYS","tag")}',
         _txt(416,358,"◉ MERGE · ◆ RELEASE","small","end"),'</g>',

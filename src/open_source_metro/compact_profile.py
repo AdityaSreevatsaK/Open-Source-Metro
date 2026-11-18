@@ -74,6 +74,16 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
                   'PUBLIC EVENTS · INCOMPLETE COVERAGE')
     years = f"{p['start'].year}–{p['today'].year}"
     metrics = f"{len(p['events'])} events · {len(routes)} routes · {p['milestones']} milestones"
+    active_days = sorted(p['by_day'])
+    active_weeks = {p['positions'][day][0] for day in active_days}
+    if not demo:
+        if active_days:
+            date_range = f"{active_days[0]:%d %b %Y} to {active_days[-1]:%d %b %Y}"
+            subtitle = f"Observed {len(active_days)} active days · {date_range}"
+        else:
+            subtitle = "No source events observed in selected repositories"
+    else:
+        subtitle = "A year of source-backed project journeys"
     items = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="metro-title metro-desc">',
         f'<title id="metro-title">Open Source Metro / Project journeys / {esc(provenance)}</title>',
@@ -93,14 +103,14 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         f'<rect x="13" y="13" width="1334" height="436" rx="22" fill="{t["panel"]}" stroke="{t["rule"]}" stroke-width="1"/>',
         f'<rect x="36" y="33" width="5" height="47" rx="2.5" fill="{colors[0]}"/>',
         f'<g fill="{t["text"]}">{txt(53,59,"OPEN SOURCE METRO","display")}</g>',
-        f'<g fill="{t["muted"]}">{txt(55,79,"A year of source-backed project journeys","small")}</g>',
+        f'<g fill="{t["muted"]}">{txt(55,79,subtitle,"small")}</g>',
         f'<rect x="994" y="34" width="323" height="25" rx="12.5" fill="{t["surface"]}" stroke="{t["rule"]}"/>',
         f'<circle cx="1008" cy="46.5" r="3.3" fill="{colors[0]}"/>',
         f'<g fill="{t["text"]}">{txt(1019,50,provenance,"tag")}</g>',
         f'<g fill="{t["muted"]}">{txt(1310,82,metrics,"small",anchor="end")}</g>',
         f'<rect x="35" y="94" width="1290" height="175" rx="13" fill="{t["surface"]}" stroke="{t["rule"]}"/>',
         f'<g fill="{t["muted"]}">{txt(53,113,"01 / SOURCE ACTIVITY","tag")}',
-        txt(1305,113,'53 WEEKS  ·  SUN–SAT  ·  UTC','tag',anchor='end'),'</g>',
+        txt(1305,113,(f"OBSERVED {len(active_weeks)}/53 WEEKS  ·  UTC" if not demo else '53 WEEKS  ·  SUN–SAT  ·  UTC'),'tag',anchor='end'),'</g>',
     ]
     # Source-observed contribution-style calendar. No blank day means a verified zero.
     for w in range(53):
@@ -139,6 +149,7 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         colour=colors[i]
         short=name if len(name)<=13 else name[:12]+'…'
         items.append(f'<g class="compact-journey" data-repo="{esc(full)}">')
+        items.append(f'<title>{esc(full)} · {len(route["weeks"])} weeks with observed activity</title>')
         items.append(f'<rect x="52" y="{y-9:.1f}" width="23" height="18" rx="6" fill="{colour}"/>')
         items.append(f'<text x="63.5" y="{y+3.7:.1f}" class="index" text-anchor="middle" fill="{t["bg"]}">{i+1:02}</text>')
         items.append(f'<g fill="{t["text"]}">{txt(84,y+4,short,"route")}</g>')
@@ -174,9 +185,12 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
     footer=('DEMO ONLY · '+str(raw.get('_synthetic_added',0))+' INVENTED ILLUSTRATION EVENTS' if synthetic else
             'SYNTHETIC EXAMPLE · NO EXTRA EVENTS' if demo else
             'PUBLIC EVENTS ONLY · COVERAGE NOT COMPLETE')
+    coverage_footer = (f"UNROUTED {p['omitted_repos']} REPOS · OUTSIDE YEAR {p['omitted_events']} EVENTS   |   {years}"
+                       if not demo else
+                       f"OMITTED {p['omitted_repos']} REPOS · {p['omitted_events']} EVENTS   |   {years}")
     items += [f'<g fill="{t["muted"]}">',
               txt(52,443,footer,'tag'),
-              txt(1308,443,f"OMITTED {p['omitted_repos']} REPOS · {p['omitted_events']} EVENTS   |   {years}",'tag',anchor='end'),
+              txt(1308,443,coverage_footer,'tag',anchor='end'),
               '</g>','</svg>']
     return '\n'.join(items)+'\n'
 

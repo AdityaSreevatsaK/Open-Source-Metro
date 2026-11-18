@@ -57,7 +57,7 @@ class MobileProfileTests(unittest.TestCase):
         data=fixture();data["source"]="github"
         svg=render_mobile(data)
         self.assertIn("PUBLIC EVENTS",svg)
-        self.assertIn("PUBLIC SOURCE MAY COVER ONLY 30 DAYS",svg)
+        self.assertIn("COVERAGE PARTIAL",svg)
         self.assertNotIn("SYNTHETIC DESIGN SHOWCASE",svg)
         with self.assertRaises(ValueError):
             render_mobile(demo_story(data))
@@ -82,6 +82,20 @@ class MobileProfileTests(unittest.TestCase):
         cells=root.findall(".//{http://www.w3.org/2000/svg}rect[@class='mobile-day']")
         self.assertEqual(len(cells),(p["today"]-p["start"]).days+1)
         self.assertLessEqual(len(cells),112)
+
+    def test_dense_real_public_events_all_survive_rendering(self):
+        source = fixture()
+        source["source"] = "github"
+        source["activity"] = [
+            dict(id=f"busy-{i}", kind="commit", repo_full_name="sample-dev/aurora",
+                 occurred_at=f"2026-11-16T{i//60:02d}:{i%60:02d}:00Z", count=1)
+            for i in range(502)]
+        plan = mobile_plan(source)
+        self.assertEqual(len(plan["events"]), 502)
+        self.assertEqual(plan["omitted_events"], 0)
+        svg = render_mobile(source)
+        self.assertIn("502 EVENTS", svg)
+        self.assertIn("PUBLIC EVENT SNAPSHOT", svg)
 
     def test_rejects_unrecognised_theme(self):
         with self.assertRaises(ValueError):
