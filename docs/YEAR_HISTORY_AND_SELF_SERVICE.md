@@ -155,3 +155,18 @@ Do not infer that a blank annual chart signifies no GitHub contributions. It mea
 ### Project-route ranking for real source snapshots
 
 The five labelled project routes prefer repositories with activity across **more distinct observed weeks**, rather than favouring one extremely busy day. Event volume then breaks ties. This avoids five newly created repositories crowding older, sustained public work out of the map. The annual calendar still includes every observed event from the collected public repositories, even those that are not given individual routes. For a different set of routes, choose a reviewed `--featured` list.
+
+
+## Official GitHub profile calendar for annual heatmap (November 2026 fix)
+
+The initial public repository history collector found only a few days of events even after changing automatic repository selection. A read-only GraphQL feasibility run against `AdityaSreevatsaK` demonstrated **1,883 profile-visible contributions on 99 non-zero days** in the preceding year, compared with just **88 public source events across three observed dates** from our selected-repository history. These are **different metrics**, not an inconsistency in GitHub.
+
+The primary public profile workflow now queries GitHub's `User.contributionsCollection(from:to:).contributionCalendar` in addition to the repository-level REST history. The GraphQL result is stored in a dedicated `_calendar` field, and the annual/portrait square colours use those exact `contributionCount` values. The metro routes continue using strictly source-backed public repository events and remain incomplete. Do not claim that GraphQL day totals can be attributed to the featured routes.
+
+**Read-only token requirements:** The one-off manual GitHub Action has `contents: read` and uses its ephemeral `github.token` to access the fixed `https://api.github.com/graphql` endpoint. Nothing is pushed to a profile. For local online use, set your own read-only `GITHUB_TOKEN` before `python -m open_source_metro.profile_cli --username ...`. Offline `--input` and demo fixtures require no token, and the CLI works without one by displaying only incomplete public repository observations.
+
+**Privacy:** GitHub's profile-visible calendar may contain anonymous restricted/private contributions, depending on what the account owner has enabled in GitHub profile settings. No private repository names, individual events or credentials are requested from GraphQL. The downloaded archive may contain public calendar counts and public repository metadata, so treat it as sharable profile data only if appropriate.
+
+**Interpretation:** The calendar is a GitHub-sourced daily summary. Metro routes indicate public events with verifiable repository links. An empty calendar square returned with count 0 is a GitHub-reported zero for the queried profile; a date not returned by the API is unknown. A blank route does not imply no contributions. The calendar's reported aggregate may not exactly equal the displayed 53-week cell sum because queries have specified time boundaries.
+
+**API:** [GraphQL users / ContributionsCollection / ContributionCalendar](https://docs.github.com/en/graphql/reference/users). Tests must mock the HTTP transport and validate the API response independently; no live GitHub requests belong in ordinary test CI.

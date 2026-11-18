@@ -1,5 +1,19 @@
 # Open Source Metro
 
+## Official GitHub contribution calendar + source-backed project routes
+
+The calendar and the project network are **different, explicitly labelled data layers**. When a read-only `GITHUB_TOKEN` is available, we query GitHub GraphQL for **profile-visible daily contribution totals** and render those in the familiar 53-week squares. The five metro routes below still represent only **independently observed public repository events**. Neither the route count nor the source-event ledger is presented as a breakdown of the calendar total.
+
+This fixes the earlier near-empty real-account graph: GitHub's own API returned **1,883 profile-visible contributions across 99 active days** for `AdityaSreevatsaK` on 18 November 2026, while the older public repository collector observed only a few days. This is a snapshot, not a permanent account statistic. Your profile's visibility settings may include anonymous private/restricted contribution counts.
+
+**Generate without editing your profile:** Actions → **Generate public Metro profile (manual)** → **Run workflow**. The downloadable archive contains both SVGs and a source snapshot with the two separately identified datasets. The workflow uses the repository's read-only GitHub Actions token and writes no profile files.
+
+For offline testing with a synthetic snapshot, no token is required. Without a token during live local generation, the CLI falls back to the incomplete public-repository event calendar and labels that limitation clearly.
+
+[Technical setup, GraphQL scope and provenance](docs/YEAR_HISTORY_AND_SELF_SERVICE.md).
+
+---
+
 > **Improved real-data interpretation:** The renderer now preserves all observed events, even in dense days, rather than dropping the oldest activity at 240 events. The 53-week overview reports **how many weeks actually have observations** and the first/last observed dates. Public activity in newly created repositories can legitimately cover only a few days, so a mostly blank full-year chart does not mean all GitHub contributions were zero. The default automatic public-repository selection now balances recent and older projects; use `--repos` to specify other public repositories.
 
 ## Self-service public profile generator | Year-scale repository history

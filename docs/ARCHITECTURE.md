@@ -114,3 +114,28 @@ The CI workflow regenerates all three SVGs and compares bytes against \`assets/\
 - No screenshot-based, pixel-level visual regression system exists yet.
 - CI must be checked after GitHub accepts the workflow in the new repository.
 - Current static SVGs are intended for GitHub READMEs; animation is not required.
+
+
+## Two independent real-account data sources
+
+```text
+             GitHub GraphQL profile-visible contributions
+                 (optional, authorised read-only POST)
+                                |
+                       _calendar.days[]
+                                |
+                                v
+                  53-week / 16-week DAY SQUARES
+                                ^
+                                |
+                  v1 source 'activity' only when GraphQL absent
+
+          GitHub REST public repository histories (bounded)
+                                |
+                         v1 activity[]
+                                |
+                                v
+                 up to five featured project ROUTES
+```
+
+The two layers are intentionally **not added together**. GraphQL day counts are GitHub profile-visible totals, which may include restricted anonymous activity according to public profile settings. REST public repository history provides verifiable repository/event IDs, but is incomplete. An unobserved REST event is not proof of a zero GitHub day. The official contribution-calendar adapter is in `contribution_calendar.py`, with a fixed GraphQL endpoint and strict validation. Snapshots without `_calendar` remain supported and will use source-ledger counts with an explicit partial-coverage label.
