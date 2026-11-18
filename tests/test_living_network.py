@@ -140,13 +140,27 @@ class LivingNetworkTests(unittest.TestCase):
         self.assertEqual(p['omitted_events'],1)
         self.assertIn('OMITTED 3 REPOS / 1 EVENTS',render_svg(data))
 
-    def test_event_cap_never_splits_a_day(self):
+    def test_dense_source_observations_never_disappear_at_240(self):
         data=raw()
         data['activity']=[{'id':f'e-{i}', 'kind':'commit','repo_full_name':'sample-dev/aurora','count':1,
-            'occurred_at':f'2026-10-01T{i//60:02d}:{i%60:02d}:00Z'} for i in range(241)]
+            'occurred_at':f'2026-10-01T{i//60:02d}:{i%60:02d}:00Z'} for i in range(502)]
         p=build_plan(data)
-        self.assertEqual(len(p['events']),0)
-        self.assertEqual(p['omitted_events'],241)
+        self.assertEqual(len(p['events']),502)
+        self.assertEqual(p['omitted_events'],0)
+        self.assertEqual(sum(map(len,p['by_day'].values())),502)
+        self.assertEqual(sum(len(v) for v in p['by_week_repo'].values()),502)
+
+    def test_calendar_includes_all_repositories_even_if_five_routes_featured(self):
+        data=raw()
+        data['repositories'].append({'full_name':'sample-dev/sixth','name':'sixth'})
+        data['activity'].append({'id':'older-sixth','kind':'commit',
+            'repo_full_name':'sample-dev/sixth','occurred_at':'2026-06-10T12:00:00Z','count':1})
+        plan=build_plan(data)
+        self.assertEqual(len(plan['featured']),5)
+        self.assertEqual(plan['omitted_repos'],1)
+        self.assertEqual(plan['omitted_events'],0)
+        self.assertIn('older-sixth',[e['id'] for e in plan['events']])
+        self.assertEqual(sum(len(v) for v in plan['by_day'].values()),11)
 
     def test_interchanges_only_where_multiple_projects_share_a_week(self):
         p=build_plan(demo_story(raw()))

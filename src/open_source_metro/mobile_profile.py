@@ -49,18 +49,17 @@ def mobile_plan(raw: dict) -> dict:
                                      r["full_name"]))[:5]
     names = {r["full_name"] for r in featured}
     chosen = [e for e in visible if e["repo"] in names]
-    # Identical cap semantics to the full renderer: never truncate half a day.
-    retained = chosen[-240:]
-    if len(chosen) > 240 and retained and chosen[-241]["date"].date() == retained[0]["date"].date():
-        boundary = retained[0]["date"].date()
-        retained = [e for e in retained if e["date"].date() != boundary]
+    # Do not silently truncate dense real activity at 240 events. Calendar
+    # cells include every source-observed event, including unfeatured repos.
+    retained = visible
     by_day = defaultdict(list)
     by_repo_week = defaultdict(list)
     for event in retained:
         d = event["date"].date()
         week = (d - start).days // 7
         by_day[d].append(event)
-        by_repo_week[(event["repo"], week)].append(event)
+        if event["repo"] in names:
+            by_repo_week[(event["repo"], week)].append(event)
     routes = []
     for index, repo in enumerate(featured):
         name = repo["full_name"]

@@ -66,26 +66,26 @@ def build_plan(raw: dict) -> dict:
           first_seen.get(r['full_name'], datetime.max.replace(tzinfo=timezone.utc)),
           r['full_name']))[:5]
     repo_names = {r['full_name'] for r in featured}
-    chosen = [e for e in eligible if e['repo'] in repo_names]
-    trimmed = chosen[-240:]
-    if len(chosen) > 240 and trimmed and chosen[-241]['date'].date() == trimmed[0]['date'].date():
-        boundary = trimmed[0]['date'].date()
-        trimmed = [e for e in trimmed if e['date'].date() != boundary]
+    # The source is already bounded by the collector. Never erase real activity
+    # merely because it exceeds an arbitrary 240-event rendering threshold.
+    # The calendar represents ALL observed public repository events. The five
+    # routes are only a readable featured subset of that calendar.
     positions = {start+timedelta(days=k):(k//7,k%7) for k in range(371)}
     by_day = defaultdict(list)
     by_week_repo = defaultdict(list)
-    for e in trimmed:
+    for e in eligible:
         by_day[e['date'].date()].append(e)
-        by_week_repo[(e['repo'], positions[e['date'].date()][0])].append(e)
+        if e['repo'] in repo_names:
+            by_week_repo[(e['repo'], positions[e['date'].date()][0])].append(e)
     # This is only *same-week co-activity*, never evidence of a dependency.
     shared = defaultdict(set)
     for (repo, week), events in by_week_repo.items():
         if events:
             shared[week].add(repo)
     return dict(snap=snap, start=start, today=today, featured=featured,
-                events=trimmed, positions=positions, by_day=by_day,
+                events=eligible, positions=positions, by_day=by_day,
                 by_week_repo=by_week_repo, coactive=shared,
-                omitted_events=snap['event_total']-len(trimmed),
+                omitted_events=snap['event_total']-len(eligible),
                 omitted_repos=snap['repo_total']-len(featured))
 
 
