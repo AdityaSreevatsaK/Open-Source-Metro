@@ -36,3 +36,38 @@ jobs:
           files = ['atlas-midnight-fixture.svg','atlas-midnight-showcase.svg','atlas-parchment-showcase.svg']
           for name in files:
               assert (assets / name).read_bytes() == (generated / name).read_bytes(), f'Export drift: {name}'
+      - name: Render Living Network snapshots and themes
+        run: |
+          python -m open_source_metro.living_network --input examples/demo-activity.json --output generated/living-snapshot
+          python -m open_source_metro.living_network --input examples/demo-activity.json --output generated/living-showcase --showcase
+          python -m open_source_metro.living_network --input examples/demo-activity.json --output generated/living-paper --showcase --theme paper
+      - name: Verify Living Network assets are deterministic and reviewed
+        shell: python
+        run: |
+          from pathlib import Path
+          comparisons = [
+              ('generated/living-snapshot/living-network-snapshot.svg', 'assets/living-network-snapshot.svg'),
+              ('generated/living-snapshot/living-network-snapshot.html', 'assets/living-network-snapshot.html'),
+              ('generated/living-showcase/living-network-showcase.svg', 'assets/living-network-showcase.svg'),
+              ('generated/living-showcase/living-network-showcase.html', 'assets/living-network-showcase.html'),
+              ('generated/living-paper/living-network-showcase.svg', 'assets/living-network-paper-showcase.svg'),
+          ]
+          for actual, expected in comparisons:
+              assert Path(actual).read_bytes() == Path(expected).read_bytes(), f'Living Network export drift: {expected}'
+
+      - name: Render compact profile editions from example sources
+        run: |
+          python -m open_source_metro.compact_profile --input examples/demo-activity.json --output generated/living-compact-showcase.svg --showcase
+          python -m open_source_metro.compact_profile --input examples/demo-activity.json --output generated/living-compact-paper.svg --showcase --theme paper
+          python -m open_source_metro.compact_profile --input examples/demo-activity.json --output generated/living-compact-fixture.svg
+      - name: Verify compact SVGs and bounded optional GIF
+        shell: python
+        run: |
+          from pathlib import Path
+          import struct
+          for filename in ('living-compact-showcase.svg','living-compact-paper.svg','living-compact-fixture.svg'):
+              assert (Path('generated') / filename).read_bytes() == (Path('assets') / filename).read_bytes(), f'Compact SVG export drift: {filename}'
+          gif = Path('assets/living-compact-replay.gif').read_bytes()
+          assert gif[:6] == b'GIF89a' and 100000 <= len(gif) < 1000000, 'Missing, oversize or invalid GIF'
+          width, height = struct.unpack('<HH',gif[6:10])
+          assert width == 850 and 250 <= height <= 350, f'Unexpected compact GIF dimensions: {width}x{height}'

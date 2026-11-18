@@ -1,5 +1,77 @@
 # Open Source Metro
 
+## Living Network | Compact GitHub-profile edition (Draft)
+
+**Project routes tell the story.** Each coloured line is a repository, with stops only at recorded active weeks. Rings indicate merged PRs; diamonds indicate releases. The upper layer retains the familiar 53-week GitHub-style contribution calendar.
+
+**Chronological compact replay, synthetic demonstration only:**
+
+![Compact Open Source Metro replay of a 53-week contribution-style calendar with five repository journeys and source-observed stations appearing over time. All activity is explicitly fictional demo data.](assets/living-compact-replay.gif)
+
+The replay shows train markers at the **latest recorded stop**, never a made-up contribution. The final completed network stays visible for 2.2 seconds. A still-image fallback is available:
+
+![Static compact midnight Living Network profile design with a recognisable contribution grid and five repository journeys. Clearly labelled synthetic data.](assets/living-compact-showcase.svg)
+
+<details>
+<summary>Compact alternatives: paper design and faithful ten-event fixture</summary>
+
+![Compact paper-coloured Living Network with identical, explicitly fictional demonstration data.](assets/living-compact-paper.svg)
+
+![Compact Living Network using only the ten original synthetic fixture records, without added illustration events.](assets/living-compact-fixture.svg)
+
+</details>
+
+**The showcase is not your actual GitHub activity.** It includes 108 expressly invented events, while the fixture-only view contains only the original ten example events. These are source-shaped **illustrations**, not GitHub's official contribution totals.
+
+See [compact design specification, generation commands and provenance rules](docs/COMPACT_LIVING_NETWORK.md).
+
+### Full Living Network | Detailed, interactive version
+
+The complete storyboard and its interactive browser event register remain available alongside the compact edition.
+
+<details>
+<summary>Watch the original full-size annual replay</summary>
+
+![Full-size animated Open Source Metro project network growing chronologically over 53 weeks, from synthetic example events.](assets/living-network-replay.gif)
+
+</details>
+
+**The calendar now tells a story instead of just wearing coloured lines.** In this alternative, **each route represents a repository**. Small stops are source-observed active weeks; distinct rings highlight PR merges and releases. A milestone passport shows exact source event IDs and dates. The **interactive replay** lets you travel through 53 weeks, focus on a repository and inspect source events.
+
+![Living Network midnight: 53-week contribution calendar, five repository-specific journeys and milestone passport, explicitly synthetic showcase.](assets/living-network-showcase.svg)
+
+<details>
+<summary>Compare paper treatment and faithful sparse fixture</summary>
+
+![Living Network parchment presentation using identical, explicitly invented demonstration data.](assets/living-network-paper-showcase.svg)
+
+![Living Network sparse preview containing exactly the original ten synthetic fixture events.](assets/living-network-snapshot.svg)
+
+</details>
+
+**These gallery assets are fictional samples, not your real GitHub activity.** The showcase adds 108 clearly marked, deliberately invented event records to the ten-event demo. The fixture version adds none. There is no live GitHub collector.
+
+**Try the working, offline browser replay:**
+
+```powershell
+py -3 -m pip install -e .
+py -3 -m open_source_metro.living_network --input examples/demo-activity.json --output output/living --showcase
+Start-Process .\output\living\living-network-showcase.html
+```
+
+Use the Play/Pause controls, week scrubber, speed selector and repo filters to explore observed events. The checked-in [interactive showcase HTML](assets/living-network-showcase.html) can also be downloaded and opened locally. GitHub itself does not run HTML from README embeds.
+
+**Optional GIF export** (not required for the regular Python renderer):
+
+```powershell
+py -3 -m pip install -e ".[animation]"
+py -3 tools/render_replay_gif.py --input examples/demo-activity.json --output output/living-network-replay.gif --showcase --frames 24 --width 760 --duration-ms 180
+```
+
+**Read:** [Living Network design, architecture, semantic rules and limitations](docs/LIVING_NETWORK_EXPERIMENT.md). This is a **separate design experiment on `design/living-network-v1`**, not a replacement for the current production baseline or an approved public release.
+
+---
+
 **A GitHub-style contribution calendar that doubles as a metro map.** Each square represents a date, the five parallel lines represent distinct public-event categories, and numbered terminals identify featured repositories.
 
 > **Project status: experimental / pre-alpha.** This is a reproducible offline visualisation prototype, not an official GitHub contribution graph or a completed public-data collector. The design is still under review.

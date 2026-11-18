@@ -1,0 +1,937 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="462" viewBox="0 0 1360 462" role="img" aria-labelledby="metro-title metro-desc">
+<title id="metro-title">Open Source Metro / Project journeys / SYNTHETIC DESIGN SHOWCASE</title>
+<desc id="metro-desc">A compact 53-week Sunday-to-Saturday GitHub-style event calendar with up to five repository journeys aligned to the same week positions. Stops are observed events; merges are rings, releases diamonds. Rails between stops are schematic and do not mean continuous contributions. Blank days are unobserved, not verified zero contributions. This is not GitHub’s official contributions chart.</desc>
+<defs><style><![CDATA[
+.display{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:27px;font-weight:850;letter-spacing:-1px}
+.small{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:10px;font-weight:600}
+.tag{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:9px;font-weight:800;letter-spacing:1px}
+.month{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:9px;font-weight:700}
+.route{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:12px;font-weight:700}
+.count{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:11px;font-weight:750}
+.index{font-family:DejaVu Sans,Segoe UI,Arial,sans-serif;font-size:10px;font-weight:850}
+]]></style>
+<clipPath id="compact-reveal"><rect id="compact-reveal-width" x="192" y="293" width="1068" height="130"/></clipPath>
+</defs>
+<rect width="1360" height="462" fill="#070C15"/>
+<rect x="13" y="13" width="1334" height="436" rx="22" fill="#101B2B" stroke="#294057" stroke-width="1"/>
+<rect x="36" y="33" width="5" height="47" rx="2.5" fill="#5AEFC0"/>
+<g fill="#EDF6FF"><text x="53.00" y="59.00" class="display" text-anchor="start">OPEN SOURCE METRO</text></g>
+<g fill="#9BB2C7"><text x="55.00" y="79.00" class="small" text-anchor="start">A year of source-backed project journeys</text></g>
+<rect x="994" y="34" width="323" height="25" rx="12.5" fill="#132235" stroke="#294057"/>
+<circle cx="1008" cy="46.5" r="3.3" fill="#5AEFC0"/>
+<g fill="#EDF6FF"><text x="1019.00" y="50.00" class="tag" text-anchor="start">SYNTHETIC DESIGN SHOWCASE</text></g>
+<g fill="#9BB2C7"><text x="1310.00" y="82.00" class="small" text-anchor="end">118 events · 5 routes · 31 milestones</text></g>
+<rect x="35" y="94" width="1290" height="175" rx="13" fill="#132235" stroke="#294057"/>
+<g fill="#9BB2C7"><text x="53.00" y="113.00" class="tag" text-anchor="start">01 / SOURCE ACTIVITY</text>
+<text x="1305.00" y="113.00" class="tag" text-anchor="end">53 WEEKS  ·  SUN–SAT  ·  UTC</text>
+</g>
+<g fill="#9BB2C7"><text x="202.00" y="143.00" class="month" text-anchor="start">NOV</text></g>
+<g fill="#9BB2C7"><text x="260.35" y="143.00" class="month" text-anchor="start">DEC</text></g>
+<g fill="#9BB2C7"><text x="338.15" y="143.00" class="month" text-anchor="start">JAN</text></g>
+<g fill="#9BB2C7"><text x="415.95" y="143.00" class="month" text-anchor="start">FEB</text></g>
+<g fill="#9BB2C7"><text x="493.75" y="143.00" class="month" text-anchor="start">MAR</text></g>
+<g fill="#9BB2C7"><text x="591.00" y="143.00" class="month" text-anchor="start">APR</text></g>
+<g fill="#9BB2C7"><text x="668.80" y="143.00" class="month" text-anchor="start">MAY</text></g>
+<g fill="#9BB2C7"><text x="766.05" y="143.00" class="month" text-anchor="start">JUN</text></g>
+<g fill="#9BB2C7"><text x="843.85" y="143.00" class="month" text-anchor="start">JUL</text></g>
+<g fill="#9BB2C7"><text x="921.65" y="143.00" class="month" text-anchor="start">AUG</text></g>
+<g fill="#9BB2C7"><text x="1018.90" y="143.00" class="month" text-anchor="start">SEP</text></g>
+<g fill="#9BB2C7"><text x="1096.70" y="143.00" class="month" text-anchor="start">OCT</text></g>
+<g fill="#9BB2C7"><text x="1174.50" y="143.00" class="month" text-anchor="start">NOV</text></g>
+<g fill="#9BB2C7"><text x="187.00" y="161.00" class="small" text-anchor="end">S</text></g>
+<g fill="#9BB2C7"><text x="187.00" y="191.60" class="small" text-anchor="end">T</text></g>
+<g fill="#9BB2C7"><text x="187.00" y="222.20" class="small" text-anchor="end">T</text></g>
+<g fill="#9BB2C7"><text x="187.00" y="252.80" class="small" text-anchor="end">S</text></g>
+<rect class="calendar-day" data-week="0" data-date="2025-11-16" data-count="0" x="202.00" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="0" data-date="2025-11-17" data-count="0" x="202.00" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-17: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="0" data-date="2025-11-18" data-count="0" x="202.00" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="0" data-date="2025-11-19" data-count="1" x="202.00" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2025-11-19: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="0" data-date="2025-11-20" data-count="0" x="202.00" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="0" data-date="2025-11-21" data-count="0" x="202.00" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="0" data-date="2025-11-22" data-count="0" x="202.00" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-23" data-count="0" x="221.45" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-24" data-count="0" x="221.45" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-25" data-count="0" x="221.45" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-26" data-count="0" x="221.45" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-27" data-count="0" x="221.45" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-28" data-count="0" x="221.45" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="1" data-date="2025-11-29" data-count="1" x="221.45" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2025-11-29: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-11-30" data-count="0" x="240.90" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-11-30: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-12-01" data-count="0" x="240.90" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-01: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-12-02" data-count="0" x="240.90" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-12-03" data-count="0" x="240.90" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-12-04" data-count="0" x="240.90" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-12-05" data-count="0" x="240.90" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="2" data-date="2025-12-06" data-count="0" x="240.90" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-07" data-count="0" x="260.35" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-07: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-08" data-count="0" x="260.35" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-09" data-count="0" x="260.35" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-10" data-count="0" x="260.35" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-11" data-count="0" x="260.35" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-12" data-count="0" x="260.35" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="3" data-date="2025-12-13" data-count="0" x="260.35" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-13: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-14" data-count="0" x="279.80" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-15" data-count="0" x="279.80" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-16" data-count="0" x="279.80" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-17" data-count="0" x="279.80" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-17: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-18" data-count="1" x="279.80" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2025-12-18: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-19" data-count="0" x="279.80" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-19: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="4" data-date="2025-12-20" data-count="0" x="279.80" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-21" data-count="0" x="299.25" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-22" data-count="0" x="299.25" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-23" data-count="0" x="299.25" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-24" data-count="0" x="299.25" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-25" data-count="0" x="299.25" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-26" data-count="0" x="299.25" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="5" data-date="2025-12-27" data-count="0" x="299.25" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2025-12-28" data-count="0" x="318.70" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2025-12-29" data-count="0" x="318.70" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2025-12-30" data-count="1" x="318.70" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2025-12-30: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2025-12-31" data-count="0" x="318.70" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2025-12-31: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2026-01-01" data-count="0" x="318.70" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-01: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2026-01-02" data-count="0" x="318.70" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="6" data-date="2026-01-03" data-count="0" x="318.70" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-04" data-count="0" x="338.15" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-05" data-count="0" x="338.15" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-06" data-count="0" x="338.15" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-07" data-count="0" x="338.15" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-07: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-08" data-count="0" x="338.15" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-09" data-count="0" x="338.15" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="7" data-date="2026-01-10" data-count="1" x="338.15" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-01-10: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-11" data-count="1" x="357.60" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-01-11: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-12" data-count="0" x="357.60" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-13" data-count="0" x="357.60" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-13: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-14" data-count="0" x="357.60" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-15" data-count="0" x="357.60" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-16" data-count="0" x="357.60" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="8" data-date="2026-01-17" data-count="1" x="357.60" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-01-17: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-18" data-count="0" x="377.05" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-19" data-count="0" x="377.05" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-19: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-20" data-count="0" x="377.05" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-21" data-count="1" x="377.05" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-01-21: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-22" data-count="0" x="377.05" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-23" data-count="0" x="377.05" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="9" data-date="2026-01-24" data-count="0" x="377.05" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-25" data-count="0" x="396.50" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-26" data-count="0" x="396.50" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-27" data-count="0" x="396.50" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-28" data-count="0" x="396.50" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-29" data-count="0" x="396.50" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-30" data-count="0" x="396.50" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-30: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="10" data-date="2026-01-31" data-count="0" x="396.50" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-01-31: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-01" data-count="1" x="415.95" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-02-01: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-02" data-count="0" x="415.95" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-03" data-count="0" x="415.95" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-04" data-count="0" x="415.95" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-05" data-count="0" x="415.95" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-06" data-count="0" x="415.95" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="11" data-date="2026-02-07" data-count="0" x="415.95" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-07: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-08" data-count="0" x="435.40" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-09" data-count="0" x="435.40" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-10" data-count="0" x="435.40" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-11" data-count="1" x="435.40" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-02-11: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-12" data-count="0" x="435.40" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-13" data-count="0" x="435.40" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-13: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="12" data-date="2026-02-14" data-count="0" x="435.40" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-15" data-count="0" x="454.85" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-16" data-count="0" x="454.85" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-17" data-count="1" x="454.85" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-02-17: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-18" data-count="0" x="454.85" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-19" data-count="0" x="454.85" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-19: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-20" data-count="0" x="454.85" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="13" data-date="2026-02-21" data-count="0" x="454.85" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-22" data-count="1" x="474.30" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-02-22: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-23" data-count="0" x="474.30" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-24" data-count="0" x="474.30" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-25" data-count="0" x="474.30" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-26" data-count="0" x="474.30" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-27" data-count="0" x="474.30" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-02-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="14" data-date="2026-02-28" data-count="1" x="474.30" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-02-28: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-01" data-count="1" x="493.75" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-01: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-02" data-count="1" x="493.75" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-02: 1 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-03" data-count="0" x="493.75" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-04" data-count="0" x="493.75" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-05" data-count="0" x="493.75" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-06" data-count="0" x="493.75" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="15" data-date="2026-03-07" data-count="0" x="493.75" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-07: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-08" data-count="0" x="513.20" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-09" data-count="0" x="513.20" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-10" data-count="0" x="513.20" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-11" data-count="0" x="513.20" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-12" data-count="0" x="513.20" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-13" data-count="1" x="513.20" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-03-13: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="16" data-date="2026-03-14" data-count="1" x="513.20" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-14: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-15" data-count="0" x="532.65" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-16" data-count="0" x="532.65" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-17" data-count="1" x="532.65" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-17: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-18" data-count="0" x="532.65" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-19" data-count="1" x="532.65" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-19: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-20" data-count="0" x="532.65" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="17" data-date="2026-03-21" data-count="0" x="532.65" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-22" data-count="1" x="552.10" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-22: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-23" data-count="0" x="552.10" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-24" data-count="0" x="552.10" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-25" data-count="1" x="552.10" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-25: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-26" data-count="0" x="552.10" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-27" data-count="1" x="552.10" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-27: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="18" data-date="2026-03-28" data-count="0" x="552.10" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-03-29" data-count="0" x="571.55" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-03-30" data-count="1" x="571.55" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-03-30: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-03-31" data-count="0" x="571.55" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-03-31: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-04-01" data-count="0" x="571.55" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-01: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-04-02" data-count="0" x="571.55" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-04-03" data-count="0" x="571.55" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="19" data-date="2026-04-04" data-count="1" x="571.55" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-04-04: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-05" data-count="0" x="591.00" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-06" data-count="0" x="591.00" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-07" data-count="1" x="591.00" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-04-07: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-08" data-count="0" x="591.00" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-09" data-count="0" x="591.00" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-10" data-count="0" x="591.00" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="20" data-date="2026-04-11" data-count="0" x="591.00" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-12" data-count="0" x="610.45" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-13" data-count="1" x="610.45" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-04-13: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-14" data-count="0" x="610.45" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-15" data-count="0" x="610.45" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-16" data-count="0" x="610.45" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-17" data-count="1" x="610.45" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-04-17: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="21" data-date="2026-04-18" data-count="0" x="610.45" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-19" data-count="1" x="629.90" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-04-19: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-20" data-count="0" x="629.90" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-21" data-count="0" x="629.90" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-22" data-count="1" x="629.90" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-04-22: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-23" data-count="0" x="629.90" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-24" data-count="0" x="629.90" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="22" data-date="2026-04-25" data-count="1" x="629.90" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-04-25: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-04-26" data-count="0" x="649.35" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-04-27" data-count="1" x="649.35" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-04-27: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-04-28" data-count="0" x="649.35" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-04-29" data-count="0" x="649.35" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-04-30" data-count="0" x="649.35" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-04-30: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-05-01" data-count="1" x="649.35" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-01: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="23" data-date="2026-05-02" data-count="1" x="649.35" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-02: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-03" data-count="0" x="668.80" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-04" data-count="0" x="668.80" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-05" data-count="1" x="668.80" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-05: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-06" data-count="0" x="668.80" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-07" data-count="1" x="668.80" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-07: 1 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-08" data-count="0" x="668.80" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="24" data-date="2026-05-09" data-count="0" x="668.80" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-10" data-count="0" x="688.25" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-11" data-count="0" x="688.25" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-12" data-count="0" x="688.25" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-13" data-count="0" x="688.25" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-13: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-14" data-count="0" x="688.25" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-15" data-count="1" x="688.25" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-15: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="25" data-date="2026-05-16" data-count="2" x="688.25" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-05-16: 2 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-17" data-count="0" x="707.70" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-17: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-18" data-count="0" x="707.70" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-19" data-count="1" x="707.70" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-19: 1 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-20" data-count="0" x="707.70" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-21" data-count="0" x="707.70" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-22" data-count="0" x="707.70" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="26" data-date="2026-05-23" data-count="1" x="707.70" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-05-23: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-24" data-count="0" x="727.15" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-25" data-count="0" x="727.15" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-26" data-count="0" x="727.15" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-27" data-count="0" x="727.15" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-28" data-count="1" x="727.15" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-05-28: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-29" data-count="0" x="727.15" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="27" data-date="2026-05-30" data-count="1" x="727.15" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-05-30: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-05-31" data-count="0" x="746.60" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-05-31: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-06-01" data-count="1" x="746.60" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-06-01: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-06-02" data-count="0" x="746.60" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-06-03" data-count="0" x="746.60" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-06-04" data-count="0" x="746.60" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-06-05" data-count="3" x="746.60" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-06-05: 3 source events, 5 observed units</title></rect>
+<rect class="calendar-day" data-week="28" data-date="2026-06-06" data-count="0" x="746.60" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="29" data-date="2026-06-07" data-count="1" x="766.05" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-06-07: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="29" data-date="2026-06-08" data-count="0" x="766.05" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="29" data-date="2026-06-09" data-count="0" x="766.05" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="29" data-date="2026-06-10" data-count="0" x="766.05" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="29" data-date="2026-06-11" data-count="0" x="766.05" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="29" data-date="2026-06-12" data-count="1" x="766.05" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-06-12: 1 source events, 1 observed units</title></rect>
+<path class="calendar-milestone" data-week="29" data-kind="release" d="M772.45 224.70l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="#FFD37E"><title>Recorded release on 2026-06-12</title></path>
+<rect class="calendar-day" data-week="29" data-date="2026-06-13" data-count="0" x="766.05" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-13: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-14" data-count="0" x="785.50" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-15" data-count="0" x="785.50" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-16" data-count="1" x="785.50" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-06-16: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-17" data-count="1" x="785.50" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-06-17: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-18" data-count="0" x="785.50" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-19" data-count="0" x="785.50" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-19: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="30" data-date="2026-06-20" data-count="1" x="785.50" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-06-20: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-21" data-count="0" x="804.95" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-22" data-count="0" x="804.95" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-23" data-count="0" x="804.95" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-24" data-count="0" x="804.95" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-25" data-count="1" x="804.95" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-06-25: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-26" data-count="1" x="804.95" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-06-26: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="31" data-date="2026-06-27" data-count="0" x="804.95" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-06-28" data-count="0" x="824.40" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-06-29" data-count="0" x="824.40" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-06-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-06-30" data-count="2" x="824.40" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-06-30: 2 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-07-01" data-count="0" x="824.40" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-01: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-07-02" data-count="0" x="824.40" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-07-03" data-count="1" x="824.40" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-03: 1 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="32" data-date="2026-07-04" data-count="0" x="824.40" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-05" data-count="0" x="843.85" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-06" data-count="1" x="843.85" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-07-06: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-07" data-count="0" x="843.85" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-07: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-08" data-count="1" x="843.85" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-08: 1 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-09" data-count="1" x="843.85" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-07-09: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-10" data-count="0" x="843.85" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="33" data-date="2026-07-11" data-count="0" x="843.85" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-12" data-count="0" x="863.30" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-13" data-count="1" x="863.30" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-13: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-14" data-count="0" x="863.30" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-15" data-count="1" x="863.30" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-15: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-16" data-count="0" x="863.30" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-17" data-count="1" x="863.30" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-17: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="34" data-date="2026-07-18" data-count="0" x="863.30" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-19" data-count="1" x="882.75" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-19: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-20" data-count="0" x="882.75" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-21" data-count="1" x="882.75" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-21: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-22" data-count="0" x="882.75" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-23" data-count="0" x="882.75" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-24" data-count="0" x="882.75" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="35" data-date="2026-07-25" data-count="1" x="882.75" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-07-25: 1 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-07-26" data-count="2" x="902.20" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-07-26: 2 source events, 5 observed units</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-07-27" data-count="0" x="902.20" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-07-28" data-count="0" x="902.20" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-07-29" data-count="0" x="902.20" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-07-30" data-count="0" x="902.20" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-30: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-07-31" data-count="0" x="902.20" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-07-31: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="36" data-date="2026-08-01" data-count="1" x="902.20" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-08-01: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-02" data-count="0" x="921.65" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-03" data-count="2" x="921.65" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#3EC995"><title>2026-08-03: 2 source events, 6 observed units</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-04" data-count="0" x="921.65" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-04: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-05" data-count="1" x="921.65" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-05: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-06" data-count="0" x="921.65" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-07" data-count="1" x="921.65" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-07: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="37" data-date="2026-08-08" data-count="0" x="921.65" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-09" data-count="3" x="941.10" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-08-09: 3 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-10" data-count="1" x="941.10" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-10: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-11" data-count="0" x="941.10" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-12" data-count="0" x="941.10" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-13" data-count="0" x="941.10" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-13: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-14" data-count="0" x="941.10" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="38" data-date="2026-08-15" data-count="0" x="941.10" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-16" data-count="0" x="960.55" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-17" data-count="0" x="960.55" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-17: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-18" data-count="1" x="960.55" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-18: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-19" data-count="0" x="960.55" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-19: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-20" data-count="0" x="960.55" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-21" data-count="1" x="960.55" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-21: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="39" data-date="2026-08-22" data-count="1" x="960.55" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-22: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-23" data-count="1" x="980.00" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-08-23: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-24" data-count="0" x="980.00" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-25" data-count="0" x="980.00" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-26" data-count="0" x="980.00" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-27" data-count="1" x="980.00" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-27: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-28" data-count="1" x="980.00" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-08-28: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="40" data-date="2026-08-29" data-count="0" x="980.00" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="41" data-date="2026-08-30" data-count="0" x="999.45" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-08-30: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="41" data-date="2026-08-31" data-count="2" x="999.45" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-08-31: 2 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="41" data-date="2026-09-01" data-count="0" x="999.45" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-01: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="41" data-date="2026-09-02" data-count="0" x="999.45" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="41" data-date="2026-09-03" data-count="0" x="999.45" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="41" data-date="2026-09-04" data-count="1" x="999.45" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-04: 1 source events, 1 observed units</title></rect>
+<path class="calendar-milestone" data-week="41" data-kind="release" d="M1005.85 224.70l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="#FFD37E"><title>Recorded release on 2026-09-04</title></path>
+<rect class="calendar-day" data-week="41" data-date="2026-09-05" data-count="0" x="999.45" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-06" data-count="2" x="1018.90" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-09-06: 2 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-07" data-count="0" x="1018.90" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-07: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-08" data-count="0" x="1018.90" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-08: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-09" data-count="0" x="1018.90" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-10" data-count="0" x="1018.90" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-11" data-count="1" x="1018.90" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-11: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="42" data-date="2026-09-12" data-count="2" x="1018.90" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-12: 2 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-13" data-count="1" x="1038.35" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-09-13: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-14" data-count="0" x="1038.35" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-15" data-count="0" x="1038.35" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-15: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-16" data-count="0" x="1038.35" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-17" data-count="0" x="1038.35" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-17: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-18" data-count="0" x="1038.35" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="43" data-date="2026-09-19" data-count="1" x="1038.35" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-19: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-20" data-count="0" x="1057.80" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-21" data-count="0" x="1057.80" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-21: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-22" data-count="1" x="1057.80" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-09-22: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-23" data-count="2" x="1057.80" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-23: 2 source events, 2 observed units</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-24" data-count="0" x="1057.80" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-24: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-25" data-count="0" x="1057.80" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-25: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="44" data-date="2026-09-26" data-count="0" x="1057.80" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-26: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-09-27" data-count="0" x="1077.25" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-09-28" data-count="1" x="1077.25" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-28: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-09-29" data-count="0" x="1077.25" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-09-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-09-30" data-count="1" x="1077.25" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-09-30: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-10-01" data-count="0" x="1077.25" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-01: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-10-02" data-count="0" x="1077.25" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="45" data-date="2026-10-03" data-count="0" x="1077.25" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-03: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-04" data-count="1" x="1096.70" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-10-04: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-05" data-count="0" x="1096.70" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-06" data-count="0" x="1096.70" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-07" data-count="1" x="1096.70" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-10-07: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-08" data-count="1" x="1096.70" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-10-08: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-09" data-count="0" x="1096.70" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-09: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="46" data-date="2026-10-10" data-count="0" x="1096.70" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-11" data-count="0" x="1116.15" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-12" data-count="0" x="1116.15" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-13" data-count="1" x="1116.15" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-10-13: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-14" data-count="0" x="1116.15" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-14: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-15" data-count="1" x="1116.15" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-10-15: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-16" data-count="0" x="1116.15" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-16: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="47" data-date="2026-10-17" data-count="2" x="1116.15" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#3EC995"><title>2026-10-17: 2 source events, 8 observed units</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-18" data-count="0" x="1135.60" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-18: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-19" data-count="0" x="1135.60" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-19: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-20" data-count="0" x="1135.60" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-20: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-21" data-count="1" x="1135.60" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-10-21: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-22" data-count="0" x="1135.60" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-22: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-23" data-count="0" x="1135.60" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-23: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="48" data-date="2026-10-24" data-count="1" x="1135.60" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-10-24: 1 source events, 1 observed units</title></rect>
+<path class="calendar-milestone" data-week="48" data-kind="release" d="M1142.00 240.00l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="#FFD37E"><title>Recorded release on 2026-10-24</title></path>
+<rect class="calendar-day" data-week="49" data-date="2026-10-25" data-count="1" x="1155.05" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-10-25: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="49" data-date="2026-10-26" data-count="1" x="1155.05" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-10-26: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="49" data-date="2026-10-27" data-count="0" x="1155.05" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-27: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="49" data-date="2026-10-28" data-count="0" x="1155.05" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-28: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="49" data-date="2026-10-29" data-count="0" x="1155.05" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-29: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="49" data-date="2026-10-30" data-count="0" x="1155.05" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-30: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="49" data-date="2026-10-31" data-count="0" x="1155.05" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-10-31: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-01" data-count="1" x="1174.50" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-11-01: 1 source events, 3 observed units</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-02" data-count="0" x="1174.50" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-02: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-03" data-count="1" x="1174.50" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-11-03: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-04" data-count="1" x="1174.50" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-11-04: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-05" data-count="0" x="1174.50" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-05: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-06" data-count="0" x="1174.50" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-06: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="50" data-date="2026-11-07" data-count="1" x="1174.50" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-11-07: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="51" data-date="2026-11-08" data-count="2" x="1193.95" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-11-08: 2 source events, 4 observed units</title></rect>
+<path class="calendar-milestone" data-week="51" data-kind="release" d="M1200.35 148.20l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="#FFD37E"><title>Recorded release on 2026-11-08</title></path>
+<rect class="calendar-day" data-week="51" data-date="2026-11-09" data-count="1" x="1193.95" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#268F6D"><title>2026-11-09: 1 source events, 4 observed units</title></rect>
+<rect class="calendar-day" data-week="51" data-date="2026-11-10" data-count="0" x="1193.95" y="181.60" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-10: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="51" data-date="2026-11-11" data-count="0" x="1193.95" y="196.90" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-11: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="51" data-date="2026-11-12" data-count="0" x="1193.95" y="212.20" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-12: unobserved in supplied snapshot</title></rect>
+<rect class="calendar-day" data-week="51" data-date="2026-11-13" data-count="1" x="1193.95" y="227.50" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-11-13: 1 source events, 1 observed units</title></rect>
+<rect class="calendar-day" data-week="51" data-date="2026-11-14" data-count="1" x="1193.95" y="242.80" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-11-14: 1 source events, 1 observed units</title></rect>
+<path class="calendar-milestone" data-week="51" data-kind="release" d="M1200.35 240.00l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="#FFD37E"><title>Recorded release on 2026-11-14</title></path>
+<rect class="calendar-day" data-week="52" data-date="2026-11-15" data-count="1" x="1213.40" y="151.00" width="12.8" height="12.8" rx="2.4" fill="#236049"><title>2026-11-15: 1 source events, 1 observed units</title></rect>
+<path class="calendar-milestone" data-week="52" data-kind="release" d="M1219.80 148.20l3.2 3.2 -3.2 3.2 -3.2 -3.2Z" fill="#FFD37E"><title>Recorded release on 2026-11-15</title></path>
+<rect class="calendar-day" data-week="52" data-date="2026-11-16" data-count="0" x="1213.40" y="166.30" width="12.8" height="12.8" rx="2.4" fill="#233246"><title>2026-11-16: unobserved in supplied snapshot</title></rect>
+<g fill="#9BB2C7"><text x="54.00" y="260.00" class="tag" text-anchor="start">BLANK = NO OBSERVATION, NOT CONFIRMED INACTIVITY</text></g>
+<rect x="35" y="281" width="1290" height="141" rx="13" fill="#132235" stroke="#294057"/>
+<g fill="#9BB2C7"><text x="53.00" y="299.00" class="tag" text-anchor="start">02 / PROJECT ROUTES</text>
+<text x="1306.00" y="299.00" class="tag" text-anchor="end">◉ MERGE  ·  ◆ RELEASE</text>
+</g>
+<g class="compact-journey" data-repo="sample-dev/ember">
+<rect x="52" y="308.0" width="23" height="18" rx="6" fill="#5AEFC0"/>
+<text x="63.5" y="320.7" class="index" text-anchor="middle" fill="#070C15">01</text>
+<g fill="#EDF6FF"><text x="84.00" y="321.00" class="route" text-anchor="start">ember</text></g>
+<g clip-path="url(#compact-reveal)">
+<circle cx="208.40" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="286.20" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="364.00" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="441.80" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="519.60" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="597.40" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="675.20" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="753.00" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="830.80" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="908.60" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="986.40" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1064.20" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1142.00" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1219.80" cy="317.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<line class="compact-track" x1="500.15" y1="317.00" x2="1200.35" y2="317.00" stroke="#5AEFC0" stroke-width="4.4" stroke-linecap="round" opacity=".91"/>
+<g class="compact-station" data-week="15" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 16: illustration-project-3-week-15</title>
+<circle cx="500.15" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="16" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 17: illustration-project-3-week-16</title>
+<circle cx="519.60" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="17" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 18: illustration-project-3-week-17</title>
+<circle cx="539.05" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="18" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 19: illustration-project-3-week-18</title>
+<circle cx="558.50" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="19" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 20: illustration-project-3-week-19</title>
+<circle cx="577.95" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="20" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 21: illustration-project-3-week-20</title>
+<circle cx="597.40" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="21" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 22: illustration-project-3-week-21</title>
+<circle cx="616.85" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="22" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 23: illustration-project-3-week-22</title>
+<circle cx="636.30" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="23" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 24: illustration-project-3-week-23</title>
+<circle cx="655.75" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="24" data-kind="pr_merged" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 25: illustration-project-3-week-24</title>
+<circle cx="675.20" cy="317.00" r="9.3" fill="#5AEFC0" opacity=".13"/>
+<circle cx="675.20" cy="317.00" r="6.3" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+<circle cx="675.20" cy="317.00" r="2.3" fill="#5AEFC0"/>
+</g>
+<g class="compact-station" data-week="25" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 26: illustration-project-3-week-25</title>
+<circle cx="694.65" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="26" data-kind="pr_merged" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 27: illustration-project-3-week-26</title>
+<circle cx="714.10" cy="317.00" r="9.3" fill="#5AEFC0" opacity=".13"/>
+<circle cx="714.10" cy="317.00" r="6.3" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+<circle cx="714.10" cy="317.00" r="2.3" fill="#5AEFC0"/>
+</g>
+<g class="compact-station" data-week="28" data-kind="pr_merged" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 29: illustration-project-3-week-28</title>
+<circle cx="753.00" cy="317.00" r="9.3" fill="#5AEFC0" opacity=".13"/>
+<circle cx="753.00" cy="317.00" r="6.3" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+<circle cx="753.00" cy="317.00" r="2.3" fill="#5AEFC0"/>
+</g>
+<g class="compact-station" data-week="29" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 30: illustration-project-3-week-29</title>
+<circle cx="772.45" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="30" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 31: illustration-project-3-week-30</title>
+<circle cx="791.90" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="32" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 33: illustration-project-3-week-32</title>
+<circle cx="830.80" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="33" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 34: illustration-project-3-week-33</title>
+<circle cx="850.25" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="35" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 36: illustration-project-3-week-35</title>
+<circle cx="889.15" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="36" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 37: illustration-project-3-week-36</title>
+<circle cx="908.60" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="37" data-kind="pr_merged" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 38: illustration-project-3-week-37</title>
+<circle cx="928.05" cy="317.00" r="9.3" fill="#5AEFC0" opacity=".13"/>
+<circle cx="928.05" cy="317.00" r="6.3" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+<circle cx="928.05" cy="317.00" r="2.3" fill="#5AEFC0"/>
+</g>
+<g class="compact-station" data-week="38" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 39: illustration-project-3-week-38</title>
+<circle cx="947.50" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="40" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 41: illustration-project-3-week-40</title>
+<circle cx="986.40" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="42" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 2 source events in week 43: demo-003, illustration-project-3-week-42</title>
+<circle cx="1025.30" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="43" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 44: illustration-project-3-week-43</title>
+<circle cx="1044.75" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="44" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 45: illustration-project-3-week-44</title>
+<circle cx="1064.20" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="46" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 47: illustration-project-3-week-46</title>
+<circle cx="1103.10" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="47" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 48: illustration-project-3-week-47</title>
+<circle cx="1122.55" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="50" data-kind="event" data-repo="sample-dev/ember"><title>sample-dev/ember: 1 source events in week 51: illustration-project-3-week-50</title>
+<circle cx="1180.90" cy="317.00" r="3.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="51" data-kind="release" data-repo="sample-dev/ember"><title>sample-dev/ember: 2 source events in week 52: demo-010, illustration-project-3-week-51</title>
+<circle cx="1200.35" cy="317.00" r="10.5" fill="#5AEFC0" opacity=".13"/>
+<circle cx="1200.35" cy="317.00" r="7.5" fill="#132235" stroke="#5AEFC0" stroke-width="2.2"/>
+<path d="M1200.35 313.40l3.6 3.6 -3.6 3.6 -3.6 -3.6Z" fill="#5AEFC0"/>
+</g>
+</g>
+<g fill="#9BB2C7"><text x="1293.00" y="320.70" class="count" text-anchor="end">29w</text></g>
+</g>
+<g class="compact-journey" data-repo="sample-dev/atlas">
+<rect x="52" y="330.5" width="23" height="18" rx="6" fill="#BFABFF"/>
+<text x="63.5" y="343.2" class="index" text-anchor="middle" fill="#070C15">02</text>
+<g fill="#EDF6FF"><text x="84.00" y="343.50" class="route" text-anchor="start">atlas</text></g>
+<g clip-path="url(#compact-reveal)">
+<circle cx="208.40" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="286.20" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="364.00" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="441.80" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="519.60" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="597.40" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="675.20" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="753.00" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="830.80" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="908.60" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="986.40" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1064.20" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1142.00" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1219.80" cy="339.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<line class="compact-track" x1="364.00" y1="339.50" x2="1025.30" y2="339.50" stroke="#BFABFF" stroke-width="4.4" stroke-linecap="round" opacity=".91"/>
+<g class="compact-station" data-week="8" data-kind="pr_merged" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 9: illustration-project-2-week-08</title>
+<circle cx="364.00" cy="339.50" r="9.3" fill="#BFABFF" opacity=".13"/>
+<circle cx="364.00" cy="339.50" r="6.3" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<circle cx="364.00" cy="339.50" r="2.3" fill="#BFABFF"/>
+</g>
+<g class="compact-station" data-week="12" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 13: illustration-project-2-week-12</title>
+<circle cx="441.80" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="13" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 14: illustration-project-2-week-13</title>
+<circle cx="461.25" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="14" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 15: illustration-project-2-week-14</title>
+<circle cx="480.70" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="15" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 16: illustration-project-2-week-15</title>
+<circle cx="500.15" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="16" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 17: illustration-project-2-week-16</title>
+<circle cx="519.60" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="17" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 18: illustration-project-2-week-17</title>
+<circle cx="539.05" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="18" data-kind="pr_merged" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 19: illustration-project-2-week-18</title>
+<circle cx="558.50" cy="339.50" r="9.3" fill="#BFABFF" opacity=".13"/>
+<circle cx="558.50" cy="339.50" r="6.3" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<circle cx="558.50" cy="339.50" r="2.3" fill="#BFABFF"/>
+</g>
+<g class="compact-station" data-week="21" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 22: illustration-project-2-week-21</title>
+<circle cx="616.85" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="22" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 23: illustration-project-2-week-22</title>
+<circle cx="636.30" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="23" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 24: illustration-project-2-week-23</title>
+<circle cx="655.75" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="24" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 25: illustration-project-2-week-24</title>
+<circle cx="675.20" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="25" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 26: illustration-project-2-week-25</title>
+<circle cx="694.65" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="27" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 28: illustration-project-2-week-27</title>
+<circle cx="733.55" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="28" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 29: illustration-project-2-week-28</title>
+<circle cx="753.00" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="30" data-kind="pr_merged" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 31: illustration-project-2-week-30</title>
+<circle cx="791.90" cy="339.50" r="9.3" fill="#BFABFF" opacity=".13"/>
+<circle cx="791.90" cy="339.50" r="6.3" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<circle cx="791.90" cy="339.50" r="2.3" fill="#BFABFF"/>
+</g>
+<g class="compact-station" data-week="31" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 32: illustration-project-2-week-31</title>
+<circle cx="811.35" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="32" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 33: illustration-project-2-week-32</title>
+<circle cx="830.80" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="34" data-kind="pr_merged" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 35: illustration-project-2-week-34</title>
+<circle cx="869.70" cy="339.50" r="9.3" fill="#BFABFF" opacity=".13"/>
+<circle cx="869.70" cy="339.50" r="6.3" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<circle cx="869.70" cy="339.50" r="2.3" fill="#BFABFF"/>
+</g>
+<g class="compact-station" data-week="36" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 37: illustration-project-2-week-36</title>
+<circle cx="908.60" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="37" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 38: illustration-project-2-week-37</title>
+<circle cx="928.05" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="38" data-kind="pr_merged" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 39: illustration-project-2-week-38</title>
+<circle cx="947.50" cy="339.50" r="9.3" fill="#BFABFF" opacity=".13"/>
+<circle cx="947.50" cy="339.50" r="6.3" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<circle cx="947.50" cy="339.50" r="2.3" fill="#BFABFF"/>
+</g>
+<g class="compact-station" data-week="39" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 2 source events in week 40: demo-002, illustration-project-2-week-39</title>
+<circle cx="966.95" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="40" data-kind="event" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 41: illustration-project-2-week-40</title>
+<circle cx="986.40" cy="339.50" r="3.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="41" data-kind="release" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 42: illustration-project-2-week-41</title>
+<circle cx="1005.85" cy="339.50" r="10.5" fill="#BFABFF" opacity=".13"/>
+<circle cx="1005.85" cy="339.50" r="7.5" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<path d="M1005.85 335.90l3.6 3.6 -3.6 3.6 -3.6 -3.6Z" fill="#BFABFF"/>
+</g>
+<g class="compact-station" data-week="42" data-kind="pr_merged" data-repo="sample-dev/atlas"><title>sample-dev/atlas: 1 source events in week 43: demo-004</title>
+<circle cx="1025.30" cy="339.50" r="9.3" fill="#BFABFF" opacity=".13"/>
+<circle cx="1025.30" cy="339.50" r="6.3" fill="#132235" stroke="#BFABFF" stroke-width="2.2"/>
+<circle cx="1025.30" cy="339.50" r="2.3" fill="#BFABFF"/>
+</g>
+</g>
+<g fill="#9BB2C7"><text x="1293.00" y="343.20" class="count" text-anchor="end">26w</text></g>
+</g>
+<g class="compact-journey" data-repo="sample-dev/orbit">
+<rect x="52" y="353.0" width="23" height="18" rx="6" fill="#FF9C89"/>
+<text x="63.5" y="365.7" class="index" text-anchor="middle" fill="#070C15">03</text>
+<g fill="#EDF6FF"><text x="84.00" y="366.00" class="route" text-anchor="start">orbit</text></g>
+<g clip-path="url(#compact-reveal)">
+<circle cx="208.40" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="286.20" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="364.00" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="441.80" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="519.60" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="597.40" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="675.20" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="753.00" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="830.80" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="908.60" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="986.40" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1064.20" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1142.00" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1219.80" cy="362.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<line class="compact-track" x1="733.55" y1="362.00" x2="1200.35" y2="362.00" stroke="#FF9C89" stroke-width="4.4" stroke-linecap="round" opacity=".91"/>
+<g class="compact-station" data-week="27" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 28: illustration-project-4-week-27</title>
+<circle cx="733.55" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="28" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 29: illustration-project-4-week-28</title>
+<circle cx="753.00" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="30" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 31: illustration-project-4-week-30</title>
+<circle cx="791.90" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="31" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 32: illustration-project-4-week-31</title>
+<circle cx="811.35" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="32" data-kind="pr_merged" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 33: illustration-project-4-week-32</title>
+<circle cx="830.80" cy="362.00" r="9.3" fill="#FF9C89" opacity=".13"/>
+<circle cx="830.80" cy="362.00" r="6.3" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+<circle cx="830.80" cy="362.00" r="2.3" fill="#FF9C89"/>
+</g>
+<g class="compact-station" data-week="33" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 34: illustration-project-4-week-33</title>
+<circle cx="850.25" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="34" data-kind="pr_merged" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 35: illustration-project-4-week-34</title>
+<circle cx="869.70" cy="362.00" r="9.3" fill="#FF9C89" opacity=".13"/>
+<circle cx="869.70" cy="362.00" r="6.3" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+<circle cx="869.70" cy="362.00" r="2.3" fill="#FF9C89"/>
+</g>
+<g class="compact-station" data-week="35" data-kind="pr_merged" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 36: illustration-project-4-week-35</title>
+<circle cx="889.15" cy="362.00" r="9.3" fill="#FF9C89" opacity=".13"/>
+<circle cx="889.15" cy="362.00" r="6.3" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+<circle cx="889.15" cy="362.00" r="2.3" fill="#FF9C89"/>
+</g>
+<g class="compact-station" data-week="36" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 37: illustration-project-4-week-36</title>
+<circle cx="908.60" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="37" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 38: illustration-project-4-week-37</title>
+<circle cx="928.05" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="38" data-kind="pr_merged" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 39: illustration-project-4-week-38</title>
+<circle cx="947.50" cy="362.00" r="9.3" fill="#FF9C89" opacity=".13"/>
+<circle cx="947.50" cy="362.00" r="6.3" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+<circle cx="947.50" cy="362.00" r="2.3" fill="#FF9C89"/>
+</g>
+<g class="compact-station" data-week="40" data-kind="pr_merged" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 41: illustration-project-4-week-40</title>
+<circle cx="986.40" cy="362.00" r="9.3" fill="#FF9C89" opacity=".13"/>
+<circle cx="986.40" cy="362.00" r="6.3" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+<circle cx="986.40" cy="362.00" r="2.3" fill="#FF9C89"/>
+</g>
+<g class="compact-station" data-week="41" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 42: illustration-project-4-week-41</title>
+<circle cx="1005.85" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="42" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 43: illustration-project-4-week-42</title>
+<circle cx="1025.30" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="44" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 45: illustration-project-4-week-44</title>
+<circle cx="1064.20" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="45" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 2 source events in week 46: demo-005, illustration-project-4-week-45</title>
+<circle cx="1083.65" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="46" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 47: illustration-project-4-week-46</title>
+<circle cx="1103.10" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="47" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 2 source events in week 48: illustration-project-4-week-47, demo-006</title>
+<circle cx="1122.55" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="48" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 49: illustration-project-4-week-48</title>
+<circle cx="1142.00" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="49" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 50: illustration-project-4-week-49</title>
+<circle cx="1161.45" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="50" data-kind="event" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 51: illustration-project-4-week-50</title>
+<circle cx="1180.90" cy="362.00" r="3.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="51" data-kind="release" data-repo="sample-dev/orbit"><title>sample-dev/orbit: 1 source events in week 52: illustration-project-4-week-51</title>
+<circle cx="1200.35" cy="362.00" r="10.5" fill="#FF9C89" opacity=".13"/>
+<circle cx="1200.35" cy="362.00" r="7.5" fill="#132235" stroke="#FF9C89" stroke-width="2.2"/>
+<path d="M1200.35 358.40l3.6 3.6 -3.6 3.6 -3.6 -3.6Z" fill="#FF9C89"/>
+</g>
+</g>
+<g fill="#9BB2C7"><text x="1293.00" y="365.70" class="count" text-anchor="end">22w</text></g>
+</g>
+<g class="compact-journey" data-repo="sample-dev/aurora">
+<rect x="52" y="375.5" width="23" height="18" rx="6" fill="#FFD37E"/>
+<text x="63.5" y="388.2" class="index" text-anchor="middle" fill="#070C15">04</text>
+<g fill="#EDF6FF"><text x="84.00" y="388.50" class="route" text-anchor="start">aurora</text></g>
+<g clip-path="url(#compact-reveal)">
+<circle cx="208.40" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="286.20" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="364.00" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="441.80" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="519.60" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="597.40" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="675.20" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="753.00" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="830.80" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="908.60" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="986.40" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1064.20" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1142.00" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1219.80" cy="384.50" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<line class="compact-track" x1="208.40" y1="384.50" x2="1142.00" y2="384.50" stroke="#FFD37E" stroke-width="4.4" stroke-linecap="round" opacity=".91"/>
+<g class="compact-station" data-week="0" data-kind="pr_merged" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 1: illustration-project-1-week-00</title>
+<circle cx="208.40" cy="384.50" r="9.3" fill="#FFD37E" opacity=".13"/>
+<circle cx="208.40" cy="384.50" r="6.3" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<circle cx="208.40" cy="384.50" r="2.3" fill="#FFD37E"/>
+</g>
+<g class="compact-station" data-week="1" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 2: illustration-project-1-week-01</title>
+<circle cx="227.85" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="4" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 5: illustration-project-1-week-04</title>
+<circle cx="286.20" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="6" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 7: illustration-project-1-week-06</title>
+<circle cx="325.10" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="7" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 8: illustration-project-1-week-07</title>
+<circle cx="344.55" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="8" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 9: illustration-project-1-week-08</title>
+<circle cx="364.00" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="9" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 10: illustration-project-1-week-09</title>
+<circle cx="383.45" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="11" data-kind="pr_merged" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 12: illustration-project-1-week-11</title>
+<circle cx="422.35" cy="384.50" r="9.3" fill="#FFD37E" opacity=".13"/>
+<circle cx="422.35" cy="384.50" r="6.3" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<circle cx="422.35" cy="384.50" r="2.3" fill="#FFD37E"/>
+</g>
+<g class="compact-station" data-week="14" data-kind="pr_merged" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 15: illustration-project-1-week-14</title>
+<circle cx="480.70" cy="384.50" r="9.3" fill="#FFD37E" opacity=".13"/>
+<circle cx="480.70" cy="384.50" r="6.3" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<circle cx="480.70" cy="384.50" r="2.3" fill="#FFD37E"/>
+</g>
+<g class="compact-station" data-week="18" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 19: illustration-project-1-week-18</title>
+<circle cx="558.50" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="19" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 20: illustration-project-1-week-19</title>
+<circle cx="577.95" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="22" data-kind="pr_merged" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 23: illustration-project-1-week-22</title>
+<circle cx="636.30" cy="384.50" r="9.3" fill="#FFD37E" opacity=".13"/>
+<circle cx="636.30" cy="384.50" r="6.3" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<circle cx="636.30" cy="384.50" r="2.3" fill="#FFD37E"/>
+</g>
+<g class="compact-station" data-week="23" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 24: illustration-project-1-week-23</title>
+<circle cx="655.75" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="25" data-kind="pr_merged" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 26: illustration-project-1-week-25</title>
+<circle cx="694.65" cy="384.50" r="9.3" fill="#FFD37E" opacity=".13"/>
+<circle cx="694.65" cy="384.50" r="6.3" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<circle cx="694.65" cy="384.50" r="2.3" fill="#FFD37E"/>
+</g>
+<g class="compact-station" data-week="26" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 27: illustration-project-1-week-26</title>
+<circle cx="714.10" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="28" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 29: illustration-project-1-week-28</title>
+<circle cx="753.00" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="29" data-kind="release" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 30: illustration-project-1-week-29</title>
+<circle cx="772.45" cy="384.50" r="10.5" fill="#FFD37E" opacity=".13"/>
+<circle cx="772.45" cy="384.50" r="7.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<path d="M772.45 380.90l3.6 3.6 -3.6 3.6 -3.6 -3.6Z" fill="#FFD37E"/>
+</g>
+<g class="compact-station" data-week="37" data-kind="event" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 38: demo-001</title>
+<circle cx="928.05" cy="384.50" r="3.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="48" data-kind="release" data-repo="sample-dev/aurora"><title>sample-dev/aurora: 1 source events in week 49: demo-007</title>
+<circle cx="1142.00" cy="384.50" r="10.5" fill="#FFD37E" opacity=".13"/>
+<circle cx="1142.00" cy="384.50" r="7.5" fill="#132235" stroke="#FFD37E" stroke-width="2.2"/>
+<path d="M1142.00 380.90l3.6 3.6 -3.6 3.6 -3.6 -3.6Z" fill="#FFD37E"/>
+</g>
+</g>
+<g fill="#9BB2C7"><text x="1293.00" y="388.20" class="count" text-anchor="end">19w</text></g>
+</g>
+<g class="compact-journey" data-repo="sample-dev/harbour">
+<rect x="52" y="398.0" width="23" height="18" rx="6" fill="#81CBFF"/>
+<text x="63.5" y="410.7" class="index" text-anchor="middle" fill="#070C15">05</text>
+<g fill="#EDF6FF"><text x="84.00" y="411.00" class="route" text-anchor="start">harbour</text></g>
+<g clip-path="url(#compact-reveal)">
+<circle cx="208.40" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="286.20" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="364.00" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="441.80" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="519.60" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="597.40" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="675.20" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="753.00" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="830.80" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="908.60" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="986.40" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1064.20" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1142.00" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<circle cx="1219.80" cy="407.00" r="1.15" fill="#9BB2C7" opacity=".35"/>
+<line class="compact-track" x1="850.25" y1="407.00" x2="1219.80" y2="407.00" stroke="#81CBFF" stroke-width="4.4" stroke-linecap="round" opacity=".91"/>
+<g class="compact-station" data-week="33" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 34: illustration-project-5-week-33</title>
+<circle cx="850.25" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="34" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 35: illustration-project-5-week-34</title>
+<circle cx="869.70" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="35" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 36: illustration-project-5-week-35</title>
+<circle cx="889.15" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="38" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 39: illustration-project-5-week-38</title>
+<circle cx="947.50" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="39" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 40: illustration-project-5-week-39</title>
+<circle cx="966.95" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="41" data-kind="pr_merged" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 42: illustration-project-5-week-41</title>
+<circle cx="1005.85" cy="407.00" r="9.3" fill="#81CBFF" opacity=".13"/>
+<circle cx="1005.85" cy="407.00" r="6.3" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+<circle cx="1005.85" cy="407.00" r="2.3" fill="#81CBFF"/>
+</g>
+<g class="compact-station" data-week="42" data-kind="pr_merged" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 43: illustration-project-5-week-42</title>
+<circle cx="1025.30" cy="407.00" r="9.3" fill="#81CBFF" opacity=".13"/>
+<circle cx="1025.30" cy="407.00" r="6.3" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+<circle cx="1025.30" cy="407.00" r="2.3" fill="#81CBFF"/>
+</g>
+<g class="compact-station" data-week="43" data-kind="pr_merged" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 44: illustration-project-5-week-43</title>
+<circle cx="1044.75" cy="407.00" r="9.3" fill="#81CBFF" opacity=".13"/>
+<circle cx="1044.75" cy="407.00" r="6.3" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+<circle cx="1044.75" cy="407.00" r="2.3" fill="#81CBFF"/>
+</g>
+<g class="compact-station" data-week="44" data-kind="pr_merged" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 45: illustration-project-5-week-44</title>
+<circle cx="1064.20" cy="407.00" r="9.3" fill="#81CBFF" opacity=".13"/>
+<circle cx="1064.20" cy="407.00" r="6.3" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+<circle cx="1064.20" cy="407.00" r="2.3" fill="#81CBFF"/>
+</g>
+<g class="compact-station" data-week="46" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 47: illustration-project-5-week-46</title>
+<circle cx="1103.10" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="47" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 48: illustration-project-5-week-47</title>
+<circle cx="1122.55" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="49" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 50: illustration-project-5-week-49</title>
+<circle cx="1161.45" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="50" data-kind="pr_merged" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 2 source events in week 51: illustration-project-5-week-50, demo-008</title>
+<circle cx="1180.90" cy="407.00" r="9.3" fill="#81CBFF" opacity=".13"/>
+<circle cx="1180.90" cy="407.00" r="6.3" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+<circle cx="1180.90" cy="407.00" r="2.3" fill="#81CBFF"/>
+</g>
+<g class="compact-station" data-week="51" data-kind="event" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 2 source events in week 52: illustration-project-5-week-51, demo-009</title>
+<circle cx="1200.35" cy="407.00" r="3.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+</g>
+<g class="compact-station" data-week="52" data-kind="release" data-repo="sample-dev/harbour"><title>sample-dev/harbour: 1 source events in week 53: illustration-project-5-week-52</title>
+<circle cx="1219.80" cy="407.00" r="10.5" fill="#81CBFF" opacity=".13"/>
+<circle cx="1219.80" cy="407.00" r="7.5" fill="#132235" stroke="#81CBFF" stroke-width="2.2"/>
+<path d="M1219.80 403.40l3.6 3.6 -3.6 3.6 -3.6 -3.6Z" fill="#81CBFF"/>
+</g>
+</g>
+<g fill="#9BB2C7"><text x="1293.00" y="410.70" class="count" text-anchor="end">15w</text></g>
+</g>
+<line id="compact-cursor" x1="1219.80" x2="1219.80" y1="147" y2="411" stroke="#5AEFC0" stroke-width="1.6" stroke-dasharray="4 5" opacity="0"/>
+<g fill="#9BB2C7">
+<text x="52.00" y="443.00" class="tag" text-anchor="start">DEMO ONLY · 108 INVENTED ILLUSTRATION EVENTS</text>
+<text x="1308.00" y="443.00" class="tag" text-anchor="end">OMITTED 0 REPOS · 0 EVENTS   |   2025–2026</text>
+</g>
+</svg>
