@@ -80,7 +80,7 @@ class ProfileExportTests(unittest.TestCase):
             export_profile(raw,Path(tmp))
             note=(Path(tmp)/"README_SNIPPET.md").read_text(encoding="utf-8")
             self.assertIn("Actually observed dates",note)
-            self.assertIn("Annual coverage",note)
+            self.assertIn("Source event coverage",note)
             # The ten-event fixture spans eight distinct weeks: not 'sparse'.
             self.assertNotIn("Sparse history warning",note)
             self.assertIn("all validated events",note)

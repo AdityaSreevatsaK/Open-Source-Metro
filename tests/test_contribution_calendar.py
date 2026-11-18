@@ -120,7 +120,10 @@ class OfficialCalendarTests(unittest.TestCase):
         sample=fixture();sample["_calendar"]=calendar()
         mobile=ET.fromstring(render_mobile(sample))
         squares=[n for n in mobile.iter() if n.get("class")=="mobile-day"]
-        self.assertEqual(sum(int(x.get("data-count","0")) for x in squares),11)
+        self.assertEqual(sum(int(x.get("data-count","0")) for x in squares),11,
+                         f"start={__import__('open_source_metro.mobile_profile',fromlist=['mobile_plan']).mobile_plan(sample)['start']}; "
+                         f"calendar={calendar()['days']}; "
+                         f"nonzero={[(x.get('data-date'), x.get('data-count')) for x in squares if int(x.get('data-count','0'))>0]}")
         self.assertIn("GITHUB PROFILE",render_mobile(sample))
         with TemporaryDirectory() as folder:
             export_profile(sample,Path(folder))
