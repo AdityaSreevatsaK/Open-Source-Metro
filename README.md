@@ -1,5 +1,36 @@
 # Open Source Metro
 
+## Experimental direction: Living Network (Draft)
+
+**The calendar now tells a story instead of just wearing coloured lines.** In this alternative, **each route represents a repository**. Small stops are source-observed active weeks; distinct rings highlight PR merges and releases. A milestone passport shows exact source event IDs and dates. The **interactive replay** lets you travel through 53 weeks, focus on a repository and inspect source events.
+
+![Living Network midnight: 53-week contribution calendar, five repository-specific journeys and milestone passport, explicitly synthetic showcase.](assets/living-network-showcase.svg)
+
+<details>
+<summary>Compare paper treatment and faithful sparse fixture</summary>
+
+![Living Network parchment presentation using identical, explicitly invented demonstration data.](assets/living-network-paper-showcase.svg)
+
+![Living Network sparse preview containing exactly the original ten synthetic fixture events.](assets/living-network-snapshot.svg)
+
+</details>
+
+**These gallery assets are fictional samples, not your real GitHub activity.** The showcase adds 108 clearly marked, deliberately invented event records to the ten-event demo. The fixture version adds none. There is no live GitHub collector.
+
+**Try the working, offline browser replay:**
+
+```powershell
+py -3 -m pip install -e .
+py -3 -m open_source_metro.living_network --input examples/demo-activity.json --output output/living --showcase
+Start-Process .\output\living\living-network-showcase.html
+```
+
+Use the Play/Pause controls, week scrubber, speed selector and repo filters to explore observed events. The checked-in [interactive showcase HTML](assets/living-network-showcase.html) can also be downloaded and opened locally. GitHub itself does not run HTML from README embeds.
+
+**Read:** [Living Network design, architecture, semantic rules and limitations](docs/LIVING_NETWORK_EXPERIMENT.md). This is a **separate design experiment on `design/living-network-v1`**, not a replacement for the current production baseline or an approved public release.
+
+---
+
 **A GitHub-style contribution calendar that doubles as a metro map.** Each square represents a date, the five parallel lines represent distinct public-event categories, and numbered terminals identify featured repositories.
 
 > **Project status: experimental / pre-alpha.** This is a reproducible offline visualisation prototype, not an official GitHub contribution graph or a completed public-data collector. The design is still under review.

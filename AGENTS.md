@@ -127,3 +127,8 @@ Agents must not race on the same files or independently build conflicting collec
 The project is **not** an official GitHub chart replacement, complete GitHub contributions API, live collector, real-user metrics report or released production tool. It is an open-source-bound, tested, **offline** graphic prototype with truthful fixture data and clearly labelled illustration-only variants.
 
 **Optimise for intelligibility before spectacle.**
+
+
+## Experimental branch: Living Network
+
+When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT.md](docs/LIVING_NETWORK_EXPERIMENT.md) first. This branch explores repository-specific routes, real milestone stations and a source-backed chronological browser replay. Do not merge its renderer into the current baseline or claim actual GitHub contributions without explicit owner approval. All synthetic events are visibly labelled, and the existing static generator stays untouched.
