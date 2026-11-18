@@ -1,0 +1,106 @@
+name: Generate public Metro profile (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: Public GitHub username to visualise
+        required: true
+        type: string
+        default: AdityaSreevatsaK
+      repos:
+        description: Optional comma-separated public repo collection scope
+        required: false
+        type: string
+      featured:
+        description: Optional comma-separated featured repos (must be collected)
+        required: false
+        type: string
+      layout:
+        description: SVG formats to generate
+        type: choice
+        required: true
+        default: both
+        options: [both, compact, mobile]
+      theme:
+        description: Metro colour theme
+        type: choice
+        required: true
+        default: midnight
+        options: [midnight, paper]
+      days:
+        description: Source history lookback (30-370 days)
+        type: number
+        required: true
+        default: 365
+      max_repos:
+        description: Maximum public repositories to scan (1-20)
+        type: number
+        required: true
+        default: 5
+      pages:
+        description: Maximum API pages per endpoint (1-5)
+        type: number
+        required: true
+        default: 2
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    name: Collect and generate reviewable public Metro files
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.11'
+      - name: Install offline renderer
+        run: python -m pip install -e .
+      - name: Fetch bounded public source and generate SVGs
+        shell: python
+        env:
+          INPUT_USERNAME: ${{ inputs.username }}
+          INPUT_REPOS: ${{ inputs.repos }}
+          INPUT_FEATURED: ${{ inputs.featured }}
+          INPUT_LAYOUT: ${{ inputs.layout }}
+          INPUT_THEME: ${{ inputs.theme }}
+          INPUT_DAYS: ${{ inputs.days }}
+          INPUT_MAX_REPOS: ${{ inputs.max_repos }}
+          INPUT_PAGES: ${{ inputs.pages }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          from pathlib import Path
+          import os
+          from open_source_metro.year_history import collect_year
+          from open_source_metro.profile_cli import export_profile
+
+          username = os.environ["INPUT_USERNAME"]
+          repo_text = os.environ.get("INPUT_REPOS", "").strip()
+          featured_text = os.environ.get("INPUT_FEATURED", "").strip()
+          repo_names = [x.strip() for x in repo_text.split(",")] if repo_text else None
+          featured_names = [x.strip() for x in featured_text.split(",")] if featured_text else None
+
+          data = collect_year(
+              username,
+              repos=repo_names,
+              days=int(os.environ["INPUT_DAYS"]),
+              max_repos=int(os.environ["INPUT_MAX_REPOS"]),
+              pages=int(os.environ["INPUT_PAGES"]),
+          )
+          results = export_profile(
+              data, Path("generated-profile"),
+              layout=os.environ["INPUT_LAYOUT"], theme=os.environ["INPUT_THEME"],
+              featured=featured_names,
+          )
+          print("Generated", len(results), "local profile files")
+          print("Incomplete public snapshot, not official GitHub contribution totals")
+      - name: Upload generated SVGs and coverage record
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: open-source-metro-public-profile
+          path: generated-profile/
+          if-no-files-found: error
+          retention-days: 7

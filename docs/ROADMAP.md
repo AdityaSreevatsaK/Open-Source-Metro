@@ -84,6 +84,20 @@ This roadmap separates **design acceptance** from **engineering correctness**. I
 - [x] Dedicated **16-week portrait** renderer, source-backed with distinct midnight/paper themes, proposed in PR #2.
 - [x] Bounded **public-only recent Events API** adapter with mock-only tests, proposed in PR #2.
 - [ ] Evaluate actual mobile portrait artwork on a 320–420px viewport and refine typography.
-- [ ] Implement a **separately source-validated year-scale collector**. The public Events API's 30-day/300-event bound does not supply full-year contribution coverage, and current PushEvent payloads do not provide complete commit counts.
-- [ ] Add user-selectable featured repositories, meaningful linked milestones and read-only hosted browser preview.
+- [x] Implement a **separately source-validated, bounded public repository year-scale collector**. The public Events API's 30-day/300-event bound does not supply full-year contribution coverage, and current PushEvent payloads do not provide complete commit counts.
+- [x] Add user-selectable featured repositories and local self-service static profile exports.
+- [ ] Add richer linked milestones and read-only hosted browser preview.
 - [ ] Owner sign-off before an installation on a live GitHub profile or release.
+
+
+## Year-scale and profile export follow-ups
+
+- [ ] Verify live public history for a chosen GitHub account, keeping the data and token out of committed assets.
+- [ ] Document per-endpoint coverage on a real test profile and add rate-limit cache/conditional requests for larger public histories.
+- [ ] Evaluate authenticated GraphQL or additional author-search endpoints for a verified, wider GitHub contribution history.
+- [ ] Improve self-service UI, choose featured projects interactively and allow a configurable layout without hand-editing flags.
+- [ ] Add a manual opt-in Action for profile-asset export, without default write privileges to user profile repositories.
+
+
+- [x] Add manual opt-in GitHub Action for self-service public profile export and 7-day downloadable artifacts, with no live profile writes.
+- [ ] Run a manual GitHub Action against a real public account after merge to validate API delivery, rate-limit behaviour, coverage manifests and actual visuals.

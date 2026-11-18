@@ -93,3 +93,23 @@ jobs:
               # Source assets follow living-mobile-{fixture,showcase,paper}.svg.
               expected = Path('assets') / path.name.replace('mobile-', 'living-mobile-')
               assert expected.read_bytes() == path.read_bytes(), f'Mobile asset drift: {expected}'
+
+      - name: Verify self-service profile generation without network
+        run: |
+          python -m open_source_metro.profile_cli --input examples/demo-activity.json --output generated/profile-test --layout both --theme midnight
+          python -m open_source_metro.profile_cli --input examples/demo-activity.json --output generated/profile-paper --layout mobile --theme paper
+      - name: Check source-backed profile exports and provenance
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          import xml.etree.ElementTree as ET
+          root = Path('generated/profile-test')
+          snapshot = json.loads((root / 'source-snapshot.json').read_text(encoding='utf-8'))
+          assert snapshot['source'] == 'demo'
+          assert len(snapshot['activity']) == 10
+          assert 'complete contribution' in (root / 'README_SNIPPET.md').read_text(encoding='utf-8').lower()
+          for path in (root / 'profile-compact.svg', root / 'profile-mobile.svg', Path('generated/profile-paper/profile-mobile.svg')):
+              svg = ET.parse(path).getroot()
+              assert svg.tag.endswith('svg')
+              assert svg.attrib.get('role') == 'img'
