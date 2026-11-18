@@ -81,8 +81,20 @@ class ProfileExportTests(unittest.TestCase):
             note=(Path(tmp)/"README_SNIPPET.md").read_text(encoding="utf-8")
             self.assertIn("Actually observed dates",note)
             self.assertIn("Annual coverage",note)
-            self.assertIn("Sparse history warning",note)
+            # The ten-event fixture spans eight distinct weeks: not 'sparse'.
+            self.assertNotIn("Sparse history warning",note)
             self.assertIn("all validated events",note)
+
+    def test_single_week_real_source_warns_about_blank_year(self):
+        raw = fixture()
+        raw["source"] = "github"
+        for record in raw["activity"]:
+            record["occurred_at"] = "2026-11-13T12:00:00Z"
+        with TemporaryDirectory() as tmp:
+            export_profile(raw, Path(tmp))
+            note = (Path(tmp)/"README_SNIPPET.md").read_text(encoding="utf-8")
+            self.assertIn("in 1 of 53 weeks", note)
+            self.assertIn("Sparse history warning", note)
 
     def test_invalid_layout_and_theme(self):
         raw=fixture()
