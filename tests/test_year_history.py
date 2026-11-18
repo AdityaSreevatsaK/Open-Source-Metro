@@ -167,6 +167,21 @@ class YearHistoryTests(unittest.TestCase):
         self.assertEqual(len(commits), 1)
         self.assertEqual(commits[0]["occurred_at"], "2026-10-03T11:00:00Z")
 
+    def test_balanced_repo_selection_preserves_older_history(self):
+        from open_source_metro.year_history import select_public_repositories_by_time
+        entries = [f"demo-dev/repo{i:02d}" for i in range(30)]
+        picked = select_public_repositories_by_time(entries, 10)
+        self.assertEqual(len(picked), 10)
+        self.assertEqual(picked[:5], entries[:5])
+        self.assertEqual(picked[-1], entries[-1])
+        self.assertEqual(len(set(picked)), 10)
+        self.assertTrue(any(x in picked for x in entries[18:25]))
+
+    def test_selection_is_stable_when_not_at_repository_cap(self):
+        from open_source_metro.year_history import select_public_repositories_by_time
+        names = ["demo-dev/alpha", "demo-dev/beta"]
+        self.assertEqual(select_public_repositories_by_time(names, 10), names)
+
     def test_selected_private_repo_fails_closed(self):
         fake = FakeAPI(overrides={"/repos/demo-dev/secret":{"full_name":"demo-dev/secret","private":True}})
         with self.assertRaisesRegex(ValueError,"public"):

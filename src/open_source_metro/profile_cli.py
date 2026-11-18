@@ -101,7 +101,7 @@ def main() -> None:
     parser.add_argument("--repos", help="Comma-separated public repository collection scope (live only)")
     parser.add_argument("--featured", help="Comma-separated repository names to include in the generated card")
     parser.add_argument("--days", type=int, default=365)
-    parser.add_argument("--max-repos", type=int, default=5)
+    parser.add_argument("--max-repos", type=int, default=10)
     parser.add_argument("--pages", type=int, default=2)
     parser.add_argument("--include-forks", action="store_true")
     parser.add_argument("--layout", choices=("compact", "mobile", "both"), default="both")
