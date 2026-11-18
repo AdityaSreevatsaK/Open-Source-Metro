@@ -76,6 +76,21 @@ class LivingNetworkTests(unittest.TestCase):
         self.assertNotIn('DEMO ONLY',svg)
         self.assertIn('COVERAGE INCOMPLETE',svg)
 
+    def test_passport_milestones_hide_until_their_observed_week(self):
+        source=demo_story(raw())
+        p=build_plan(source)
+        doc=ET.fromstring(render_svg(source))
+        milestones={e['id']:p['positions'][e['date'].date()][0] for e in p['events']
+                    if e['kind'] in ('release','pr_merged')}
+        cards=[el for el in doc.iter() if el.attrib.get('class')=='passport-card']
+        self.assertEqual(len(cards),4)
+        for card in cards:
+            text=''.join(card.itertext())
+            self.assertIn('data-week',card.attrib)
+            self.assertIn(int(card.attrib['data-week']),range(53))
+            self.assertTrue(any(source_id in text and week==int(card.attrib['data-week'])
+                                for source_id,week in milestones.items()))
+
     def test_all_outputs_are_valid_accessible_svg(self):
         for theme in ('midnight','paper'):
             with self.subTest(theme=theme):

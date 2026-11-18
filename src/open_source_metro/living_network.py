@@ -288,7 +288,8 @@ def render_svg(raw: dict, *, theme: str = 'midnight') -> str:
         short_repo=event['repo'].split('/')[-1][:18]
         when=event['date'].strftime('%d %b %Y')
         kind_name='RELEASE' if event['kind']=='release' else 'PR MERGED'
-        c.append(f'<g class="passport-card"><title>{xml(event["id"])}: {xml(event["repo"])} / {xml(event["kind"])} / {when}</title>')
+        milestone_week=p['positions'][event['date'].date()][0]
+        c.append(f'<g class="passport-card" data-week="{milestone_week}"><title>{xml(event["id"])}: {xml(event["repo"])} / {xml(event["kind"])} / {when}</title>')
         c.append(f'<rect x="{x}" y="789" width="311" height="89" rx="10" fill="{canvas}" stroke="{t["stroke"]}"/>')
         c.append(f'<rect x="{x}" y="789" width="5" height="89" rx="2.5" fill="{colour}"/>')
         c.append(f'<circle cx="{x+26}" cy="809" r="7" fill="none" stroke="{colour}" stroke-width="2.2"/>')

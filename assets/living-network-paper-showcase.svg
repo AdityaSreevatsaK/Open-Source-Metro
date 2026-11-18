@@ -967,7 +967,7 @@
 <text x="88.0" y="778.0" class="tag" text-anchor="start">03 / MILESTONE PASSPORT</text>
 <text x="1364.0" y="778.0" class="meta" text-anchor="end">RECORDED SOURCE EVENTS • NO INVENTED MILESTONE TITLES</text>
 </g>
-<g class="passport-card"><title>illustration-project-1-week-00: sample-dev/aurora / pr_merged / 19 Nov 2025</title>
+<g class="passport-card" data-week="0"><title>illustration-project-1-week-00: sample-dev/aurora / pr_merged / 19 Nov 2025</title>
 <rect x="86" y="789" width="311" height="89" rx="10" fill="#FAF4EA" stroke="#C9C9BD"/>
 <rect x="86" y="789" width="5" height="89" rx="2.5" fill="#9C711C"/>
 <circle cx="112" cy="809" r="7" fill="none" stroke="#9C711C" stroke-width="2.2"/>
@@ -975,7 +975,7 @@
 <g fill="#263B43"><text x="104.0" y="840.0" class="route" text-anchor="start">aurora</text></g>
 <g fill="#667A80"><text x="104.0" y="860.0" class="tiny" text-anchor="start">illustration-project-1-week-00</text></g>
 </g>
-<g class="passport-card"><title>illustration-project-1-week-29: sample-dev/aurora / release / 12 Jun 2026</title>
+<g class="passport-card" data-week="29"><title>illustration-project-1-week-29: sample-dev/aurora / release / 12 Jun 2026</title>
 <rect x="413" y="789" width="311" height="89" rx="10" fill="#FAF4EA" stroke="#C9C9BD"/>
 <rect x="413" y="789" width="5" height="89" rx="2.5" fill="#9C711C"/>
 <circle cx="439" cy="809" r="7" fill="none" stroke="#9C711C" stroke-width="2.2"/>
@@ -983,7 +983,7 @@
 <g fill="#263B43"><text x="431.0" y="840.0" class="route" text-anchor="start">aurora</text></g>
 <g fill="#667A80"><text x="431.0" y="860.0" class="tiny" text-anchor="start">illustration-project-1-week-29</text></g>
 </g>
-<g class="passport-card"><title>illustration-project-5-week-41: sample-dev/harbour / pr_merged / 31 Aug 2026</title>
+<g class="passport-card" data-week="41"><title>illustration-project-5-week-41: sample-dev/harbour / pr_merged / 31 Aug 2026</title>
 <rect x="740" y="789" width="311" height="89" rx="10" fill="#FAF4EA" stroke="#C9C9BD"/>
 <rect x="740" y="789" width="5" height="89" rx="2.5" fill="#317CA9"/>
 <circle cx="766" cy="809" r="7" fill="none" stroke="#317CA9" stroke-width="2.2"/>
@@ -991,7 +991,7 @@
 <g fill="#263B43"><text x="758.0" y="840.0" class="route" text-anchor="start">harbour</text></g>
 <g fill="#667A80"><text x="758.0" y="860.0" class="tiny" text-anchor="start">illustration-project-5-week-41</text></g>
 </g>
-<g class="passport-card"><title>illustration-project-5-week-52: sample-dev/harbour / release / 15 Nov 2026</title>
+<g class="passport-card" data-week="52"><title>illustration-project-5-week-52: sample-dev/harbour / release / 15 Nov 2026</title>
 <rect x="1067" y="789" width="311" height="89" rx="10" fill="#FAF4EA" stroke="#C9C9BD"/>
 <rect x="1067" y="789" width="5" height="89" rx="2.5" fill="#317CA9"/>
 <circle cx="1093" cy="809" r="7" fill="none" stroke="#317CA9" stroke-width="2.2"/>

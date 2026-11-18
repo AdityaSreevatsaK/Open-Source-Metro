@@ -2,6 +2,12 @@
 
 ## Experimental direction: Living Network (Draft)
 
+**Animated chronological replay (synthetic showcase, approximately 650 KB):**
+
+![Animated Open Source Metro project network growing chronologically over 53 weeks. The source data is explicitly synthetic, not the owner's real GitHub history.](assets/living-network-replay.gif)
+
+This animation is a preview of the offline interactive experience, **not** a complete GitHub contributions graph. A fully readable [static version](assets/living-network-showcase.svg) is always available.
+
 **The calendar now tells a story instead of just wearing coloured lines.** In this alternative, **each route represents a repository**. Small stops are source-observed active weeks; distinct rings highlight PR merges and releases. A milestone passport shows exact source event IDs and dates. The **interactive replay** lets you travel through 53 weeks, focus on a repository and inspect source events.
 
 ![Living Network midnight: 53-week contribution calendar, five repository-specific journeys and milestone passport, explicitly synthetic showcase.](assets/living-network-showcase.svg)
@@ -26,6 +32,13 @@ Start-Process .\output\living\living-network-showcase.html
 ```
 
 Use the Play/Pause controls, week scrubber, speed selector and repo filters to explore observed events. The checked-in [interactive showcase HTML](assets/living-network-showcase.html) can also be downloaded and opened locally. GitHub itself does not run HTML from README embeds.
+
+**Optional GIF export** (not required for the regular Python renderer):
+
+```powershell
+py -3 -m pip install -e ".[animation]"
+py -3 tools/render_replay_gif.py --input examples/demo-activity.json --output output/living-network-replay.gif --showcase --frames 24 --width 760 --duration-ms 180
+```
 
 **Read:** [Living Network design, architecture, semantic rules and limitations](docs/LIVING_NETWORK_EXPERIMENT.md). This is a **separate design experiment on `design/living-network-v1`**, not a replacement for the current production baseline or an approved public release.
 

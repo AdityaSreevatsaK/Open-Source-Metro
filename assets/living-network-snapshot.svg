@@ -600,7 +600,7 @@
 <text x="88.0" y="778.0" class="tag" text-anchor="start">03 / MILESTONE PASSPORT</text>
 <text x="1364.0" y="778.0" class="meta" text-anchor="end">RECORDED SOURCE EVENTS • NO INVENTED MILESTONE TITLES</text>
 </g>
-<g class="passport-card"><title>demo-004: sample-dev/atlas / pr_merged / 12 Sep 2026</title>
+<g class="passport-card" data-week="42"><title>demo-004: sample-dev/atlas / pr_merged / 12 Sep 2026</title>
 <rect x="86" y="789" width="311" height="89" rx="10" fill="#0C1725" stroke="#2B4357"/>
 <rect x="86" y="789" width="5" height="89" rx="2.5" fill="#BEA2FF"/>
 <circle cx="112" cy="809" r="7" fill="none" stroke="#BEA2FF" stroke-width="2.2"/>
@@ -608,7 +608,7 @@
 <g fill="#F1F7FE"><text x="104.0" y="840.0" class="route" text-anchor="start">atlas</text></g>
 <g fill="#748EA4"><text x="104.0" y="860.0" class="tiny" text-anchor="start">demo-004</text></g>
 </g>
-<g class="passport-card"><title>demo-007: sample-dev/aurora / release / 24 Oct 2026</title>
+<g class="passport-card" data-week="48"><title>demo-007: sample-dev/aurora / release / 24 Oct 2026</title>
 <rect x="413" y="789" width="311" height="89" rx="10" fill="#0C1725" stroke="#2B4357"/>
 <rect x="413" y="789" width="5" height="89" rx="2.5" fill="#59F0BD"/>
 <circle cx="439" cy="809" r="7" fill="none" stroke="#59F0BD" stroke-width="2.2"/>
@@ -616,7 +616,7 @@
 <g fill="#F1F7FE"><text x="431.0" y="840.0" class="route" text-anchor="start">aurora</text></g>
 <g fill="#748EA4"><text x="431.0" y="860.0" class="tiny" text-anchor="start">demo-007</text></g>
 </g>
-<g class="passport-card"><title>demo-008: sample-dev/harbour / pr_merged / 04 Nov 2026</title>
+<g class="passport-card" data-week="50"><title>demo-008: sample-dev/harbour / pr_merged / 04 Nov 2026</title>
 <rect x="740" y="789" width="311" height="89" rx="10" fill="#0C1725" stroke="#2B4357"/>
 <rect x="740" y="789" width="5" height="89" rx="2.5" fill="#7BC9FF"/>
 <circle cx="766" cy="809" r="7" fill="none" stroke="#7BC9FF" stroke-width="2.2"/>

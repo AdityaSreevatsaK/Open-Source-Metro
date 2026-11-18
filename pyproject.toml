@@ -18,6 +18,9 @@ classifiers = [
   "Topic :: Multimedia :: Graphics :: Presentation",
 ]
 
+[project.optional-dependencies]
+animation = ["Pillow>=10,<14", "CairoSVG>=2.7,<3"]
+
 [project.scripts]
 open-source-metro = "open_source_metro.renderer:main"
 

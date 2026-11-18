@@ -85,3 +85,17 @@ The interactive file works offline and does not contact GitHub, inject external 
 4. After owner design feedback, should the team build a compact GitHub profile preset or explore a *genuinely different* graphic metaphor?
 
 This design intentionally remains a **draft PR** until the owner selects a direction. The previous Metro Atlas and its verified CI remain intact on `master`.
+
+
+## Optional GitHub README animation
+
+A 24-frame, approximately 650 KB GIF is checked in at `assets/living-network-replay.gif`. It reveals weeks in chronological order, with repository track lengths and the milestone passport gradually appearing. The last frame pauses on the full network.
+
+Build this optional binary with:
+
+```powershell
+py -3 -m pip install -e ".[animation]"
+py -3 tools/render_replay_gif.py --input examples/demo-activity.json --output output/living-network-replay.gif --showcase --frames 24 --width 760 --duration-ms 180
+```
+
+The GIF uses CairoSVG/Pillow only for optional local asset generation. **The standard library remains sufficient for the normal SVG/HTML renderer.** GIF pixel bytes can vary across operating systems due to rasterisation/fonts, so CI checks the committed GIF's format and size, not byte-for-byte equivalence. No animation is used to infer extra source events. The SVG is the static fallback for reduced-motion preferences.
