@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 
 from .living_network import build_plan, demo_story, _density
-from .contribution_calendar import normalise_calendar_for_snapshot
+from .contribution_calendar import normalise_calendar_for_snapshot, contribution_intensity
 
 WIDTH, HEIGHT = 1360, 462
 X0, XSTEP, DAY_SIZE = 202.0, 19.45, 12.8
@@ -83,6 +83,9 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
                           if p['start'] <= day <= p['today'] and amount > 0)
                    if official is not None else sorted(p['by_day']))
     active_weeks = {p['positions'][day][0] for day in active_days}
+    intensity_samples = (sorted(value for day,value in official.items()
+                                if p['start'] <= day <= p['today'] and value > 0)
+                         if official is not None else [])
     if not demo:
         if active_days:
             date_range = f"{active_days[0]:%d %b %Y} to {active_days[-1]:%d %b %Y}"
@@ -137,7 +140,8 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         week,row = divmod(offset,7)
         observed = p['by_day'].get(day,())
         units = official.get(day, 0) if official is not None else sum(e['count'] for e in observed)
-        level = _density(units)
+        level = (contribution_intensity(units, intensity_samples)
+                 if official is not None else _density(units))
         fill = t['greens'][level-1] if level else t['empty']
         x = X0+week*XSTEP
         y = DAY_Y+row*DAY_STEP

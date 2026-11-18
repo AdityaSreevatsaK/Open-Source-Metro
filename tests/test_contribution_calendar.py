@@ -116,6 +116,15 @@ class OfficialCalendarTests(unittest.TestCase):
         self.assertIn("01 / GITHUB PROFILE CONTRIBUTIONS",render_compact(sample))
         self.assertEqual(len(sample["activity"]),10)
 
+    def test_profile_intensity_has_four_observation_based_levels(self):
+        from open_source_metro.contribution_calendar import contribution_intensity
+        samples = [1, 3, 5, 9, 15, 30, 60, 100]
+        self.assertEqual(contribution_intensity(0, samples),0)
+        self.assertEqual(contribution_intensity(1, samples),1)
+        self.assertEqual(contribution_intensity(100, samples),4)
+        self.assertLess(contribution_intensity(3, samples),
+                        contribution_intensity(60, samples))
+
     def test_mobile_and_profile_pack_keep_calendar_independent(self):
         sample=fixture();sample["_calendar"]=calendar()
         mobile=ET.fromstring(render_mobile(sample))

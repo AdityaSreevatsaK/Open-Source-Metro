@@ -136,6 +136,22 @@ def fetch_contribution_calendar(username: str, *, generated_at: datetime | None 
     return result
 
 
+def contribution_intensity(units: int, positive_counts: list[int]) -> int:
+    """Four percentile-based colour levels for real GitHub contribution days.
+
+    This is a visual encoding only. SVG title/data-count always preserve the
+    exact GitHub contributionCount. Never apply the percentile transform to
+    demo fixture or public repository event counts.
+    """
+    if units <= 0:
+        return 0
+    if not positive_counts:
+        return 0
+    from bisect import bisect_right
+    rank = bisect_right(positive_counts, units)
+    return max(1, min(4, (rank * 4 + len(positive_counts) - 1) // len(positive_counts)))
+
+
 def normalise_calendar_for_snapshot(raw: dict, snapshot: dict) -> dict[date, int] | None:
     """Validate optional independent calendar before rendering untrusted input."""
     value = raw.get("_calendar")

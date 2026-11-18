@@ -16,7 +16,7 @@ from pathlib import Path
 from .compact_profile import COLOURS
 from .living_network import demo_story, _density
 from .validation import normalise
-from .contribution_calendar import normalise_calendar_for_snapshot
+from .contribution_calendar import normalise_calendar_for_snapshot, contribution_intensity
 
 WIDTH, HEIGHT = 460, 808
 WEEKS = 16
@@ -113,6 +113,9 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
         range_label = "NO SOURCE EVENTS OBSERVED IN THIS WINDOW"
     else:
         range_label = "BLANK SQUARES = UNOBSERVED"
+    intensity_samples = (sorted(amount for day,amount in official.items()
+                                if p["start"] <= day <= p["today"] and amount > 0)
+                         if official is not None else [])
     items = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="mobile-title mobile-desc">',
         f'<title id="mobile-title">Open Source Metro mobile / {provenance}</title>',
@@ -151,7 +154,8 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
         week, row = divmod(offset, 7)
         records = p["by_day"].get(d, ())
         units = official.get(d, 0) if official is not None else sum(e["count"] for e in records)
-        level = _density(units)
+        level = (contribution_intensity(units, intensity_samples)
+                 if official is not None else _density(units))
         fill = c["greens"][level-1] if level else c["empty"]
         x = X0 + week*XSTEP
         y = DAY_Y + row*DAY_STEP
