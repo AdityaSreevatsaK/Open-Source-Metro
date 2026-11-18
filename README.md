@@ -9,10 +9,25 @@ py -3 -m open_source_metro.mobile_profile --input examples/demo-activity.json --
 py -3 -m open_source_metro.mobile_profile --input examples/demo-activity.json --output output/mobile-fixture.svg
 ```
 
+
+
+### Portrait mobile gallery (synthetic illustration)
+
+![Dedicated 16-week portrait Open Source Metro with five repository journeys and event-backed stops; synthetic demonstration only.](assets/living-mobile-showcase.svg)
+
+<details>
+<summary>Paper theme and original fixture-only mobile version</summary>
+
+![Warm paper-coloured 16-week portrait network, using explicitly synthetic demonstration events.](assets/living-mobile-paper.svg)
+
+![Portrait network built from the ten original synthetic fixture events only, without any additional illustrative events.](assets/living-mobile-fixture.svg)
+
+</details>
+
 The initial **public GitHub Events API adapter** supports recent source-backed, username-specific events without a token, but is **not a complete GitHub contribution history**. It accesses only public events, at most 300 events from the previous 30 days, and skips pushes without explicit commit lists rather than inventing counts. All results are written only to local `output/`, never checked in as the owner's activity.
 
 ```powershell
-py -3 -m open_source_metro.public_events AdityaSreevatsaK --output output/public-snapshot.json --compact-svg output/public-compact.svg
+py -3 -m open_source_metro.public_events AdityaSreevatsaK --output output/public-snapshot.json --compact-svg output/public-compact.svg --mobile-svg output/public-mobile.svg
 ```
 
 [Collector data/coverage contract](docs/PUBLIC_EVENTS_COLLECTOR.md). **Neither output has been installed on the owner's live GitHub profile.**

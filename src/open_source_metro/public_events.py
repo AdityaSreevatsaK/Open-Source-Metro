@@ -223,6 +223,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True, help="Output JSON (do not commit personal snapshots)")
     parser.add_argument("--pages", type=int, default=3, help="1-3 pages, capped at 300 public API events")
     parser.add_argument("--compact-svg", type=Path, help="Optional compact 53-week source-event SVG")
+    parser.add_argument("--mobile-svg", type=Path, help="Optional 16-week portrait source-event SVG")
     args = parser.parse_args()
     events = fetch_public_events(args.username, pages=args.pages)
     snapshot = convert_events(args.username, events, pages_fetched=min(args.pages, (len(events) + 99)//100))
@@ -232,6 +233,10 @@ def main() -> None:
         from .compact_profile import render_compact
         args.compact_svg.parent.mkdir(parents=True, exist_ok=True)
         args.compact_svg.write_text(render_compact(snapshot), encoding="utf-8")
+    if args.mobile_svg:
+        from .mobile_profile import render_mobile
+        args.mobile_svg.parent.mkdir(parents=True, exist_ok=True)
+        args.mobile_svg.write_text(render_mobile(snapshot), encoding="utf-8")
     mapped = snapshot["_coverage"]["mapped_events"]
     print(f"Public snapshot: {mapped} mapped events from {len(events)} API records")
     print("WARNING: recent public-event sample only, not complete GitHub contributions.")

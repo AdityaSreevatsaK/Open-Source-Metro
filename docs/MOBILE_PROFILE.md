@@ -28,3 +28,11 @@ Use \`--showcase\` only with synthetic \`source=demo\`; it rejects \`source=gith
 No changes were made to the full Living Network or the compact 53-week export. The portrait view has its own tests for source-backed stops, themes, date bounds, no injected markup, sparse/empty fixtures and deterministic output.
 
 A browser-hosted interactive portrait and true profile-specific personalisation are future work; a static SVG in a GitHub README cannot provide app-like interactions.
+
+## Reviewed demonstration SVG assets
+
+- [Midnight synthetic density showcase](../assets/living-mobile-showcase.svg)
+- [Paper synthetic density showcase](../assets/living-mobile-paper.svg)
+- [Exact ten-event fixture preview](../assets/living-mobile-fixture.svg)
+
+These three assets are byte-for-byte checked against the renderer's output in GitHub Actions. Real personal snapshots are never embedded in the committed previews.

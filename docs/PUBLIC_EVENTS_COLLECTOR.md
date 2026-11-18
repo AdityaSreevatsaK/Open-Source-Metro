@@ -1,6 +1,6 @@
 # Public Events API collector | Experimental, limited history
 
-\`python -m open_source_metro.public_events USERNAME --output output/public-snapshot.json --compact-svg output/public-compact.svg\`
+\`python -m open_source_metro.public_events USERNAME --output output/public-snapshot.json --compact-svg output/public-compact.svg --mobile-svg output/public-mobile.svg\`
 
 This is the **first live public-data adapter**, not a complete GitHub contributions integration.
 

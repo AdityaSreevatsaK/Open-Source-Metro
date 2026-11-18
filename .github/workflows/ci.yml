@@ -89,3 +89,7 @@ jobs:
               assert root.attrib.get('height') == '808'
               assert 'LATEST 16 WEEKS' in content
               assert 'UNOBSERVED' in content
+              expected = Path('assets') / ('living-' + path.name)
+              # Source assets follow living-mobile-{fixture,showcase,paper}.svg.
+              expected = Path('assets') / path.name.replace('mobile-', 'living-mobile-')
+              assert expected.read_bytes() == path.read_bytes(), f'Mobile asset drift: {expected}'
