@@ -151,3 +151,7 @@ Corrections:
 5. To explore other public repos, specify a reviewed comma-separated `--repos` list. This changes the collection scope, not the rendered numbers' honesty.
 
 Do not infer that a blank annual chart signifies no GitHub contributions. It means this selected public source had no observations for those dates. It can still omit external PRs, private activity, branch contributions and other GitHub event types.
+
+### Project-route ranking for real source snapshots
+
+The five labelled project routes prefer repositories with activity across **more distinct observed weeks**, rather than favouring one extremely busy day. Event volume then breaks ties. This avoids five newly created repositories crowding older, sustained public work out of the map. The annual calendar still includes every observed event from the collected public repositories, even those that are not given individual routes. For a different set of routes, choose a reviewed `--featured` list.

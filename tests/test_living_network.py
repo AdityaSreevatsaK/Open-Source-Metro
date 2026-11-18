@@ -162,6 +162,28 @@ class LivingNetworkTests(unittest.TestCase):
         self.assertIn('older-sixth',[e['id'] for e in plan['events']])
         self.assertEqual(sum(len(v) for v in plan['by_day'].values()),11)
 
+    def test_real_routes_prefer_sustained_weeks_over_single_day_bursts(self):
+        data = raw()
+        data['source'] = 'github'
+        data['repositories'] = data['repositories'][:2]
+        data['activity'] = [
+            {'id': f'burst-{i}', 'kind': 'commit',
+             'repo_full_name': 'sample-dev/aurora', 'count': 1,
+             'occurred_at': f'2026-10-01T{i//60:02d}:{i%60:02d}:00Z'}
+            for i in range(120)]
+        data['activity'].extend([
+            {'id':f'sustained-{i}', 'kind':'pr_opened',
+             'repo_full_name':'sample-dev/atlas', 'count':1,
+             'occurred_at':stamp}
+            for i,stamp in enumerate(('2026-07-01T10:00:00Z',
+                                       '2026-08-01T10:00:00Z',
+                                       '2026-09-01T10:00:00Z'))])
+        p = build_plan(data)
+        self.assertEqual(len(p['events']),123)
+        self.assertEqual([r['full_name'] for r in p['featured']],
+                         ['sample-dev/atlas','sample-dev/aurora'])
+        self.assertEqual(p['omitted_events'],0)
+
     def test_interchanges_only_where_multiple_projects_share_a_week(self):
         p=build_plan(demo_story(raw()))
         doc=ET.fromstring(render_svg(demo_story(raw())))

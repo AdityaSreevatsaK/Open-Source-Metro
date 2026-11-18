@@ -61,10 +61,26 @@ def build_plan(raw: dict) -> dict:
     first_seen = {}
     for e in eligible:
         first_seen.setdefault(e['repo'], e['date'])
-    # Prefer active repos, not old/inactive or large synthetic 'count' weights.
-    featured = sorted([r for r in snap['repos'] if sizes[r['full_name']] > 0], key=lambda r: (-sizes[r['full_name']],
-          first_seen.get(r['full_name'], datetime.max.replace(tzinfo=timezone.utc)),
-          r['full_name']))[:5]
+    # Real-history routes tell the story of sustained work, not an arbitrary
+    # pile-up of hundreds of new events in a single week. Day squares still
+    # include ALL observed source events, including unfeatured repositories.
+    if snap['source'] == 'github':
+        observed_weeks = defaultdict(set)
+        for event in eligible:
+            week = (event['date'].date() - start).days // 7
+            observed_weeks[event['repo']].add(week)
+        featured = sorted(
+            (r for r in snap['repos'] if sizes[r['full_name']] > 0),
+            key=lambda r: (-len(observed_weeks[r['full_name']]),
+                           -sizes[r['full_name']],
+                           first_seen.get(r['full_name'], datetime.max.replace(tzinfo=timezone.utc)),
+                           r['full_name']))[:5]
+    else:
+        featured = sorted(
+            (r for r in snap['repos'] if sizes[r['full_name']] > 0),
+            key=lambda r: (-sizes[r['full_name']],
+                           first_seen.get(r['full_name'], datetime.max.replace(tzinfo=timezone.utc)),
+                           r['full_name']))[:5]
     repo_names = {r['full_name'] for r in featured}
     # The source is already bounded by the collector. Never erase real activity
     # merely because it exceeds an arbitrary 240-event rendering threshold.
