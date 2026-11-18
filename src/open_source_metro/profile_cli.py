@@ -70,7 +70,9 @@ def export_profile(snapshot: dict, output: Path, *, layout: str = "both",
                              encoding="utf-8")
     produced.append(snapshot_path)
     status = ("Synthetic demonstration data" if data["source"] == "demo"
-              else "Partial public GitHub event snapshot")
+              else "GitHub profile-visible contributions + partial public project routes"
+              if data.get("_calendar") is not None else
+              "Partial public GitHub event snapshot")
     snap = normalise(data)
     calendar = normalise_calendar_for_snapshot(data, snap)
     generated = snap["generated"].date()
@@ -115,7 +117,9 @@ def export_profile(snapshot: dict, output: Path, *, layout: str = "both",
         text.append(f"![{status} | {svg.stem}](./{svg.name})")
         text.append("")
     text.extend([
-        "**Coverage:** Blank squares are unobserved activity, not confirmed zero contributions.",
+        ("**Calendar scope:** The day squares use GitHub's profile-visible counts, which can include anonymous restricted contributions depending on profile settings. Missing dates outside the API query are not proof of zero; project routes show only observed public events."
+         if calendar is not None else
+         "**Coverage:** Blank squares are unobserved activity, not confirmed zero contributions."),
         "For public data, refer to source-snapshot.json → _coverage for API, pagination and omissions.",
         "Portrait image intentionally shows only the most recent 16 weeks.",
         "",
@@ -163,7 +167,10 @@ def main() -> None:
                            theme=args.theme, featured=featured)
     for file in files:
         print(file)
-    print("This is a source-backed event illustration, NOT a complete GitHub contribution calendar.")
+    if data.get("_calendar") is not None:
+        print("Day squares: GitHub's profile-visible contributions. Metro routes: partial public event history.")
+    else:
+        print("Partial source-event snapshot only. This is NOT GitHub's full contribution calendar.")
 
 
 if __name__ == "__main__":

@@ -155,7 +155,9 @@ def render_mobile(raw: dict, *, theme: str = "midnight") -> str:
         fill = c["greens"][level-1] if level else c["empty"]
         x = X0 + week*XSTEP
         y = DAY_Y + row*DAY_STEP
-        message = (f"{d.isoformat()}: {units} GitHub profile contributions, {len(records)} public repository events"
+        message = (f"{d.isoformat()}: not returned by GitHub profile calendar query"
+                   if official is not None and d not in official else
+                   f"{d.isoformat()}: {units} GitHub profile contributions, {len(records)} public repository events"
                    if official is not None else
                    f"{d.isoformat()}: {len(records)} observed events, {units} units" if records
                    else f"{d.isoformat()}: not observed in supplied snapshot")

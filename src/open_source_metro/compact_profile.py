@@ -141,7 +141,9 @@ def render_compact(raw: dict, *, theme: str = 'midnight') -> str:
         fill = t['greens'][level-1] if level else t['empty']
         x = X0+week*XSTEP
         y = DAY_Y+row*DAY_STEP
-        desc = (f'{day.isoformat()}: {units} GitHub profile contributions, {len(observed)} observed public repository events'
+        desc = (f'{day.isoformat()}: not returned in GitHub profile calendar query'
+                if official is not None and day not in official else
+                f'{day.isoformat()}: {units} GitHub profile contributions, {len(observed)} observed public repository events'
                 if official is not None else
                 f'{day.isoformat()}: {len(observed)} source events, {units} observed units' if observed else
                 f'{day.isoformat()}: unobserved in supplied snapshot')
