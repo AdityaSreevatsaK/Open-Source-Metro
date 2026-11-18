@@ -18,6 +18,8 @@ Output: `source-snapshot.json`, `profile-compact.svg`, `profile-mobile.svg` and 
 
 **Important:** This is **not** GitHub's complete contributions calendar. Commits are from the current default branch; other repos, branch histories, reviews and private contributions may be absent. The source manifest describes the precise window and omissions. Blank cells are *unobserved*, not proven zero contributions.
 
+**No-code option:** From the repository's **Actions** tab, select **Generate public Metro profile (manual)** → **Run workflow**, enter a public username, then download the `open-source-metro-public-profile` artifact. It contains both requested SVGs, the source and coverage manifest, and suggested README embed text. Artifacts expire after **7 days**; no changes are pushed to any profile.
+
 [Full collection and self-service guide](docs/YEAR_HISTORY_AND_SELF_SERVICE.md). No real-account data is bundled, no profile repository is modified and no paid service is required.
 
 ---

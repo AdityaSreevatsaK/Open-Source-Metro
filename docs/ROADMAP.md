@@ -97,3 +97,7 @@ This roadmap separates **design acceptance** from **engineering correctness**. I
 - [ ] Evaluate authenticated GraphQL or additional author-search endpoints for a verified, wider GitHub contribution history.
 - [ ] Improve self-service UI, choose featured projects interactively and allow a configurable layout without hand-editing flags.
 - [ ] Add a manual opt-in Action for profile-asset export, without default write privileges to user profile repositories.
+
+
+- [x] Add manual opt-in GitHub Action for self-service public profile export and 7-day downloadable artifacts, with no live profile writes.
+- [ ] Run a manual GitHub Action against a real public account after merge to validate API delivery, rate-limit behaviour, coverage manifests and actual visuals.

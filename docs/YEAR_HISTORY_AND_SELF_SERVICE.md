@@ -121,3 +121,18 @@ The repository remains public, and the collector may only include source rows wh
 ### Future extension, not yet implemented
 
 A more complete collector would need additional coverage of public organisation repositories, forks, default-branch changes, authored PRs across external repositories, and authenticated GraphQL contributions collection. Each source must be independently verified with limits, costs, rate handling and privacy controls before it becomes part of the published source contract.
+
+
+## No-code workflow: GitHub Actions (manual, opt-in)
+
+A one-off self-service workflow is installed at [Generate public Metro profile](../.github/workflows/generate-public-profile.yml). After this feature merges into the default branch:
+
+1. Open the repository's **Actions** tab.
+2. Select **Generate public Metro profile (manual)**.
+3. Choose **Run workflow** and supply a public GitHub username; optionally choose public repository scope, featured repositories, theme and layout.
+4. Open the completed run and download the **open-source-metro-public-profile** artifact, which includes SVGs, source JSON and the README snippet.
+5. Review the **_coverage** manifest and only then decide whether to manually embed the SVG in a GitHub profile.
+
+The workflow uses a short-lived read-only GitHub Actions token to increase public API allowance, performs no Git push, has no account-write permissions and retains downloadable artifacts for **seven days**. Actions artifacts from a public project may be visible to others: use only information you are comfortable sharing publicly. The workflow is **not scheduled** and does not automatically update any profile.
+
+The automated unit test workflow makes **zero real network requests**, uses synthetic and mocked data, and cannot prove that an arbitrary GitHub account's entire development history is captured.

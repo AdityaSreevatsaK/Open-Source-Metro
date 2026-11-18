@@ -161,3 +161,13 @@ When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT
 - `GITHUB_TOKEN` is optional for rate limits and must never appear in output SVG/JSON, logs or tests; use mocked transports for CI.
 - Self-service `--featured` must only filter the already validated input, without injecting extra events or replacing the synthetic labels. Never auto-write to a GitHub profile or commit real-user snapshots.
 - Keep the existing static/animated demos unchanged, and respect the distinction between the 53-week compact layout and 16-week portrait.
+
+
+## Manual public-profile GitHub Action
+
+- `.github/workflows/generate-public-profile.yml` is a strictly opt-in `workflow_dispatch`, never an automatic profile updater.
+- Use `contents: read`, default GitHub Actions token only as an optional request credential to `api.github.com`, and no profile write permissions.
+- All inputs are passed through environment variables to Python, never interpolated directly into shell commands. Validate username/repositories, numeric bounds, theme and layout before requests.
+- Generate local artifacts only: bounded source snapshot, static SVGs and a README snippet; upload them with 7-day retention. No source-specific tokens in artifacts and no real-account snapshots committed to the repository.
+- Public Actions artifacts may be accessible to other users; warn people that the archive contains data drawn from public repositories and source identifiers.
+- No live API calls should be required in routine CI tests. Verify the manual workflow itself after merge with an explicit owner-triggered run; do not claim a successful live account run merely because the YAML exists.
