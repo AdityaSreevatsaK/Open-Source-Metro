@@ -171,3 +171,13 @@ When working on `design/living-network-v1`, read [docs/LIVING_NETWORK_EXPERIMENT
 - Generate local artifacts only: bounded source snapshot, static SVGs and a README snippet; upload them with 7-day retention. No source-specific tokens in artifacts and no real-account snapshots committed to the repository.
 - Public Actions artifacts may be accessible to other users; warn people that the archive contains data drawn from public repositories and source identifiers.
 - No live API calls should be required in routine CI tests. Verify the manual workflow itself after merge with an explicit owner-triggered run; do not claim a successful live account run merely because the YAML exists.
+
+
+## Renderer coverage and repository selection correction
+
+- **Do not reintroduce the 240-event limit** in Living Network, compact or portrait calendar generation. The snapshot is already bounded by collectors and must remain source-complete within its time scope.
+- Draw day-square intensity using **all in-window public source events** from selected/collected repositories, even if only five repository lines are displayed. Hidden rails do not mean hidden calendar observations.
+- Routes are only created for repositories with observed events in the displayed window; never display `0w` as an active route.
+- Public year-scale collector defaults to ten public repositories and balances recently pushed projects against older repositories; explicit `--repos` overrides this sampling.
+- Preserve sampled coverage metadata and show real first/last observed dates. A mostly empty year may be accurate for the selected repositories; do not fill historical dates with invented activity or disguise sparsity.
+- The actual GitHub profile is never modified automatically and a selected public history is **not** all official GitHub contributions.

@@ -6,6 +6,7 @@ profile repository is modified, and no demonstration events are fabricated.
 from __future__ import annotations
 
 import argparse
+from datetime import timedelta
 import json
 from pathlib import Path
 
@@ -68,10 +69,29 @@ def export_profile(snapshot: dict, output: Path, *, layout: str = "both",
     produced.append(snapshot_path)
     status = ("Synthetic demonstration data" if data["source"] == "demo"
               else "Partial public GitHub event snapshot")
+    snap = normalise(data)
+    generated = snap["generated"].date()
+    last_sunday = generated - timedelta(days=(generated.weekday() + 1) % 7)
+    window_start = last_sunday - timedelta(weeks=52)
+    observed = [e["date"].date() for e in snap["events"]
+                if window_start <= e["date"].date() <= generated
+                and e["date"] <= snap["generated"]]
+    observed_days = sorted(set(observed))
+    observed_weeks = {(day - window_start).days // 7 for day in observed_days}
+    observed_range = (f"{observed_days[0].isoformat()} to {observed_days[-1].isoformat()}"
+                      if observed_days else "No events in the displayed annual window")
     text = [
         "# Open Source Metro | Generated profile assets",
         "",
         f"**Source:** {status}. This is not GitHub's official complete contribution calendar.",
+        "",
+        f"**Actually observed dates:** {observed_range}.",
+        f"**Annual coverage:** {len(observed)} observed events on {len(observed_days)} days in {len(observed_weeks)} of 53 weeks.",
+        f"**Repository routes:** Up to five featured projects; all validated events contribute to the annual calendar.",
+        ("**Sparse history warning:** The selected source data covers fewer than eight active weeks; "
+         "a nearly blank year is expected. Add older public repositories using --repos, "
+         "or view the separate 16-week mobile layout." if data["source"] == "github"
+         and len(observed_weeks) < 8 else ""),
         "",
         "Upload the chosen SVG to your own profile repository and update its README **manually**.",
         "This tool does not open PRs, commit to a profile, publish any token or change GitHub settings.",

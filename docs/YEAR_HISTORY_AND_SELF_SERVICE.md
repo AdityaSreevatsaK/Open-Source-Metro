@@ -18,10 +18,10 @@ cd Open-Source-Metro
 py -3 -m pip install -e .
 \`\`\`
 
-Collect public repository history for the default five most recently pushed, non-fork **owned public** repositories:
+Collect public repository history for the default ten **time-diverse, non-fork owned public** repositories (recent plus progressively older projects):
 
 \`\`\`powershell
-py -3 -m open_source_metro.year_history AdityaSreevatsaK --days 365 --max-repos 5 --pages 2 --output output/year-public.json
+py -3 -m open_source_metro.year_history AdityaSreevatsaK --days 365 --max-repos 10 --pages 2 --output output/year-public.json
 \`\`\`
 
 Collect from **explicit public repositories**, including repositories belonging to other owners where the specified user has authored activity:
@@ -91,7 +91,7 @@ The \`_coverage\` field includes:
 
 **Even when \`possible_history_truncation\` is false, the snapshot is not complete GitHub contributions.** A complete API page cannot prove no omitted events elsewhere, and this collector deliberately excludes many kinds of contribution.
 
-Default request bounds: 5 repositories; up to 2 pages of 100 entries per endpoint and discovery. All bounds are configurable within 1-20 repositories and 1-5 pages, with a maximum 370-day window. More repositories/pages may hit unauthenticated rate limits.
+Default request bounds: 10 repositories; up to 2 pages of 100 entries per endpoint and discovery. All bounds are configurable within 1-20 repositories and 1-5 pages, with a maximum 370-day window. More repositories/pages may hit unauthenticated rate limits.
 
 No network queries run in CI; the public collector is tested using injected mock HTTP responses.
 
@@ -136,3 +136,18 @@ A one-off self-service workflow is installed at [Generate public Metro profile](
 The workflow uses a short-lived read-only GitHub Actions token to increase public API allowance, performs no Git push, has no account-write permissions and retains downloadable artifacts for **seven days**. Actions artifacts from a public project may be visible to others: use only information you are comfortable sharing publicly. The workflow is **not scheduled** and does not automatically update any profile.
 
 The automated unit test workflow makes **zero real network requests**, uses synthetic and mocked data, and cannot prove that an arbitrary GitHub account's entire development history is captured.
+
+
+## Why the old profile image looked nearly empty
+
+The initial export used only five most recently pushed repositories and an unnecessary 240-event renderer cap. On a real run, 502 events were fetched but the chart kept only 207 and reported **295 omitted**. The selected projects were so recent that the visible map had about a week of activity. This was a poor representation of a year, not evidence that the GitHub account was inactive.
+
+Corrections:
+
+1. The **annual calendar now uses all source events in its 53-week window**, from every repository present in the snapshot. Up to five observed-active repositories become labelled routes; other repositories still influence the day squares.
+2. Automatic public repository selection now spans **ten** repositories by default, combining recent and progressively older projects from the public, pushed-date-sorted list. This remains a bounded sample rather than account-wide collection.
+3. The SVG displays **actual observed date range**, **weeks with observations**, and explicitly distinguishes unfeatured routes from events outside the year.
+4. The generated README snippet includes a data-coverage summary and highlights sparse history.
+5. To explore other public repos, specify a reviewed comma-separated `--repos` list. This changes the collection scope, not the rendered numbers' honesty.
+
+Do not infer that a blank annual chart signifies no GitHub contributions. It means this selected public source had no observations for those dates. It can still omit external PRs, private activity, branch contributions and other GitHub event types.

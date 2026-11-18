@@ -101,3 +101,13 @@ This roadmap separates **design acceptance** from **engineering correctness**. I
 
 - [x] Add manual opt-in GitHub Action for self-service public profile export and 7-day downloadable artifacts, with no live profile writes.
 - [ ] Run a manual GitHub Action against a real public account after merge to validate API delivery, rate-limit behaviour, coverage manifests and actual visuals.
+
+
+## Real-data display corrections
+
+- [x] Remove the arbitrary 240-event clipping and day-boundary deletion from annual and portrait maps.
+- [x] Include activity from unfeatured repositories in calendar intensity while showing only five readable project routes.
+- [x] Display actual date span and observed-week count; hide zero-observation project routes.
+- [x] Choose a more time-diverse public repository sample by default, rather than only the five most recently pushed projects.
+- [ ] Add an optional focused 12-week horizontal banner for accounts with sparse annual public history, without mislabelling it as a complete year.
+- [ ] Add broader public authorship discovery across external repositories and GraphQL contribution totals with explicit coverage boundaries.

@@ -1,5 +1,7 @@
 # Open Source Metro
 
+> **Improved real-data interpretation:** The renderer now preserves all observed events, even in dense days, rather than dropping the oldest activity at 240 events. The 53-week overview reports **how many weeks actually have observations** and the first/last observed dates. Public activity in newly created repositories can legitimately cover only a few days, so a mostly blank full-year chart does not mean all GitHub contributions were zero. The default automatic public-repository selection now balances recent and older projects; use `--repos` to specify other public repositories.
+
 ## Self-service public profile generator | Year-scale repository history
 
 **New:** Generate a compact 53-week Metro banner and a separate 16-week portrait card for a public GitHub account. Unlike the older 30-day Events API sampler, the new collector reads **source-backed history** from selected public repositories. It records exactly what it saw and documents all coverage gaps.

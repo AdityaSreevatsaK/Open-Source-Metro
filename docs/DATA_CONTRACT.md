@@ -76,7 +76,7 @@ Non-authoritative metadata such as language/stars may be included in the input b
 - GitHub's public Events API, repository commit history, pull requests and contribution calendar can differ in visibility, counting rules, historical coverage and ownership. No current adapter has proven equivalence.
 - Inactive/blank cells mean **absent from the input**, not zero real activity.
 - The fixed 53-week period ends at \`generated_at\`; events after that exact instant or outside the displayed period must not be treated as observed.
-- Repository selection is limited to five featured stations and event display to 240 eligible events. Disclose omissions. When a 240-event boundary splits a day, drop that oldest day rather than drawing a misleading fractional daily total.
+- Only five repositories are drawn as labelled routes, but the calendar uses every eligible in-window source event from **all supplied repositories**. No arbitrary 240-event cap or partial-day deletion is allowed. Events outside the requested time window and the actual number of observed days/weeks must be disclosed.
 - Only real safe public URLs can become clickable in a future interactive preview. The current static exports do not need links.
 
 ## Determinism and deduplication
